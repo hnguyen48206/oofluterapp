@@ -1,0 +1,2 @@
+creativecreatorormaybenot/wakelock/BuildConfig.java
+ creativecreatorormaybenot.wakelock.BuildConfig

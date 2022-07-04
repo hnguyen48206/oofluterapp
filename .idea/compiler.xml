@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="android.app" target="16" />
+      <module name="android.esys_flutter_share" target="16" />
+      <module name="android.file_picker" target="16" />
+      <module name="android.firebase_core" target="16" />
+      <module name="android.firebase_messaging" target="16" />
+      <module name="android.flutter_full_pdf_viewer" target="16" />
+      <module name="android.flutter_plugin_android_lifecycle" target="16" />
+      <module name="android.flutter_plugin_pdf_viewer" target="16" />
+      <module name="android.flutter_udid" target="16" />
+      <module name="android.flutter_webview_plugin" target="16" />
+      <module name="android.image_picker" target="16" />
+      <module name="android.local_auth" target="16" />
+      <module name="android.multi_image_picker" target="16" />
+      <module name="android.open_file" target="16" />
+      <module name="android.path_provider" target="16" />
+      <module name="android.shared_preferences" target="16" />
+      <module name="android.sqflite" target="16" />
+      <module name="android.url_launcher" target="16" />
+      <module name="android.video_player" target="16" />
+      <module name="android.wakelock" target="16" />
+      <module name="android.webview_flutter" target="16" />
+      <module name="com.alveliu.flutterfullpdfviewer.android.flutter_full_pdf_viewer" target="16" />
+      <module name="com.crazecoder.openfile.android.open_file" target="16" />
+      <module name="com.flutter_webview_plugin.android.flutter_webview_plugin" target="16" />
+      <module name="com.mr.flutter.plugin.filepicker.android.file_picker" target="16" />
+      <module name="com.tekartik.sqflite.android.sqflite" target="16" />
+      <module name="com.vitanov.multiimagepicker.android.multi_image_picker" target="16" />
+      <module name="creativecreatorormaybenot.wakelock.android.wakelock" target="16" />
+      <module name="de.esys.esysfluttershare.android.esys_flutter_share" target="16" />
+      <module name="de.gigadroid.flutterudid.android.flutter_udid" target="16" />
+      <module name="io.flutter.plugins.firebase.core.android.firebase_core" target="16" />
+      <module name="io.flutter.plugins.firebasemessaging.android.firebase_messaging" target="16" />
+      <module name="io.flutter.plugins.flutter_plugin_android_lifecycle.android.flutter_plugin_android_lifecycle" target="16" />
+      <module name="io.flutter.plugins.imagepicker.android.image_picker" target="16" />
+      <module name="io.flutter.plugins.localauth.android.local_auth" target="16" />
+      <module name="io.flutter.plugins.pathprovider.android.path_provider" target="16" />
+      <module name="io.flutter.plugins.sharedpreferences.android.shared_preferences" target="16" />
+      <module name="io.flutter.plugins.urllauncher.android.url_launcher" target="16" />
+      <module name="io.flutter.plugins.videoplayer.android.video_player" target="16" />
+      <module name="io.flutter.plugins.webviewflutter.android.webview_flutter" target="16" />
+      <module name="pt.tribeiro.flutter_pdf_viewer.android.flutter_plugin_pdf_viewer" target="16" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

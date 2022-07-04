@@ -1,0 +1,27 @@
+{
+  "name": "flutter_full_pdf_viewer",
+  "version": "1.0.1",
+  "summary": "A fully functional pdf viewer for both iOS and Android.",
+  "description": "A fully functional pdf viewer for both iOS and Android.",
+  "homepage": "https://github.com/albo1337",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Alban Veliu": "alveliu93@gmail.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "Flutter": [
+
+    ]
+  },
+  "frameworks": "WebKit",
+  "platforms": {
+    "ios": "8.0"
+  }
+}

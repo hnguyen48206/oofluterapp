@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "711544675888",
+    "firebase_url": "https://android-online-office.firebaseio.com",
+    "project_id": "android-online-office",
+    "storage_bucket": "android-online-office.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711544675888:android:827887f4ea320de9",
+        "android_client_info": {
+          "package_name": "vn.onlineoffice.www.oomessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711544675888-806rllokju602mijg20018lghm9id4hj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vn.onlineoffice.www.oomessenger",
+            "certificate_hash": "cf4ff6b802a29ab722c0d06b93e020d87dd80cf9"
+          }
+        },
+        {
+          "client_id": "711544675888-l2brpt9pvhot1l09f1golrs8iesid4ga.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "711544675888-l2brpt9pvhot1l09f1golrs8iesid4ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDME0Tj6ChTeLSIuCf-p0EAc6sH0902ERU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711544675888-l2brpt9pvhot1l09f1golrs8iesid4ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

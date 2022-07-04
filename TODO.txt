@@ -1,0 +1,6 @@
+1. Dung luong file duoi 1MB => hien thi Byte hoac KB
+2. Test doi pass tren web, sau do mo app xem co tu logout ?
+3. Test Trinh Ky tren Android
+4. Them button 'Ket thuc trinh ky' trong signature_detail.dart
+
+309a au duong lan

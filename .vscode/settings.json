@@ -1,0 +1,22 @@
+{
+    "dart.flutterSdkPath": "/Users/vietnhq/Documents/flutter",
+    "git.ignoreLimitWarning": true,
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "202.78.227.218",
+            "port": 24000,
+            "askForPassword": true,
+            "driver": "MSSQL",
+            "name": "DEMO",
+            "group": "OO",
+            "database": "OO_V8_DEMO",
+            "username": "sa"
+        }
+    ]
+}

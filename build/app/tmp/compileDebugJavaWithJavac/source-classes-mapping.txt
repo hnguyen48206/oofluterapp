@@ -1,0 +1,807 @@
+androidx/transition/R.java
+ androidx.transition.R
+ androidx.transition.R$attr
+ androidx.transition.R$color
+ androidx.transition.R$dimen
+ androidx.transition.R$drawable
+ androidx.transition.R$id
+ androidx.transition.R$integer
+ androidx.transition.R$layout
+ androidx.transition.R$string
+ androidx.transition.R$style
+ androidx.transition.R$styleable
+vn/onlineoffice/www/oomessenger/BuildConfig.java
+ vn.onlineoffice.www.oomessenger.BuildConfig
+androidx/print/R.java
+ androidx.print.R
+androidx/lifecycle/livedata/core/R.java
+ androidx.lifecycle.livedata.core.R
+androidx/appcompat/resources/R.java
+ androidx.appcompat.resources.R
+ androidx.appcompat.resources.R$attr
+ androidx.appcompat.resources.R$color
+ androidx.appcompat.resources.R$dimen
+ androidx.appcompat.resources.R$drawable
+ androidx.appcompat.resources.R$id
+ androidx.appcompat.resources.R$integer
+ androidx.appcompat.resources.R$layout
+ androidx.appcompat.resources.R$string
+ androidx.appcompat.resources.R$style
+ androidx.appcompat.resources.R$styleable
+androidx/arch/core/R.java
+ androidx.arch.core.R
+androidx/fragment/R.java
+ androidx.fragment.R
+ androidx.fragment.R$attr
+ androidx.fragment.R$color
+ androidx.fragment.R$dimen
+ androidx.fragment.R$drawable
+ androidx.fragment.R$id
+ androidx.fragment.R$integer
+ androidx.fragment.R$layout
+ androidx.fragment.R$string
+ androidx.fragment.R$style
+ androidx.fragment.R$styleable
+androidx/savedstate/R.java
+ androidx.savedstate.R
+com/flutter_webview_plugin/R.java
+ com.flutter_webview_plugin.R
+ com.flutter_webview_plugin.R$anim
+ com.flutter_webview_plugin.R$attr
+ com.flutter_webview_plugin.R$bool
+ com.flutter_webview_plugin.R$color
+ com.flutter_webview_plugin.R$dimen
+ com.flutter_webview_plugin.R$drawable
+ com.flutter_webview_plugin.R$id
+ com.flutter_webview_plugin.R$integer
+ com.flutter_webview_plugin.R$interpolator
+ com.flutter_webview_plugin.R$layout
+ com.flutter_webview_plugin.R$string
+ com.flutter_webview_plugin.R$style
+ com.flutter_webview_plugin.R$styleable
+ com.flutter_webview_plugin.R$xml
+com/google/android/gms/measurement_base/R.java
+ com.google.android.gms.measurement_base.R
+androidx/asynclayoutinflater/R.java
+ androidx.asynclayoutinflater.R
+ androidx.asynclayoutinflater.R$attr
+ androidx.asynclayoutinflater.R$color
+ androidx.asynclayoutinflater.R$dimen
+ androidx.asynclayoutinflater.R$drawable
+ androidx.asynclayoutinflater.R$id
+ androidx.asynclayoutinflater.R$integer
+ androidx.asynclayoutinflater.R$layout
+ androidx.asynclayoutinflater.R$string
+ androidx.asynclayoutinflater.R$style
+ androidx.asynclayoutinflater.R$styleable
+com/google/firebase/R.java
+ com.google.firebase.R
+ com.google.firebase.R$attr
+ com.google.firebase.R$color
+ com.google.firebase.R$dimen
+ com.google.firebase.R$drawable
+ com.google.firebase.R$id
+ com.google.firebase.R$integer
+ com.google.firebase.R$layout
+ com.google.firebase.R$string
+ com.google.firebase.R$style
+ com.google.firebase.R$styleable
+com/github/barteksc/pdfviewer/R.java
+ com.github.barteksc.pdfviewer.R
+ com.github.barteksc.pdfviewer.R$attr
+ com.github.barteksc.pdfviewer.R$drawable
+ com.github.barteksc.pdfviewer.R$styleable
+pt/tribeiro/flutter_plugin_pdf_viewer/R.java
+ pt.tribeiro.flutter_plugin_pdf_viewer.R
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$attr
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$color
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$dimen
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$drawable
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$id
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$integer
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$layout
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$string
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$style
+ pt.tribeiro.flutter_plugin_pdf_viewer.R$styleable
+androidx/interpolator/R.java
+ androidx.interpolator.R
+com/vitanov/multiimagepicker/R.java
+ com.vitanov.multiimagepicker.R
+ com.vitanov.multiimagepicker.R$anim
+ com.vitanov.multiimagepicker.R$animator
+ com.vitanov.multiimagepicker.R$attr
+ com.vitanov.multiimagepicker.R$bool
+ com.vitanov.multiimagepicker.R$color
+ com.vitanov.multiimagepicker.R$dimen
+ com.vitanov.multiimagepicker.R$drawable
+ com.vitanov.multiimagepicker.R$id
+ com.vitanov.multiimagepicker.R$integer
+ com.vitanov.multiimagepicker.R$interpolator
+ com.vitanov.multiimagepicker.R$layout
+ com.vitanov.multiimagepicker.R$menu
+ com.vitanov.multiimagepicker.R$string
+ com.vitanov.multiimagepicker.R$style
+ com.vitanov.multiimagepicker.R$styleable
+ com.vitanov.multiimagepicker.R$xml
+androidx/core/R.java
+ androidx.core.R
+ androidx.core.R$attr
+ androidx.core.R$color
+ androidx.core.R$dimen
+ androidx.core.R$drawable
+ androidx.core.R$id
+ androidx.core.R$integer
+ androidx.core.R$layout
+ androidx.core.R$string
+ androidx.core.R$style
+ androidx.core.R$styleable
+com/google/android/gms/measurement/sdk/api/R.java
+ com.google.android.gms.measurement.sdk.api.R
+com/google/firebase/analytics/connector/R.java
+ com.google.firebase.analytics.connector.R
+com/google/android/gms/common/R.java
+ com.google.android.gms.common.R
+ com.google.android.gms.common.R$integer
+ com.google.android.gms.common.R$string
+creativecreatorormaybenot/wakelock/R.java
+ creativecreatorormaybenot.wakelock.R
+ creativecreatorormaybenot.wakelock.R$attr
+ creativecreatorormaybenot.wakelock.R$color
+ creativecreatorormaybenot.wakelock.R$dimen
+ creativecreatorormaybenot.wakelock.R$drawable
+ creativecreatorormaybenot.wakelock.R$id
+ creativecreatorormaybenot.wakelock.R$integer
+ creativecreatorormaybenot.wakelock.R$layout
+ creativecreatorormaybenot.wakelock.R$string
+ creativecreatorormaybenot.wakelock.R$style
+ creativecreatorormaybenot.wakelock.R$styleable
+com/google/firebase/installations/R.java
+ com.google.firebase.installations.R
+ com.google.firebase.installations.R$attr
+ com.google.firebase.installations.R$color
+ com.google.firebase.installations.R$dimen
+ com.google.firebase.installations.R$drawable
+ com.google.firebase.installations.R$id
+ com.google.firebase.installations.R$integer
+ com.google.firebase.installations.R$layout
+ com.google.firebase.installations.R$string
+ com.google.firebase.installations.R$style
+ com.google.firebase.installations.R$styleable
+androidx/multidex/R.java
+ androidx.multidex.R
+androidx/media/R.java
+ androidx.media.R
+ androidx.media.R$attr
+ androidx.media.R$color
+ androidx.media.R$dimen
+ androidx.media.R$drawable
+ androidx.media.R$id
+ androidx.media.R$integer
+ androidx.media.R$layout
+ androidx.media.R$string
+ androidx.media.R$style
+ androidx.media.R$styleable
+androidx/core/ktx/R.java
+ androidx.core.ktx.R
+ androidx.core.ktx.R$attr
+ androidx.core.ktx.R$color
+ androidx.core.ktx.R$dimen
+ androidx.core.ktx.R$drawable
+ androidx.core.ktx.R$id
+ androidx.core.ktx.R$integer
+ androidx.core.ktx.R$layout
+ androidx.core.ktx.R$string
+ androidx.core.ktx.R$style
+ androidx.core.ktx.R$styleable
+io/flutter/plugins/webviewflutter/R.java
+ io.flutter.plugins.webviewflutter.R
+ io.flutter.plugins.webviewflutter.R$attr
+ io.flutter.plugins.webviewflutter.R$color
+ io.flutter.plugins.webviewflutter.R$dimen
+ io.flutter.plugins.webviewflutter.R$drawable
+ io.flutter.plugins.webviewflutter.R$id
+ io.flutter.plugins.webviewflutter.R$integer
+ io.flutter.plugins.webviewflutter.R$layout
+ io.flutter.plugins.webviewflutter.R$string
+ io.flutter.plugins.webviewflutter.R$style
+ io.flutter.plugins.webviewflutter.R$styleable
+com/bumptech/glide/R.java
+ com.bumptech.glide.R
+ com.bumptech.glide.R$attr
+ com.bumptech.glide.R$color
+ com.bumptech.glide.R$dimen
+ com.bumptech.glide.R$drawable
+ com.bumptech.glide.R$id
+ com.bumptech.glide.R$integer
+ com.bumptech.glide.R$layout
+ com.bumptech.glide.R$string
+ com.bumptech.glide.R$style
+ com.bumptech.glide.R$styleable
+com/google/firebase/messaging/R.java
+ com.google.firebase.messaging.R
+ com.google.firebase.messaging.R$string
+com/bumptech/glide/gifdecoder/R.java
+ com.bumptech.glide.gifdecoder.R
+com/dexterous/flutterlocalnotifications/R.java
+ com.dexterous.flutterlocalnotifications.R
+ com.dexterous.flutterlocalnotifications.R$attr
+ com.dexterous.flutterlocalnotifications.R$color
+ com.dexterous.flutterlocalnotifications.R$dimen
+ com.dexterous.flutterlocalnotifications.R$drawable
+ com.dexterous.flutterlocalnotifications.R$id
+ com.dexterous.flutterlocalnotifications.R$integer
+ com.dexterous.flutterlocalnotifications.R$layout
+ com.dexterous.flutterlocalnotifications.R$string
+ com.dexterous.flutterlocalnotifications.R$style
+ com.dexterous.flutterlocalnotifications.R$styleable
+androidx/swiperefreshlayout/R.java
+ androidx.swiperefreshlayout.R
+ androidx.swiperefreshlayout.R$attr
+ androidx.swiperefreshlayout.R$color
+ androidx.swiperefreshlayout.R$dimen
+ androidx.swiperefreshlayout.R$drawable
+ androidx.swiperefreshlayout.R$id
+ androidx.swiperefreshlayout.R$integer
+ androidx.swiperefreshlayout.R$layout
+ androidx.swiperefreshlayout.R$string
+ androidx.swiperefreshlayout.R$style
+ androidx.swiperefreshlayout.R$styleable
+androidx/appcompat/R.java
+ androidx.appcompat.R
+ androidx.appcompat.R$anim
+ androidx.appcompat.R$attr
+ androidx.appcompat.R$bool
+ androidx.appcompat.R$color
+ androidx.appcompat.R$dimen
+ androidx.appcompat.R$drawable
+ androidx.appcompat.R$id
+ androidx.appcompat.R$integer
+ androidx.appcompat.R$interpolator
+ androidx.appcompat.R$layout
+ androidx.appcompat.R$string
+ androidx.appcompat.R$style
+ androidx.appcompat.R$styleable
+io/flutter/plugins/localauth/R.java
+ io.flutter.plugins.localauth.R
+ io.flutter.plugins.localauth.R$anim
+ io.flutter.plugins.localauth.R$attr
+ io.flutter.plugins.localauth.R$bool
+ io.flutter.plugins.localauth.R$color
+ io.flutter.plugins.localauth.R$dimen
+ io.flutter.plugins.localauth.R$drawable
+ io.flutter.plugins.localauth.R$id
+ io.flutter.plugins.localauth.R$integer
+ io.flutter.plugins.localauth.R$interpolator
+ io.flutter.plugins.localauth.R$layout
+ io.flutter.plugins.localauth.R$string
+ io.flutter.plugins.localauth.R$style
+ io.flutter.plugins.localauth.R$styleable
+androidx/legacy/coreui/R.java
+ androidx.legacy.coreui.R
+ androidx.legacy.coreui.R$attr
+ androidx.legacy.coreui.R$color
+ androidx.legacy.coreui.R$dimen
+ androidx.legacy.coreui.R$drawable
+ androidx.legacy.coreui.R$id
+ androidx.legacy.coreui.R$integer
+ androidx.legacy.coreui.R$layout
+ androidx.legacy.coreui.R$string
+ androidx.legacy.coreui.R$style
+ androidx.legacy.coreui.R$styleable
+androidx/customview/R.java
+ androidx.customview.R
+ androidx.customview.R$attr
+ androidx.customview.R$color
+ androidx.customview.R$dimen
+ androidx.customview.R$drawable
+ androidx.customview.R$id
+ androidx.customview.R$integer
+ androidx.customview.R$layout
+ androidx.customview.R$string
+ androidx.customview.R$style
+ androidx.customview.R$styleable
+com/google/firebase/iid/R.java
+ com.google.firebase.iid.R
+androidx/exifinterface/R.java
+ androidx.exifinterface.R
+com/shockwave/pdfium/R.java
+ com.shockwave.pdfium.R
+com/google/android/gms/stats/R.java
+ com.google.android.gms.stats.R
+androidx/legacy/coreutils/R.java
+ androidx.legacy.coreutils.R
+ androidx.legacy.coreutils.R$attr
+ androidx.legacy.coreutils.R$color
+ androidx.legacy.coreutils.R$dimen
+ androidx.legacy.coreutils.R$drawable
+ androidx.legacy.coreutils.R$id
+ androidx.legacy.coreutils.R$integer
+ androidx.legacy.coreutils.R$layout
+ androidx.legacy.coreutils.R$string
+ androidx.legacy.coreutils.R$style
+ androidx.legacy.coreutils.R$styleable
+com/google/android/gms/cloudmessaging/R.java
+ com.google.android.gms.cloudmessaging.R
+com/google/firebase/components/R.java
+ com.google.firebase.components.R
+androidx/lifecycle/runtime/R.java
+ androidx.lifecycle.runtime.R
+ androidx.lifecycle.runtime.R$id
+io/flutter/plugins/flutter_plugin_android_lifecycle/R.java
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$attr
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$color
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$dimen
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$drawable
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$id
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$integer
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$layout
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$string
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$style
+ io.flutter.plugins.flutter_plugin_android_lifecycle.R$styleable
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/google/android/gms/measurement/sdk/R.java
+ com.google.android.gms.measurement.sdk.R
+de/esys/esysfluttershare/R.java
+ de.esys.esysfluttershare.R
+ de.esys.esysfluttershare.R$attr
+ de.esys.esysfluttershare.R$color
+ de.esys.esysfluttershare.R$dimen
+ de.esys.esysfluttershare.R$drawable
+ de.esys.esysfluttershare.R$id
+ de.esys.esysfluttershare.R$integer
+ de.esys.esysfluttershare.R$layout
+ de.esys.esysfluttershare.R$string
+ de.esys.esysfluttershare.R$style
+ de.esys.esysfluttershare.R$styleable
+ de.esys.esysfluttershare.R$xml
+com/alveliu/flutterfullpdfviewer/R.java
+ com.alveliu.flutterfullpdfviewer.R
+ com.alveliu.flutterfullpdfviewer.R$attr
+ com.alveliu.flutterfullpdfviewer.R$color
+ com.alveliu.flutterfullpdfviewer.R$dimen
+ com.alveliu.flutterfullpdfviewer.R$drawable
+ com.alveliu.flutterfullpdfviewer.R$id
+ com.alveliu.flutterfullpdfviewer.R$integer
+ com.alveliu.flutterfullpdfviewer.R$layout
+ com.alveliu.flutterfullpdfviewer.R$string
+ com.alveliu.flutterfullpdfviewer.R$style
+ com.alveliu.flutterfullpdfviewer.R$styleable
+com/google/firebase/firebase_core/R.java
+ com.google.firebase.firebase_core.R
+com/crazecoder/openfile/R.java
+ com.crazecoder.openfile.R
+ com.crazecoder.openfile.R$attr
+ com.crazecoder.openfile.R$color
+ com.crazecoder.openfile.R$dimen
+ com.crazecoder.openfile.R$drawable
+ com.crazecoder.openfile.R$id
+ com.crazecoder.openfile.R$integer
+ com.crazecoder.openfile.R$layout
+ com.crazecoder.openfile.R$string
+ com.crazecoder.openfile.R$style
+ com.crazecoder.openfile.R$styleable
+ com.crazecoder.openfile.R$xml
+com/google/firebase/iid/internal/R.java
+ com.google.firebase.iid.internal.R
+fr/g123k/flutterappbadge/flutterappbadger/R.java
+ fr.g123k.flutterappbadge.flutterappbadger.R
+ fr.g123k.flutterappbadge.flutterappbadger.R$attr
+ fr.g123k.flutterappbadge.flutterappbadger.R$color
+ fr.g123k.flutterappbadge.flutterappbadger.R$dimen
+ fr.g123k.flutterappbadge.flutterappbadger.R$drawable
+ fr.g123k.flutterappbadge.flutterappbadger.R$id
+ fr.g123k.flutterappbadge.flutterappbadger.R$integer
+ fr.g123k.flutterappbadge.flutterappbadger.R$layout
+ fr.g123k.flutterappbadge.flutterappbadger.R$string
+ fr.g123k.flutterappbadge.flutterappbadger.R$style
+ fr.g123k.flutterappbadge.flutterappbadger.R$styleable
+me/leolin/shortcutbadger/R.java
+ me.leolin.shortcutbadger.R
+vn/onlineoffice/www/oomessenger/R.java
+ vn.onlineoffice.www.oomessenger.R
+ vn.onlineoffice.www.oomessenger.R$anim
+ vn.onlineoffice.www.oomessenger.R$animator
+ vn.onlineoffice.www.oomessenger.R$attr
+ vn.onlineoffice.www.oomessenger.R$bool
+ vn.onlineoffice.www.oomessenger.R$color
+ vn.onlineoffice.www.oomessenger.R$dimen
+ vn.onlineoffice.www.oomessenger.R$drawable
+ vn.onlineoffice.www.oomessenger.R$id
+ vn.onlineoffice.www.oomessenger.R$integer
+ vn.onlineoffice.www.oomessenger.R$interpolator
+ vn.onlineoffice.www.oomessenger.R$layout
+ vn.onlineoffice.www.oomessenger.R$menu
+ vn.onlineoffice.www.oomessenger.R$mipmap
+ vn.onlineoffice.www.oomessenger.R$string
+ vn.onlineoffice.www.oomessenger.R$style
+ vn.onlineoffice.www.oomessenger.R$styleable
+ vn.onlineoffice.www.oomessenger.R$xml
+io/flutter/plugins/firebase/core/R.java
+ io.flutter.plugins.firebase.core.R
+ io.flutter.plugins.firebase.core.R$attr
+ io.flutter.plugins.firebase.core.R$color
+ io.flutter.plugins.firebase.core.R$dimen
+ io.flutter.plugins.firebase.core.R$drawable
+ io.flutter.plugins.firebase.core.R$id
+ io.flutter.plugins.firebase.core.R$integer
+ io.flutter.plugins.firebase.core.R$layout
+ io.flutter.plugins.firebase.core.R$string
+ io.flutter.plugins.firebase.core.R$style
+ io.flutter.plugins.firebase.core.R$styleable
+androidx/localbroadcastmanager/R.java
+ androidx.localbroadcastmanager.R
+com/google/firebase/installations/interop/R.java
+ com.google.firebase.installations.interop.R
+ com.google.firebase.installations.interop.R$attr
+ com.google.firebase.installations.interop.R$color
+ com.google.firebase.installations.interop.R$dimen
+ com.google.firebase.installations.interop.R$drawable
+ com.google.firebase.installations.interop.R$id
+ com.google.firebase.installations.interop.R$integer
+ com.google.firebase.installations.interop.R$layout
+ com.google.firebase.installations.interop.R$string
+ com.google.firebase.installations.interop.R$style
+ com.google.firebase.installations.interop.R$styleable
+androidx/webkit/R.java
+ androidx.webkit.R
+ androidx.webkit.R$attr
+ androidx.webkit.R$color
+ androidx.webkit.R$dimen
+ androidx.webkit.R$drawable
+ androidx.webkit.R$id
+ androidx.webkit.R$integer
+ androidx.webkit.R$layout
+ androidx.webkit.R$string
+ androidx.webkit.R$style
+ androidx.webkit.R$styleable
+com/tekartik/sqflite/R.java
+ com.tekartik.sqflite.R
+ com.tekartik.sqflite.R$attr
+ com.tekartik.sqflite.R$color
+ com.tekartik.sqflite.R$dimen
+ com.tekartik.sqflite.R$drawable
+ com.tekartik.sqflite.R$id
+ com.tekartik.sqflite.R$integer
+ com.tekartik.sqflite.R$layout
+ com.tekartik.sqflite.R$string
+ com.tekartik.sqflite.R$style
+ com.tekartik.sqflite.R$styleable
+androidx/vectordrawable/animated/R.java
+ androidx.vectordrawable.animated.R
+ androidx.vectordrawable.animated.R$attr
+ androidx.vectordrawable.animated.R$color
+ androidx.vectordrawable.animated.R$dimen
+ androidx.vectordrawable.animated.R$drawable
+ androidx.vectordrawable.animated.R$id
+ androidx.vectordrawable.animated.R$integer
+ androidx.vectordrawable.animated.R$layout
+ androidx.vectordrawable.animated.R$string
+ androidx.vectordrawable.animated.R$style
+ androidx.vectordrawable.animated.R$styleable
+com/google/android/gms/ads_identifier/R.java
+ com.google.android.gms.ads_identifier.R
+io/flutter/plugins/sharedpreferences/R.java
+ io.flutter.plugins.sharedpreferences.R
+ io.flutter.plugins.sharedpreferences.R$attr
+ io.flutter.plugins.sharedpreferences.R$color
+ io.flutter.plugins.sharedpreferences.R$dimen
+ io.flutter.plugins.sharedpreferences.R$drawable
+ io.flutter.plugins.sharedpreferences.R$id
+ io.flutter.plugins.sharedpreferences.R$integer
+ io.flutter.plugins.sharedpreferences.R$layout
+ io.flutter.plugins.sharedpreferences.R$string
+ io.flutter.plugins.sharedpreferences.R$style
+ io.flutter.plugins.sharedpreferences.R$styleable
+com/google/android/datatransport/backend/cct/R.java
+ com.google.android.datatransport.backend.cct.R
+com/google/android/exoplayer2/source/smoothstreaming/R.java
+ com.google.android.exoplayer2.source.smoothstreaming.R
+vn/onlineoffice/www/oomessenger/MainActivity.java
+ vn.onlineoffice.www.oomessenger.MainActivity
+androidx/vectordrawable/R.java
+ androidx.vectordrawable.R
+ androidx.vectordrawable.R$attr
+ androidx.vectordrawable.R$color
+ androidx.vectordrawable.R$dimen
+ androidx.vectordrawable.R$drawable
+ androidx.vectordrawable.R$id
+ androidx.vectordrawable.R$integer
+ androidx.vectordrawable.R$layout
+ androidx.vectordrawable.R$string
+ androidx.vectordrawable.R$style
+ androidx.vectordrawable.R$styleable
+com/google/android/gms/measurement/api/R.java
+ com.google.android.gms.measurement.api.R
+com/sangcomz/fishbun/R.java
+ com.sangcomz.fishbun.R
+ com.sangcomz.fishbun.R$anim
+ com.sangcomz.fishbun.R$animator
+ com.sangcomz.fishbun.R$attr
+ com.sangcomz.fishbun.R$bool
+ com.sangcomz.fishbun.R$color
+ com.sangcomz.fishbun.R$dimen
+ com.sangcomz.fishbun.R$drawable
+ com.sangcomz.fishbun.R$id
+ com.sangcomz.fishbun.R$integer
+ com.sangcomz.fishbun.R$interpolator
+ com.sangcomz.fishbun.R$layout
+ com.sangcomz.fishbun.R$menu
+ com.sangcomz.fishbun.R$string
+ com.sangcomz.fishbun.R$style
+ com.sangcomz.fishbun.R$styleable
+ com.sangcomz.fishbun.R$xml
+io/flutter/plugins/firebasemessaging/R.java
+ io.flutter.plugins.firebasemessaging.R
+ io.flutter.plugins.firebasemessaging.R$attr
+ io.flutter.plugins.firebasemessaging.R$color
+ io.flutter.plugins.firebasemessaging.R$dimen
+ io.flutter.plugins.firebasemessaging.R$drawable
+ io.flutter.plugins.firebasemessaging.R$id
+ io.flutter.plugins.firebasemessaging.R$integer
+ io.flutter.plugins.firebasemessaging.R$layout
+ io.flutter.plugins.firebasemessaging.R$string
+ io.flutter.plugins.firebasemessaging.R$style
+ io.flutter.plugins.firebasemessaging.R$styleable
+io/flutter/plugins/urllauncher/R.java
+ io.flutter.plugins.urllauncher.R
+ io.flutter.plugins.urllauncher.R$attr
+ io.flutter.plugins.urllauncher.R$color
+ io.flutter.plugins.urllauncher.R$dimen
+ io.flutter.plugins.urllauncher.R$drawable
+ io.flutter.plugins.urllauncher.R$id
+ io.flutter.plugins.urllauncher.R$integer
+ io.flutter.plugins.urllauncher.R$layout
+ io.flutter.plugins.urllauncher.R$string
+ io.flutter.plugins.urllauncher.R$style
+ io.flutter.plugins.urllauncher.R$styleable
+androidx/activity/R.java
+ androidx.activity.R
+ androidx.activity.R$attr
+ androidx.activity.R$color
+ androidx.activity.R$dimen
+ androidx.activity.R$drawable
+ androidx.activity.R$id
+ androidx.activity.R$integer
+ androidx.activity.R$layout
+ androidx.activity.R$string
+ androidx.activity.R$style
+ androidx.activity.R$styleable
+androidx/recyclerview/R.java
+ androidx.recyclerview.R
+ androidx.recyclerview.R$attr
+ androidx.recyclerview.R$color
+ androidx.recyclerview.R$dimen
+ androidx.recyclerview.R$drawable
+ androidx.recyclerview.R$id
+ androidx.recyclerview.R$integer
+ androidx.recyclerview.R$layout
+ androidx.recyclerview.R$string
+ androidx.recyclerview.R$style
+ androidx.recyclerview.R$styleable
+com/jakewharton/threetenabp/R.java
+ com.jakewharton.threetenabp.R
+com/google/android/exoplayer2/source/dash/R.java
+ com.google.android.exoplayer2.source.dash.R
+io/flutter/plugins/videoplayer/R.java
+ io.flutter.plugins.videoplayer.R
+ io.flutter.plugins.videoplayer.R$attr
+ io.flutter.plugins.videoplayer.R$color
+ io.flutter.plugins.videoplayer.R$dimen
+ io.flutter.plugins.videoplayer.R$drawable
+ io.flutter.plugins.videoplayer.R$id
+ io.flutter.plugins.videoplayer.R$integer
+ io.flutter.plugins.videoplayer.R$layout
+ io.flutter.plugins.videoplayer.R$string
+ io.flutter.plugins.videoplayer.R$style
+ io.flutter.plugins.videoplayer.R$styleable
+com/google/firebase/firebase_analytics/R.java
+ com.google.firebase.firebase_analytics.R
+androidx/drawerlayout/R.java
+ androidx.drawerlayout.R
+ androidx.drawerlayout.R$attr
+ androidx.drawerlayout.R$color
+ androidx.drawerlayout.R$dimen
+ androidx.drawerlayout.R$drawable
+ androidx.drawerlayout.R$id
+ androidx.drawerlayout.R$integer
+ androidx.drawerlayout.R$layout
+ androidx.drawerlayout.R$string
+ androidx.drawerlayout.R$style
+ androidx.drawerlayout.R$styleable
+androidx/versionedparcelable/R.java
+ androidx.versionedparcelable.R
+androidx/lifecycle/ktx/R.java
+ androidx.lifecycle.ktx.R
+ androidx.lifecycle.ktx.R$id
+androidx/lifecycle/viewmodel/R.java
+ androidx.lifecycle.viewmodel.R
+androidx/legacy/v4/R.java
+ androidx.legacy.v4.R
+ androidx.legacy.v4.R$attr
+ androidx.legacy.v4.R$color
+ androidx.legacy.v4.R$dimen
+ androidx.legacy.v4.R$drawable
+ androidx.legacy.v4.R$id
+ androidx.legacy.v4.R$integer
+ androidx.legacy.v4.R$layout
+ androidx.legacy.v4.R$string
+ androidx.legacy.v4.R$style
+ androidx.legacy.v4.R$styleable
+io/flutter/plugins/pathprovider/R.java
+ io.flutter.plugins.pathprovider.R
+ io.flutter.plugins.pathprovider.R$attr
+ io.flutter.plugins.pathprovider.R$color
+ io.flutter.plugins.pathprovider.R$dimen
+ io.flutter.plugins.pathprovider.R$drawable
+ io.flutter.plugins.pathprovider.R$id
+ io.flutter.plugins.pathprovider.R$integer
+ io.flutter.plugins.pathprovider.R$layout
+ io.flutter.plugins.pathprovider.R$string
+ io.flutter.plugins.pathprovider.R$style
+ io.flutter.plugins.pathprovider.R$styleable
+androidx/cursoradapter/R.java
+ androidx.cursoradapter.R
+androidx/cardview/R.java
+ androidx.cardview.R
+ androidx.cardview.R$attr
+ androidx.cardview.R$color
+ androidx.cardview.R$dimen
+ androidx.cardview.R$style
+ androidx.cardview.R$styleable
+com/google/android/exoplayer2/core/R.java
+ com.google.android.exoplayer2.core.R
+androidx/coordinatorlayout/R.java
+ androidx.coordinatorlayout.R
+ androidx.coordinatorlayout.R$attr
+ androidx.coordinatorlayout.R$color
+ androidx.coordinatorlayout.R$dimen
+ androidx.coordinatorlayout.R$drawable
+ androidx.coordinatorlayout.R$id
+ androidx.coordinatorlayout.R$integer
+ androidx.coordinatorlayout.R$layout
+ androidx.coordinatorlayout.R$string
+ androidx.coordinatorlayout.R$style
+ androidx.coordinatorlayout.R$styleable
+androidx/lifecycle/livedata/R.java
+ androidx.lifecycle.livedata.R
+com/google/android/datatransport/R.java
+ com.google.android.datatransport.R
+com/google/android/datatransport/runtime/R.java
+ com.google.android.datatransport.runtime.R
+com/google/firebase/measurement_impl/R.java
+ com.google.firebase.measurement_impl.R
+androidx/documentfile/R.java
+ androidx.documentfile.R
+androidx/loader/R.java
+ androidx.loader.R
+ androidx.loader.R$attr
+ androidx.loader.R$color
+ androidx.loader.R$dimen
+ androidx.loader.R$drawable
+ androidx.loader.R$id
+ androidx.loader.R$integer
+ androidx.loader.R$layout
+ androidx.loader.R$string
+ androidx.loader.R$style
+ androidx.loader.R$styleable
+com/mr/flutter/plugin/filepicker/R.java
+ com.mr.flutter.plugin.filepicker.R
+ com.mr.flutter.plugin.filepicker.R$attr
+ com.mr.flutter.plugin.filepicker.R$color
+ com.mr.flutter.plugin.filepicker.R$dimen
+ com.mr.flutter.plugin.filepicker.R$drawable
+ com.mr.flutter.plugin.filepicker.R$id
+ com.mr.flutter.plugin.filepicker.R$integer
+ com.mr.flutter.plugin.filepicker.R$layout
+ com.mr.flutter.plugin.filepicker.R$string
+ com.mr.flutter.plugin.filepicker.R$style
+ com.mr.flutter.plugin.filepicker.R$styleable
+androidx/biometric/R.java
+ androidx.biometric.R
+ androidx.biometric.R$anim
+ androidx.biometric.R$attr
+ androidx.biometric.R$bool
+ androidx.biometric.R$color
+ androidx.biometric.R$dimen
+ androidx.biometric.R$drawable
+ androidx.biometric.R$id
+ androidx.biometric.R$integer
+ androidx.biometric.R$interpolator
+ androidx.biometric.R$layout
+ androidx.biometric.R$string
+ androidx.biometric.R$style
+ androidx.biometric.R$styleable
+com/google/android/material/R.java
+ com.google.android.material.R
+ com.google.android.material.R$anim
+ com.google.android.material.R$animator
+ com.google.android.material.R$attr
+ com.google.android.material.R$bool
+ com.google.android.material.R$color
+ com.google.android.material.R$dimen
+ com.google.android.material.R$drawable
+ com.google.android.material.R$id
+ com.google.android.material.R$integer
+ com.google.android.material.R$interpolator
+ com.google.android.material.R$layout
+ com.google.android.material.R$string
+ com.google.android.material.R$style
+ com.google.android.material.R$styleable
+com/google/android/exoplayer2/source/hls/R.java
+ com.google.android.exoplayer2.source.hls.R
+androidx/constraintlayout/widget/R.java
+ androidx.constraintlayout.widget.R
+ androidx.constraintlayout.widget.R$attr
+ androidx.constraintlayout.widget.R$id
+ androidx.constraintlayout.widget.R$styleable
+com/google/firebase/encoders/json/R.java
+ com.google.firebase.encoders.json.R
+androidx/slidingpanelayout/R.java
+ androidx.slidingpanelayout.R
+ androidx.slidingpanelayout.R$attr
+ androidx.slidingpanelayout.R$color
+ androidx.slidingpanelayout.R$dimen
+ androidx.slidingpanelayout.R$drawable
+ androidx.slidingpanelayout.R$id
+ androidx.slidingpanelayout.R$integer
+ androidx.slidingpanelayout.R$layout
+ androidx.slidingpanelayout.R$string
+ androidx.slidingpanelayout.R$style
+ androidx.slidingpanelayout.R$styleable
+vn/onlineoffice/www/oomessenger/Application.java
+ vn.onlineoffice.www.oomessenger.Application
+com/google/firebase/measurement/R.java
+ com.google.firebase.measurement.R
+io/flutter/plugins/imagepicker/R.java
+ io.flutter.plugins.imagepicker.R
+ io.flutter.plugins.imagepicker.R$attr
+ io.flutter.plugins.imagepicker.R$color
+ io.flutter.plugins.imagepicker.R$dimen
+ io.flutter.plugins.imagepicker.R$drawable
+ io.flutter.plugins.imagepicker.R$id
+ io.flutter.plugins.imagepicker.R$integer
+ io.flutter.plugins.imagepicker.R$layout
+ io.flutter.plugins.imagepicker.R$string
+ io.flutter.plugins.imagepicker.R$style
+ io.flutter.plugins.imagepicker.R$styleable
+ io.flutter.plugins.imagepicker.R$xml
+androidx/viewpager/R.java
+ androidx.viewpager.R
+ androidx.viewpager.R$attr
+ androidx.viewpager.R$color
+ androidx.viewpager.R$dimen
+ androidx.viewpager.R$drawable
+ androidx.viewpager.R$id
+ androidx.viewpager.R$integer
+ androidx.viewpager.R$layout
+ androidx.viewpager.R$string
+ androidx.viewpager.R$style
+ androidx.viewpager.R$styleable
+com/google/firebase/datatransport/R.java
+ com.google.firebase.datatransport.R
+ com.google.firebase.datatransport.R$attr
+ com.google.firebase.datatransport.R$color
+ com.google.firebase.datatransport.R$dimen
+ com.google.firebase.datatransport.R$drawable
+ com.google.firebase.datatransport.R$id
+ com.google.firebase.datatransport.R$integer
+ com.google.firebase.datatransport.R$layout
+ com.google.firebase.datatransport.R$string
+ com.google.firebase.datatransport.R$style
+ com.google.firebase.datatransport.R$styleable
+de/gigadroid/flutterudid/R.java
+ de.gigadroid.flutterudid.R
+ de.gigadroid.flutterudid.R$attr
+ de.gigadroid.flutterudid.R$color
+ de.gigadroid.flutterudid.R$dimen
+ de.gigadroid.flutterudid.R$drawable
+ de.gigadroid.flutterudid.R$id
+ de.gigadroid.flutterudid.R$integer
+ de.gigadroid.flutterudid.R$layout
+ de.gigadroid.flutterudid.R$string
+ de.gigadroid.flutterudid.R$style
+ de.gigadroid.flutterudid.R$styleable
+com/google/android/gms/tasks/R.java
+ com.google.android.gms.tasks.R

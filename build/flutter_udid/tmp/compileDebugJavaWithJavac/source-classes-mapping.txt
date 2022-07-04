@@ -1,0 +1,2 @@
+de/gigadroid/flutterudid/BuildConfig.java
+ de.gigadroid.flutterudid.BuildConfig

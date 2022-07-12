@@ -767,41 +767,31 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                 CupertinoActionSheetAction(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      FocusScope.of(context).requestFocus(new FocusNode());
-                      Future.delayed(
-                          const Duration(milliseconds: 1000), attachImages());
+                      attachImages();
                     },
                     child: Text("Chọn nhiều ảnh từ Gallery")),
                 CupertinoActionSheetAction(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      FocusScope.of(context).requestFocus(new FocusNode());
-                      Future.delayed(const Duration(milliseconds: 1000),
-                          attachImageVideo(true, ImageSource.gallery));
+                      attachImageVideo(true, ImageSource.gallery);
                     },
                     child: Text("Chọn video từ Gallery")),
                 CupertinoActionSheetAction(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      FocusScope.of(context).requestFocus(new FocusNode());
-                      Future.delayed(const Duration(milliseconds: 1000),
-                          attachImageVideo(false, ImageSource.camera));
+                      attachImageVideo(false, ImageSource.camera);
                     },
                     child: Text("Chụp ảnh từ Camera")),
                 CupertinoActionSheetAction(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      FocusScope.of(context).requestFocus(new FocusNode());
-                      Future.delayed(const Duration(milliseconds: 1000),
-                          attachImageVideo(true, ImageSource.camera));
+                      attachImageVideo(true, ImageSource.camera);
                     },
                     child: Text("Quay video từ Camera")),
                 CupertinoActionSheetAction(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      FocusScope.of(context).requestFocus(new FocusNode());
-                      Future.delayed(
-                          const Duration(milliseconds: 1000), attachFiles());
+                      attachFiles();
                     },
                     child: Text("Chọn từ trình quản lý files",
                         style: TextStyle(color: Colors.red)))

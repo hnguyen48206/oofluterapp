@@ -209,15 +209,14 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
     if (this.sharedValue == 0) {
       return Expanded(
           child: ListView.builder(
-              itemCount: AppCache.currentSignature.files.length + 1,
+              itemCount: AppCache.currentSignature.files.length,
               itemBuilder: (context, index) {
-                if (index == 0) {
-                  return SingleChildScrollView(
-                      child: HtmlWidget(AppCache.currentSignature.content,
-                          webView: true, webViewJs: false));
-                }
-                FileAttachment item =
-                    AppCache.currentSignature.files[index - 1];
+                // if (index == 0) {
+                //   return SingleChildScrollView(
+                //       child: HtmlWidget(AppCache.currentSignature.content,
+                //           webView: true, webViewJs: false));
+                // }
+                FileAttachment item = AppCache.currentSignature.files[index];
                 return Container(
                     constraints: BoxConstraints(maxWidth: this.maxWidthChat),
                     margin: EdgeInsets.all(5),

@@ -20,6 +20,10 @@ class MyApp extends StatelessWidget {
           AppHelpers.loadBadgeNumber();
         },
         onTap: () {
+          FocusScopeNode currentFocus = FocusScope.of(context);
+          if (!currentFocus.hasPrimaryFocus) {
+            currentFocus.unfocus();
+          }
           AppHelpers.loadBadgeNumber();
         },
         child: MaterialApp(

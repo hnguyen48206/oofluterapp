@@ -161,10 +161,9 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
           this.downloadFile(
               item, 'TrinhKyDienTu', AppCache.currentSignature.id);
         },
-        child: Flexible(
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
               Padding(
                   padding: EdgeInsets.only(top: 10, right: 10),
                   child: Text(item.fileName,
@@ -187,7 +186,7 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
                           maxLines: 1,
                           softWrap: false,
                           style: TextStyle(color: Colors.grey)))
-            ]))));
+            ])));
     if (AppCache.currentSignature.availableSign == true) {
       // result.add(Spacer());
       result.add(Padding(

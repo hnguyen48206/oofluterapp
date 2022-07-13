@@ -148,58 +148,67 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
 
   List<Widget> _layoutFile(FileAttachment item) {
     List<Widget> result = [];
-    result.add(Padding(
-        padding: EdgeInsets.all(10),
-        child: item.isDownloading
-            ? CircularProgressIndicator()
-            : item.icon.isEmpty
-                ? Icon(Icons.attach_file, color: Colors.green, size: 24.0)
-                : Image(
-                    width: 24, height: 24, image: NetworkImage(item.icon))));
-    result.add(InkWell(
-        onTap: () {
-          this.downloadFile(
-              item, 'TrinhKyDienTu', AppCache.currentSignature.id);
-        },
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Padding(
-                  padding: EdgeInsets.only(top: 10, right: 10),
-                  child: Text(item.fileName,
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                      softWrap: false,
-                      style: TextStyle(color: Colors.black))),
-              Padding(
-                  padding: EdgeInsets.only(right: 10, top: 5, bottom: 10),
-                  child: item.progressing.isEmpty
-                      ? (item.size > 0
-                          ? Text(item.getTextSize(),
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              softWrap: false,
-                              style: TextStyle(color: Colors.grey))
-                          : Text(''))
-                      : Text(item.progressing,
+    result.add(Expanded(
+        flex: 2, // 20%
+        child: Padding(
+            padding: EdgeInsets.all(10),
+            child: item.isDownloading
+                ? CircularProgressIndicator()
+                : item.icon.isEmpty
+                    ? Icon(Icons.attach_file, color: Colors.green, size: 24.0)
+                    : Image(
+                        width: 24,
+                        height: 24,
+                        image: NetworkImage(item.icon)))));
+
+    result.add(Expanded(
+        flex: 6, // 60%
+        child: InkWell(
+            onTap: () {
+              this.downloadFile(
+                  item, 'TrinhKyDienTu', AppCache.currentSignature.id);
+            },
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                      padding: EdgeInsets.only(top: 10, right: 10),
+                      child: Text(item.fileName,
                           overflow: TextOverflow.ellipsis,
                           maxLines: 1,
                           softWrap: false,
-                          style: TextStyle(color: Colors.grey)))
-            ])));
+                          style: TextStyle(color: Colors.black))),
+                  Padding(
+                      padding: EdgeInsets.only(right: 10, top: 5, bottom: 10),
+                      child: item.progressing.isEmpty
+                          ? (item.size > 0
+                              ? Text(item.getTextSize(),
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 1,
+                                  softWrap: false,
+                                  style: TextStyle(color: Colors.grey))
+                              : Text(''))
+                          : Text(item.progressing,
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 1,
+                              softWrap: false,
+                              style: TextStyle(color: Colors.grey)))
+                ]))));
     if (AppCache.currentSignature.availableSign == true) {
       // result.add(Spacer());
-      result.add(Padding(
-          padding: EdgeInsets.all(10),
-          child: IconButton(
-              icon: Icon(Icons.edit_rounded, color: Colors.green),
-              onPressed: () {
-                Navigator.push(
-                    this.context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            SignatureEditPage(filePDF: item.fileName)));
-              })));
+      result.add(Expanded(
+          flex: 2, // 20%
+          child: Padding(
+              padding: EdgeInsets.all(10),
+              child: IconButton(
+                  icon: Icon(Icons.edit_rounded, color: Colors.green),
+                  onPressed: () {
+                    Navigator.push(
+                        this.context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                SignatureEditPage(filePDF: item.fileName)));
+                  }))));
     }
     return result;
   }
@@ -217,17 +226,16 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
                 // }
                 FileAttachment item = AppCache.currentSignature.files[index];
                 return Container(
-                    constraints: BoxConstraints(maxWidth: this.maxWidthChat),
-                    margin: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.blue),
-                        color: Colors.grey[50],
-                        borderRadius: BorderRadius.all(Radius.circular(8))),
-                    child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: _layoutFile(item)));
+                  constraints: BoxConstraints(maxWidth: this.maxWidthChat),
+                  margin: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.blue),
+                      color: Colors.grey[50],
+                      borderRadius: BorderRadius.all(Radius.circular(8))),
+                  child: Row(
+                      // main axis (rows or columns)
+                      children: _layoutFile(item)),
+                );
               }));
     }
     if (this.sharedValue == 1) {

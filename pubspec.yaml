@@ -61,7 +61,8 @@ dependencies:
   #line_icons: ^1.3.2
   rxdart: ^0.21.0
   # threading: ^0.0.10
-  
+  need_resume: ^1.0.4
+
    
   #flutter_search_bar:
   #  git:

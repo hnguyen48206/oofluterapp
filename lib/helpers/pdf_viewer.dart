@@ -12,6 +12,7 @@ import 'package:flutter_full_pdf_viewer/full_pdf_viewer_scaffold.dart';
 import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
 import 'package:onlineoffice_flutter/old_version.dart';
 import 'dart:io' show Platform;
+import 'package:need_resume/need_resume.dart';
 
 class PdfViewerPageState extends State<PdfViewerPage> {
   bool _isLoading = true;
@@ -25,7 +26,9 @@ class PdfViewerPageState extends State<PdfViewerPage> {
 
   loadDocument() async {
     document = await PDFDocument.fromFile(File(widget.file.localPath));
-    setState(() => _isLoading = false);
+    try {
+      setState(() => _isLoading = false);
+    } catch (e) {}
   }
 
   Future<bool> onBackClick() async {
@@ -36,15 +39,16 @@ class PdfViewerPageState extends State<PdfViewerPage> {
               builder: (context) =>
                   OldVersionPage(linkRedirect: widget.linkWebView)));
     } else {
-      Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-              builder: (context) => WebLinkViewerPage(
-                  title: widget.titleWebView,
-                  link: FetchService.getLinkMobileLogin(),
-                  linkRedirect: widget.linkWebView)));
+      Navigator.pop(context);
+      // Navigator.pushReplacement(
+      //     context,
+      //     MaterialPageRoute(
+      //         builder: (context) => WebLinkViewerPage(
+      //             title: widget.titleWebView,
+      //             link: FetchService.getLinkMobileLogin(),
+      //             linkRedirect: widget.linkWebView)));
     }
-	return false;
+    return false;
   }
 
   @override

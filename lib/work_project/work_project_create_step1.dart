@@ -64,7 +64,6 @@ class WorkProjectCreateStep1PageState
     this._ketThucController = TextEditingController();
     this._chuDeController = TextEditingController();
     this._noiDungController = TextEditingController();
-
     if (AppCache.currentWorkProject.title.isNotEmpty) {
       this._chuDeController.text = AppCache.currentWorkProject.title;
     }

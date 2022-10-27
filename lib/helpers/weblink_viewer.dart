@@ -11,14 +11,42 @@ import 'package:onlineoffice_flutter/helpers/pdf_viewer.dart';
 import 'package:date_format/date_format.dart';
 import 'package:onlineoffice_flutter/models/models_ext.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:need_resume/need_resume.dart';
+import 'package:onlineoffice_flutter/globals.dart';
 
-class WebLinkViewerPageState extends State<WebLinkViewerPage> {
+class WebLinkViewerPageState extends ResumableState<WebLinkViewerPage> {
+  @override
+  int currentIndex = 0;
+
+  bool _isShowing = true;
   final filesPreview = ["pdf", "xls", "xlsx", "doc", "docx", "ppt", "pptx"];
   final flutterWebviewPlugin = new FlutterWebviewPlugin();
   bool showShare = false;
   String currentUrl = '';
   FileAttachment file = FileAttachment.empty();
   bool flagRedirect = true;
+
+  @override
+  void onResume() {
+    // Implement your code inside here
+    setState(() {
+      // currentIndex = 1;
+      print(AppCache.webviewLastURL);
+      _isShowing = true;
+    });
+  }
+
+  @override
+  void onReady() {
+    // Implement your code inside here
+    // setState(() => _isShowing = true);
+  }
+
+  @override
+  void onPause() {
+    // Implement your code inside here
+    print('HomeScreen is paused!');
+  }
 
   @override
   void initState() {
@@ -77,7 +105,13 @@ class WebLinkViewerPageState extends State<WebLinkViewerPage> {
           file.progressing = '';
         });
         if (file.extension == 'pdf') {
-          Navigator.pushReplacement(
+          setState(() {
+            // currentIndex = 0;
+            _isShowing = false;
+          });
+          // new Timer(
+          //     Duration(seconds: 2), () => setState(() => _isShowing = true));
+          push(
               context,
               MaterialPageRoute(
                   builder: (context) => PdfViewerPage(
@@ -167,34 +201,53 @@ class WebLinkViewerPageState extends State<WebLinkViewerPage> {
 
   @override
   Widget build(BuildContext context) {
+    flutterWebviewPlugin.onUrlChanged.listen((String url) {
+      AppCache.webviewLastURL = url;
+    });
+    final widgetList = [
+      // Container(
+      //   width: MediaQuery.of(context).size.width,
+      //   height: MediaQuery.of(context).size.height,
+      //   color: Colors.white,
+      // ),
+      Visibility(
+          visible: _isShowing,
+          // maintainState: true,
+          child: SizedBox(
+              child: WebviewScaffold(
+                  withJavascript: true,
+                  clearCache: false,
+                  clearCookies: false,
+                  enableAppScheme: true,
+                  withZoom: true,
+                  withLocalStorage: true,
+                  // withLocalUrl: true, ERROR on iOS
+                  withOverviewMode: true,
+                  useWideViewPort: true,
+                  supportMultipleWindows: true,
+                  hidden: true,
+                  allowFileURLs: true,
+                  appBar: AppBar(
+                      automaticallyImplyLeading: false,
+                      leading: IconButton(
+                        icon: new Icon(Icons.arrow_back, color: Colors.black),
+                        onPressed: () => onBackClick(),
+                      ),
+                      actions: getActionButtons(),
+                      centerTitle: true,
+                      title: this.file.isDownloading == false
+                          ? Text(widget.title)
+                          : Text(this.file.progressing,
+                              style: TextStyle(fontSize: 12.0))),
+                  url: AppCache.webviewLastURL))),
+    ];
+
     return WillPopScope(
         onWillPop: () => onBackClick(),
-        child: WebviewScaffold(
-            withJavascript: true,
-            clearCache: true,
-            clearCookies: true,
-            enableAppScheme: true,
-            withZoom: true,
-            withLocalStorage: true,
-            // withLocalUrl: true, ERROR on iOS
-            withOverviewMode: true,
-            useWideViewPort: true,
-            supportMultipleWindows: true,
-            hidden: true,
-            allowFileURLs: true,
-            appBar: AppBar(
-                automaticallyImplyLeading: false,
-                leading: IconButton(
-                  icon: new Icon(Icons.arrow_back, color: Colors.black),
-                  onPressed: () => onBackClick(),
-                ),
-                actions: getActionButtons(),
-                centerTitle: true,
-                title: this.file.isDownloading == false
-                    ? Text(widget.title)
-                    : Text(this.file.progressing,
-                        style: TextStyle(fontSize: 12.0))),
-            url: widget.link));
+        child: IndexedStack(
+          index: currentIndex,
+          children: widgetList,
+        ));
   }
 }
 

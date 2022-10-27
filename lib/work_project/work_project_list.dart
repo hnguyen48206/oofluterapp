@@ -343,6 +343,8 @@ class WorkProjectPageState extends State<WorkProjectPage> {
 
   onCreateWorkProject() {
     AppCache.currentWorkProject = WorkProject(null);
+    AppCache.isCreatedFromDocs = false;
+
     Navigator.push(context,
         MaterialPageRoute(builder: (context) => WorkProjectCreateStep1Page()));
   }

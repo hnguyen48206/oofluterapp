@@ -328,6 +328,9 @@ class FetchService {
         AppCache.currentWorkProject.creator = AppCache.currentUser.userId;
       }
       var jsonOriginal = AppCache.currentWorkProject.toJson();
+      if (AppCache.isCreatedFromDocs)
+        jsonOriginal['msvb'] = AppCache.currentDocumentDetail.id;
+
       String jsonText = jsonEncode(jsonOriginal);
       body.clear();
       body["data"] = ObjectHelper.toBase64(jsonText);
@@ -1246,6 +1249,27 @@ class FetchService {
           await http.post(url, body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return WorkProject.fromJsonDetail(json.decode(response.body));
+      } else {
+        return null;
+      }
+    } on Exception {
+      return null;
+    }
+  }
+
+  static Future<String> checkIfDocsIsWorkProject(String id) async {
+    String url = linkService + 'vanban/isgeneratedtotask';
+    try {
+      body.clear();
+      body['msvb'] = id;
+      final response =
+          await http.post(url, body: body).timeout(durationTimeout);
+      if (response.statusCode == 200) {
+        var result = json.decode(response.body);
+        if (result.IsFound)
+          return result.mscv;
+        else
+          return null;
       } else {
         return null;
       }

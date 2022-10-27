@@ -15,7 +15,8 @@ import 'package:onlineoffice_flutter/models/work_project_model.dart';
 import 'package:onlineoffice_flutter/models/report_daily_model.dart';
 
 class AppCache {
-
+  static String webviewLastURL = '';
+  static bool isCreatedFromDocs = false;
   static List<int> badges = <int>[0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   static Map<String, dynamic> messageNotify;
@@ -128,7 +129,7 @@ class AppCache {
   static String getGroupNameById(String groupId) {
     var query = allGroupUser.where((i) => i.groupId == groupId);
     if (query.length > 0) return query.first.groupName;
-	if (groupId == 'All') return 'Tất cả';
+    if (groupId == 'All') return 'Tất cả';
     return '';
   }
 

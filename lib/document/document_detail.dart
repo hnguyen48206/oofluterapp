@@ -1,5 +1,7 @@
 import 'dart:async';
+// import 'dart:html';
 import 'package:onlineoffice_flutter/dal/enums.dart';
+import 'package:onlineoffice_flutter/models/work_project_model.dart';
 import 'package:onlineoffice_flutter/work_project/work_project_chat.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -7,6 +9,7 @@ import 'package:onlineoffice_flutter/dal/services.dart';
 import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/models/models_ext.dart';
+import 'package:onlineoffice_flutter/work_project/work_project_create_step1.dart';
 
 class DocumentDetailPageState extends State<DocumentDetailPage> {
   int sharedValue = 0;
@@ -62,6 +65,122 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
       default:
         return 'Chi tiết văn bản';
     }
+  }
+
+  bool checkIfDocumentIsTransferable(String person) {
+    bool isUserHasRight = false;
+    for (var i = 0; i < AppCache.listRole.length; i++) {
+      // print(AppCache.listRole[i].roleId + '/' + AppCache.listRole[i].roleName);
+      if ((AppCache.listRole[i].roleId.toLowerCase() == 'adm19') ||
+          (AppCache.currentUser.fullName.toLowerCase() == person)) {
+        isUserHasRight = true;
+        break;
+      }
+    }
+    return isUserHasRight;
+  }
+
+  Widget adjustStackMembers(String title, String subtitle) {
+    var mscvFrommsvb = '';
+    FetchService.checkIfDocsIsWorkProject(AppCache.currentDocumentDetail.id)
+        .then((result) {
+      if (result != null) {
+        mscvFrommsvb = result;
+      }
+    });
+    if (mscvFrommsvb != '' &&
+        title.toLowerCase() == 'người chuyển thành công việc') {
+      return Stack(
+        children: <Widget>[
+          ListTile(
+            title: Text(title),
+            subtitle: Text(subtitle,
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+          ),
+          Positioned(
+            bottom: 0.0,
+            right: 5.0,
+            child: FlatButton(
+              child: Text(
+                'Theo Dõi Xử Lý',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              color: Colors.blueAccent,
+              textColor: Colors.white,
+              onPressed: () {
+                FetchService.workProjectGetById(mscvFrommsvb).then((result) {
+                  if (result != null) {
+                    AppCache.currentWorkProject = result;
+                    Navigator.push(
+                      this.context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              WorkProjectChatPage(isFromFormList: true)),
+                    );
+                  }
+                });
+              },
+            ),
+          ),
+        ],
+      );
+    } else if (title.toLowerCase() == 'người chuyển thành công việc' &&
+        checkIfDocumentIsTransferable(subtitle))
+      return Stack(
+        children: <Widget>[
+          ListTile(
+            title: Text(title),
+            subtitle: Text(subtitle,
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+          ),
+          Positioned(
+            bottom: 0.0,
+            right: 5.0,
+            child: FlatButton(
+              child: Text(
+                'Chuyển Xử Lý',
+                style: TextStyle(fontSize: 12.0),
+              ),
+              color: Colors.blueAccent,
+              textColor: Colors.white,
+              onPressed: () {
+                // print(AppCache.currentDocumentDetail);
+                AppCache.currentWorkProject = WorkProject(null);
+                // print(AppCache.currentDocument.toJson());
+                String trichyeu = '';
+                for (var i = 0;
+                    i < AppCache.currentDocumentDetail.infos.length;
+                    ++i) {
+                  var arr =
+                      AppCache.currentDocumentDetail.infos[i].split('!;!');
+                  if (arr[0].toLowerCase() == 'trích yếu') {
+                    trichyeu = arr[1];
+                  }
+                }
+                AppCache.currentWorkProject.title = trichyeu;
+                AppCache.currentWorkProject.content = trichyeu;
+                AppCache.currentWorkProject.files =
+                    AppCache.currentDocumentDetail.files;
+                AppCache.isCreatedFromDocs = true;
+                // AppCache.currentWorkProject.fileDinhKems =
+                //     AppCache.currentDocumentDetail.fileDinhKems;
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WorkProjectCreateStep1Page()));
+              },
+            ),
+          ),
+        ],
+      );
+    else
+      return ListTile(
+        title: Text(title),
+        subtitle: Text(subtitle,
+            style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+      );
   }
 
   Widget getDetail() {
@@ -123,11 +242,7 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
               itemBuilder: (context, index) {
                 List<String> arr =
                     AppCache.currentDocumentDetail.infos[index].split('!;!');
-                return ListTile(
-                    title: Text(arr[0]),
-                    subtitle: Text(arr[1],
-                        style: TextStyle(
-                            fontStyle: FontStyle.italic, color: Colors.grey)));
+                return adjustStackMembers(arr[0], arr[1]);
               }));
     }
     if (this.sharedValue == 2) {

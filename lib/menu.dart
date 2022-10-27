@@ -19,9 +19,9 @@ class MenuPage extends StatefulWidget {
   }
 }
 
-class MenuPageState extends State<MenuPage> {  
-
-  Widget getTabIcon(IndexBadgeApp enumBadgeApp, IconData iconData, Color colorIcon) {
+class MenuPageState extends State<MenuPage> {
+  Widget getTabIcon(
+      IndexBadgeApp enumBadgeApp, IconData iconData, Color colorIcon) {
     if (AppCache.badges[enumBadgeApp.index] == 0) {
       return Icon(iconData, color: colorIcon);
     }
@@ -35,10 +35,7 @@ class MenuPageState extends State<MenuPage> {
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(6),
               ),
-              constraints: BoxConstraints(
-                minWidth: 16,
-                minHeight: 16
-              ),
+              constraints: BoxConstraints(minWidth: 16, minHeight: 16),
               child: Text(
                 AppCache.badges[enumBadgeApp.index].toString(),
                 style: TextStyle(
@@ -58,6 +55,7 @@ class MenuPageState extends State<MenuPage> {
           title: Text('Giao diện web'),
           trailing: Icon(Icons.navigate_next, color: Colors.black),
           onTap: () {
+            AppCache.webviewLastURL = FetchService.getLinkMobileLogin();
             Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -69,7 +67,8 @@ class MenuPageState extends State<MenuPage> {
     if (AppCache.currentUser.modulesActive.contains('TrinhKy')) {
       result.add(Card(
         child: ListTile(
-            leading: getTabIcon(IndexBadgeApp.Signature, Icons.edit_rounded, Colors.red),
+            leading: getTabIcon(
+                IndexBadgeApp.Signature, Icons.edit_rounded, Colors.red),
             title: Text('Trình ký'),
             trailing: Icon(Icons.navigate_next, color: Colors.black),
             onTap: () {
@@ -81,7 +80,8 @@ class MenuPageState extends State<MenuPage> {
     if (AppCache.currentUser.modulesActive.contains('ThongBao')) {
       result.add(Card(
         child: ListTile(
-            leading: getTabIcon(IndexBadgeApp.Announcement, Icons.volume_up, Colors.orange),
+            leading: getTabIcon(
+                IndexBadgeApp.Announcement, Icons.volume_up, Colors.orange),
             title: Text('Thông báo'),
             trailing: Icon(Icons.navigate_next, color: Colors.black),
             onTap: () {
@@ -93,7 +93,8 @@ class MenuPageState extends State<MenuPage> {
     if (AppCache.currentUser.modulesActive.contains('BaoCao')) {
       result.add(Card(
         child: ListTile(
-            leading: getTabIcon(IndexBadgeApp.ReportDaily, Icons.stacked_bar_chart, Colors.black),
+            leading: getTabIcon(IndexBadgeApp.ReportDaily,
+                Icons.stacked_bar_chart, Colors.black),
             title: Text('Báo cáo định kỳ'),
             trailing: Icon(Icons.navigate_next, color: Colors.black),
             onTap: () {
@@ -105,7 +106,8 @@ class MenuPageState extends State<MenuPage> {
     if (AppCache.currentUser.modulesActive.contains('ThuVien')) {
       result.add(Card(
         child: ListTile(
-            leading: getTabIcon(IndexBadgeApp.Library, Icons.book_outlined, Colors.brown),
+            leading: getTabIcon(
+                IndexBadgeApp.Library, Icons.book_outlined, Colors.brown),
             title: Text('Thư viện'),
             trailing: Icon(Icons.navigate_next, color: Colors.black),
             onTap: () {

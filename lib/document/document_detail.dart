@@ -71,8 +71,10 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
     bool isUserHasRight = false;
     for (var i = 0; i < AppCache.listRole.length; i++) {
       // print(AppCache.listRole[i].roleId + '/' + AppCache.listRole[i].roleName);
-      if ((AppCache.listRole[i].roleId.toLowerCase() == 'adm19') ||
-          (AppCache.currentUser.fullName.toLowerCase() == person)) {
+      if ((AppCache.listRole[i].roleId.toLowerCase() ==
+              'adm19'.toLowerCase()) ||
+          (AppCache.currentUser.fullName.toLowerCase() ==
+              person.toLowerCase())) {
         isUserHasRight = true;
         break;
       }
@@ -155,7 +157,7 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
                     ++i) {
                   var arr =
                       AppCache.currentDocumentDetail.infos[i].split('!;!');
-                  if (arr[0].toLowerCase() == 'trích yếu') {
+                  if (arr[0].toLowerCase() == 'trích yếu'.toLowerCase()) {
                     trichyeu = arr[1];
                   }
                 }

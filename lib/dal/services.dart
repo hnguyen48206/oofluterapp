@@ -1258,7 +1258,7 @@ class FetchService {
   }
 
   static Future<String> checkIfDocsIsWorkProject(String id) async {
-    String url = linkService + 'vanban/isgeneratedtotask';
+    String url = linkService + 'VanBan/IsGeneratedToTask';
     try {
       body.clear();
       body['msvb'] = id;

@@ -33,6 +33,8 @@ class WorkProjectCreateStep1PageState
   DateTime _startTime;
   DateTime _endTime;
 
+  DateTime _initStartDate = DateTime.now().add(const Duration(minutes: 30));
+
   Widget _headerWidget = new Container(
       child: new Row(children: <Widget>[
     AppHelpers.getHeaderStep(Colors.blue, "Nội dung"),
@@ -43,18 +45,24 @@ class WorkProjectCreateStep1PageState
 
   void onNextClick() {
     final form = formKey.currentState;
-    if (form.validate() == true) {
-      form.save();
-      AppCache.currentWorkProject.ngayBatDau =
-          this._batDauController.text.trim();
-      AppCache.currentWorkProject.ngayKetThuc =
-          this._ketThucController.text.trim();
-      AppCache.currentWorkProject.title = this._chuDeController.text.trim();
-      AppCache.currentWorkProject.content = this._noiDungController.text.trim();
-      Navigator.push(
-          this.context,
-          MaterialPageRoute(
-              builder: (context) => WorkProjectCreateStep2Page()));
+    try {
+      var check = form.validate();
+      if (check) {
+        // form.save();
+        AppCache.currentWorkProject.ngayBatDau =
+            this._batDauController.text.trim();
+        AppCache.currentWorkProject.ngayKetThuc =
+            this._ketThucController.text.trim();
+        AppCache.currentWorkProject.title = this._chuDeController.text.trim();
+        AppCache.currentWorkProject.content =
+            this._noiDungController.text.trim();
+        Navigator.push(
+            this.context,
+            MaterialPageRoute(
+                builder: (context) => WorkProjectCreateStep2Page()));
+      }
+    } catch (e) {
+      print(e);
     }
   }
 
@@ -79,6 +87,20 @@ class WorkProjectCreateStep1PageState
           .map((p) => FileAttachment(p))
           .toList();
     }
+
+    this._startTime = _initStartDate;
+    this._batDauController.text =
+        formatDate(_initStartDate, AppCache.dateVnFormatArray);
+    this._batDauController.value =
+        TextEditingValue(text: this._batDauController.text);
+    this._endTime = _initStartDate.add(const Duration(days: 14));
+    this._ketThucController.text =
+        formatDate(_endTime, AppCache.dateVnFormatArray);
+    this._ketThucController.value =
+        TextEditingValue(text: this._ketThucController.text);
+    AppCache.currentWorkProject.ngayBatDau = this._batDauController.text.trim();
+    AppCache.currentWorkProject.ngayKetThuc =
+        this._ketThucController.text.trim();
 
     super.initState();
   }
@@ -124,7 +146,7 @@ class WorkProjectCreateStep1PageState
               return showDatePicker(
                   context: context,
                   firstDate: DateTime(1900),
-                  initialDate: currentValue ?? DateTime.now(),
+                  initialDate: currentValue ?? _startTime,
                   lastDate: DateTime(2100));
             },
             controller: _batDauController,
@@ -145,10 +167,13 @@ class WorkProjectCreateStep1PageState
                         : Colors.black),
                 fillColor: Colors.blue),
             onChanged: (dt) {
+              print(dt);
               this._startTime = dt;
             },
             validator: (val) {
-              return val == null ? 'Chọn ngày bắt đầu' : null;
+              return val == null && this._startTime == null
+                  ? 'Chọn ngày bắt đầu'
+                  : null;
             },
             onSaved: (dt) {
               this._startTime = dt;
@@ -219,7 +244,7 @@ class WorkProjectCreateStep1PageState
           return showDatePicker(
               context: context,
               firstDate: DateTime(1900),
-              initialDate: currentValue ?? DateTime.now(),
+              initialDate: currentValue ?? _endTime,
               lastDate: DateTime(2100));
         },
         controller: this._ketThucController,
@@ -240,10 +265,10 @@ class WorkProjectCreateStep1PageState
                     : Colors.black),
             fillColor: Colors.blue),
         validator: (val) {
-          if (val == null) {
+          if (val == null && this._endTime == null) {
             return 'Vui lòng nhập chọn ngày hoàn thành';
           }
-          if (val.isBefore(this._startTime)) {
+          if (this._endTime.isBefore(this._startTime)) {
             return 'Ngày hoàn thành lớn hơn ngày bắt đầu';
           }
           return null;

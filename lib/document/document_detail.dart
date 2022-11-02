@@ -83,33 +83,31 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
   }
 
   Widget adjustStackMembers(String title, String subtitle) {
-    var mscvFrommsvb = '';
-    FetchService.checkIfDocsIsWorkProject(AppCache.currentDocumentDetail.id)
-        .then((result) {
-      if (result != null) {
-        mscvFrommsvb = result;
-      }
-    });
-    if (mscvFrommsvb != '' &&
+    var mscvFrommsvb = AppCache.currentDocumentDetail.workProjectId;
+    print(AppCache.currentDocumentDetail.workProjectId == '0');
+    // FetchService.checkIfDocsIsWorkProject(AppCache.currentDocumentDetail.id)
+    //     .then((result) {
+    //   if (result != null) {
+    //     mscvFrommsvb = result;
+    //   }
+    // });
+    if (mscvFrommsvb != '0' &&
         title.toLowerCase() == 'người chuyển thành công việc') {
       return Stack(
         children: <Widget>[
-          ListTile(
-            title: Text(title),
-            subtitle: Text(subtitle,
-                style:
-                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 20),
+            child: ListTile(
+              title: Text(title),
+              subtitle: Text(subtitle,
+                  style: TextStyle(
+                      fontStyle: FontStyle.italic, color: Colors.grey)),
+            ),
           ),
           Positioned(
             bottom: 0.0,
             right: 5.0,
-            child: FlatButton(
-              child: Text(
-                'Theo Dõi Xử Lý',
-                style: TextStyle(fontSize: 12.0),
-              ),
-              color: Colors.blueAccent,
-              textColor: Colors.white,
+            child: ElevatedButton(
               onPressed: () {
                 FetchService.workProjectGetById(mscvFrommsvb).then((result) {
                   if (result != null) {
@@ -123,6 +121,9 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
                   }
                 });
               },
+              child: Text('Theo Dõi Xử Lý'),
+              style: ElevatedButton.styleFrom(
+                  shape: StadiumBorder(), primary: Colors.orangeAccent),
             ),
           ),
         ],
@@ -131,22 +132,19 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
         checkIfDocumentIsTransferable(subtitle))
       return Stack(
         children: <Widget>[
-          ListTile(
-            title: Text(title),
-            subtitle: Text(subtitle,
-                style:
-                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey)),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 20),
+            child: ListTile(
+              title: Text(title),
+              subtitle: Text(subtitle,
+                  style: TextStyle(
+                      fontStyle: FontStyle.italic, color: Colors.grey)),
+            ),
           ),
           Positioned(
             bottom: 0.0,
             right: 5.0,
-            child: FlatButton(
-              child: Text(
-                'Chuyển Xử Lý',
-                style: TextStyle(fontSize: 12.0),
-              ),
-              color: Colors.blueAccent,
-              textColor: Colors.white,
+            child: ElevatedButton(
               onPressed: () {
                 // print(AppCache.currentDocumentDetail);
                 AppCache.currentWorkProject = WorkProject(null);
@@ -173,6 +171,9 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
                     MaterialPageRoute(
                         builder: (context) => WorkProjectCreateStep1Page()));
               },
+              child: Text('Chuyển Xử Lý'),
+              style: ElevatedButton.styleFrom(
+                  shape: StadiumBorder(), primary: Colors.orangeAccent),
             ),
           ),
         ],

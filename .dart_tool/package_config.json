@@ -86,6 +86,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "diacritic",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/diacritic-0.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "dio",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dio-3.0.10",
       "packageUri": "lib/",
@@ -674,7 +680,7 @@
       "languageVersion": "1.22"
     }
   ],
-  "generated": "2022-10-26T04:35:49.927023Z",
+  "generated": "2022-11-14T02:22:21.814143Z",
   "generator": "pub",
   "generatorVersion": "2.10.4"
 }

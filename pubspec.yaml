@@ -62,7 +62,7 @@ dependencies:
   rxdart: ^0.21.0
   # threading: ^0.0.10
   need_resume: ^1.0.4
-
+  diacritic: ^0.1.1
    
   #flutter_search_bar:
   #  git:

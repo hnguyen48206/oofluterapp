@@ -17,10 +17,13 @@ import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/models/models_ext.dart';
+import 'package:diacritic/diacritic.dart';
 
 class WorkProjectCreateStep1PageState
     extends State<WorkProjectCreateStep1Page> {
   final formKey = GlobalKey<FormState>();
+  bool _isEnableEditting = true;
+
   TextEditingController _batDauController,
       _ketThucController,
       _chuDeController,
@@ -68,6 +71,10 @@ class WorkProjectCreateStep1PageState
 
   @override
   initState() {
+    if (AppCache.isCreatedFromDocs)
+      this._isEnableEditting = false;
+    else
+      this._isEnableEditting = true;
     this._batDauController = TextEditingController();
     this._ketThucController = TextEditingController();
     this._chuDeController = TextEditingController();
@@ -317,6 +324,7 @@ class WorkProjectCreateStep1PageState
                       ),
                     ),
                     TextFormField(
+                        enabled: this._isEnableEditting,
                         autocorrect: true,
                         maxLines: 4,
                         controller: this._chuDeController,
@@ -415,6 +423,7 @@ class WorkProjectCreateStep1PageState
                       ),
                     ),
                     TextFormField(
+                        enabled: this._isEnableEditting,
                         autocorrect: true,
                         maxLines: 4,
                         controller: this._noiDungController,
@@ -518,7 +527,7 @@ class WorkProjectCreateStep1PageState
       setState(() {
         for (var item in files.entries) {
           FileAttachment file = FileAttachment.empty();
-          file.fileName = item.key;
+          file.fileName = removeDiacritics(item.key);
           file.mimeType = '';
           file.url = '';
           file.localPath = item.value;

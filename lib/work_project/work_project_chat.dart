@@ -1142,6 +1142,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
 
         break;
       case 'Tạo công việc con':
+        AppCache.isCreatedFromDocs = true;
         WorkProject newWorkProject = WorkProject(null);
         newWorkProject.parentId = AppCache.currentWorkProject.id;
         newWorkProject.title = AppCache.currentWorkProject.title;
@@ -1149,6 +1150,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
         newWorkProject.isEdited = 1;
 
         AppCache.currentWorkProject = newWorkProject;
+        AppCache.currentWorkProject.content = 'Vui lòng xem file đính kèm';
 
         Navigator.push(
             context,

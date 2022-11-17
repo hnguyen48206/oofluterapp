@@ -1,5 +1,9 @@
 library globals;
 
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:path_provider/path_provider.dart';
+import 'package:http/http.dart' as http;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -167,4 +171,162 @@ class AppCache {
   static double paddingCard = 10.0;
 
   static double textScaleFactor = 1.0;
+
+  static Future<File> getFileFromURL(url) async {
+    final http.Response responseData = await http.get(url);
+    Uint8List uint8list = responseData.bodyBytes;
+    var buffer = uint8list.buffer;
+    ByteData byteData = ByteData.view(buffer);
+    var tempDir = await getTemporaryDirectory();
+    File file = await File('${tempDir.path}/onlineoffice').writeAsBytes(
+        buffer.asUint8List(byteData.offsetInBytes, byteData.lengthInBytes));
+    return file;
+  }
+
+  static String toLowerCaseNonAccentVietnamese(String str) {
+    str = str.toLowerCase();
+
+    var arr1 = [
+      "á",
+      "à",
+      "ả",
+      "ã",
+      "ạ",
+      "â",
+      "ấ",
+      "ầ",
+      "ẩ",
+      "ẫ",
+      "ậ",
+      "ă",
+      "ắ",
+      "ằ",
+      "ẳ",
+      "ẵ",
+      "ặ",
+      "đ",
+      "é",
+      "è",
+      "ẻ",
+      "ẽ",
+      "ẹ",
+      "ê",
+      "ế",
+      "ề",
+      "ể",
+      "ễ",
+      "ệ",
+      "í",
+      "ì",
+      "ỉ",
+      "ĩ",
+      "ị",
+      "ó",
+      "ò",
+      "ỏ",
+      "õ",
+      "ọ",
+      "ô",
+      "ố",
+      "ồ",
+      "ổ",
+      "ỗ",
+      "ộ",
+      "ơ",
+      "ớ",
+      "ờ",
+      "ở",
+      "ỡ",
+      "ợ",
+      "ú",
+      "ù",
+      "ủ",
+      "ũ",
+      "ụ",
+      "ư",
+      "ứ",
+      "ừ",
+      "ử",
+      "ữ",
+      "ự",
+      "ý",
+      "ỳ",
+      "ỷ",
+      "ỹ",
+      "ỵ"
+    ];
+    var arr2 = [
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "a",
+      "d",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "e",
+      "i",
+      "i",
+      "i",
+      "i",
+      "i",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "o",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "u",
+      "y",
+      "y",
+      "y",
+      "y",
+      "y"
+    ];
+    for (int i = 0; i < arr1.length; i++) {
+      str = str.replaceAll("ẫ", '');
+    }
+    return str;
+  }
 }

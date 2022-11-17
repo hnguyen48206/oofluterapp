@@ -257,8 +257,10 @@ class FetchService {
       body["data"] = base64Encode(await file.readAsBytes());
       final response =
           await http.post(url, body: body).timeout(durationTimeout);
+      print('Upload file OK');
       return response.statusCode == 200;
     } on Exception {
+      print('Upload file Fail');
       return false;
     }
   }

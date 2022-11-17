@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 // import 'dart:html';
 import 'package:onlineoffice_flutter/dal/enums.dart';
 import 'package:onlineoffice_flutter/models/work_project_model.dart';
@@ -10,6 +11,7 @@ import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/models/models_ext.dart';
 import 'package:onlineoffice_flutter/work_project/work_project_create_step1.dart';
+import 'package:diacritic/diacritic.dart';
 
 class DocumentDetailPageState extends State<DocumentDetailPage> {
   int sharedValue = 0;
@@ -145,7 +147,7 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
             bottom: 0.0,
             right: 5.0,
             child: ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 // print(AppCache.currentDocumentDetail);
                 AppCache.currentWorkProject = WorkProject(null);
                 // print(AppCache.currentDocument.toJson());
@@ -160,9 +162,32 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
                   }
                 }
                 AppCache.currentWorkProject.title = trichyeu;
-                AppCache.currentWorkProject.content = trichyeu;
-                AppCache.currentWorkProject.files =
-                    AppCache.currentDocumentDetail.files;
+                // AppCache.currentWorkProject.content = trichyeu;
+                AppCache.currentWorkProject.content =
+                    'Vui lòng xem file đính kèm';
+
+                try {
+                  for (var i = 0;
+                      i < AppCache.currentDocumentDetail.files.length;
+                      ++i) {
+                    File res = await AppCache.getFileFromURL(
+                        AppCache.currentDocumentDetail.files[i].url);
+                    FileAttachment file = FileAttachment.empty();
+                    file.fileName = removeDiacritics(
+                        AppCache.currentDocumentDetail.files[i].fileName);
+                    file.mimeType = '';
+                    file.url = '';
+                    file.localPath = res.path;
+                    file.isDownloading = false;
+                    file.extension = file.fileName.split(".").last;
+                    file.progressing = '';
+                    AppCache.currentWorkProject.files.add(file);
+                  }
+                } catch (e) {
+                  print(e);
+                  // AppCache.currentWorkProject.files =
+                  //     AppCache.currentDocumentDetail.files;
+                }
                 AppCache.isCreatedFromDocs = true;
                 // AppCache.currentWorkProject.fileDinhKems =
                 //     AppCache.currentDocumentDetail.fileDinhKems;

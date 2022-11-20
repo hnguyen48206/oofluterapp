@@ -78,11 +78,12 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
     for (var button in lichTuan.buttons) {
       switch (button) {
         case "cancel":
-          this._buttons.add(RaisedButton.icon(
+          this._buttons.add(ElevatedButton.icon(
               label: Text("Huỷ",
                   style: TextStyle(color: Colors.white, fontSize: 14.0)),
-              color: Colors.redAccent,
-              elevation: 0.0,
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent //elevated btton background color
+                  ),
               icon: Icon(Icons.cancel, color: Colors.black),
               onPressed: () {
                 showCupertinoModalPopup(
@@ -93,13 +94,13 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
                         content:
                             Text('Bạn có chắc chắn muốn huỷ lịch tuần này ?'),
                         actions: <Widget>[
-                          FlatButton(
+                          ElevatedButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },
                               child: Text("Không",
                                   style: TextStyle(color: Colors.black))),
-                          FlatButton(
+                          ElevatedButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
                                 _cancel();
@@ -112,11 +113,12 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
               }));
           break;
         case "approve":
-          this._buttons.add(RaisedButton.icon(
+          this._buttons.add(ElevatedButton.icon(
               label: Text("Phê duyệt",
                   style: TextStyle(color: Colors.white, fontSize: 14.0)),
-              color: Colors.blueAccent,
-              elevation: 0.0,
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.blueAccent //elevated btton background color
+                  ),
               icon: Icon(Icons.send, color: Colors.black),
               onPressed: () {
                 showCupertinoModalPopup(
@@ -127,13 +129,13 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
                         content:
                             Text('Bạn có chắc chắn muốn duyệt lịch tuần này ?'),
                         actions: <Widget>[
-                          FlatButton(
+                          ElevatedButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },
                               child: Text("Không",
                                   style: TextStyle(color: Colors.black))),
-                          FlatButton(
+                          ElevatedButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
                                 _approve();
@@ -146,9 +148,10 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
               }));
           break;
         case "edit":
-          this._buttons.add(RaisedButton.icon(
-              color: Colors.green,
-              elevation: 0.0,
+          this._buttons.add(ElevatedButton.icon(
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.green //elevated btton background color
+                  ),
               icon: Icon(Icons.edit, color: Colors.black),
               onPressed: () {
                 AppCache.currentCalendar = this.lichTuan;
@@ -185,7 +188,7 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
   }
 
   Widget _btnSuccess() {
-    return FlatButton(
+    return ElevatedButton(
         onPressed: () {
           AppHelpers.navigatorToHome(context, IndexTabHome.CalendarWeek);
           CalendarPage.globalKey.currentState.loadData();
@@ -289,11 +292,11 @@ class CalendarDetailPageState extends State<CalendarDetailPage> {
                   title: Text(this.lichTuan.noidung),
                   content: Text('Bạn có chắc chắn muốn XÓA lịch tuần này ?'),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () => Navigator.pop(context),
                         child: Text("Không",
                             style: TextStyle(color: Colors.black))),
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           _delete();

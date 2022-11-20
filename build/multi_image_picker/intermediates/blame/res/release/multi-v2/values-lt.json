@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\multi_image_picker\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lt\\values-lt.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\multi_image_picker\\intermediates\\res\\merged\\release\\values-lt\\values-lt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\799ba499acf56073c4c28b198676cef9\\appcompat-1.0.0\\res\\values-lt\\values-lt.xml",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\multi_image_picker\\intermediates\\res\\merged\\release\\values-lt\\values-lt.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\multi_image_picker\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lt\\values-lt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\799ba499acf56073c4c28b198676cef9\\appcompat-1.0.0\\res\\values-lt\\values-lt.xml",

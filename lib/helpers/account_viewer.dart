@@ -12,9 +12,10 @@ class AccountViewerPageState extends State<AccountViewerPage> {
 
   getButtons() {
     List<Widget> widgets = <Widget>[];
-    widgets.add(RaisedButton.icon(
-        color: Colors.green,
-        elevation: 0.0,
+    widgets.add(ElevatedButton.icon(
+         style: ElevatedButton.styleFrom(
+                  primary: Colors.green //elevated btton background color
+                  ),
         icon: Icon(Icons.arrow_back, color: Colors.black),
         onPressed: () {
           appAuth.logout().then((prefs) {

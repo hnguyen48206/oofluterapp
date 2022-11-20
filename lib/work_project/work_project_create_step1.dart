@@ -657,13 +657,13 @@ class WorkProjectCreateStep1PageState
                                                 content: Text(
                                                     "Bạn có chắc chắn muốn xoá file này ?"),
                                                 actions: <Widget>[
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
                                                       child: Text("Không")),
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();

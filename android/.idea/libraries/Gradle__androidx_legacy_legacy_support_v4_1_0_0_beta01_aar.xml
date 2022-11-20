@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fc89668d0ed74de3113d785e7c8f1c4/legacy-support-v4-1.0.0-beta01/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1fc89668d0ed74de3113d785e7c8f1c4/legacy-support-v4-1.0.0-beta01/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5eae3ca374f9ad6d5cf25f8fa2f05711/legacy-support-v4-1.0.0-beta01/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5eae3ca374f9ad6d5cf25f8fa2f05711/legacy-support-v4-1.0.0-beta01/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5eae3ca374f9ad6d5cf25f8fa2f05711/legacy-support-v4-1.0.0-beta01/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

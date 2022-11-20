@@ -62,7 +62,7 @@ class AnnouncementCreateStep3PageState
                 title: Text(AppCache.currentAnnouncement.getTitleAction()),
                 content: Text("THÀNH CÔNG !!!"),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         Navigator.pushReplacement(
                             this.context,

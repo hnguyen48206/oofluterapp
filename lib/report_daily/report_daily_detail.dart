@@ -712,10 +712,10 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
                   webView: true, webViewJs: false)
             ]),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                   onPressed: () => Navigator.pop(context),
                   child: Text("Đóng", style: TextStyle(color: Colors.black))),
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     var text = this
                         .textReplyController

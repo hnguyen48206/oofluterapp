@@ -232,10 +232,10 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
             return Container(
                 margin: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 5.0),
                 child: Center(
-                    child: RaisedButton(
-                        color: Colors.blue,
-                        elevation: 0.0,
-                        highlightElevation: 0.0,
+                    child: ElevatedButton(
+                         style: ElevatedButton.styleFrom(
+                  primary: Colors.blue //elevated btton background color
+                  ),
                         child: Text(
                           'Xem xử lý',
                           style: TextStyle(color: Colors.white, fontSize: 20),

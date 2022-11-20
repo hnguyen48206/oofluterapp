@@ -333,13 +333,13 @@ class AnnouncementCreateStep1State extends State<AnnouncementCreateStep1Page> {
                                                 content: Text(
                                                     "Bạn có chắc chắn muốn xoá file này ?"),
                                                 actions: <Widget>[
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
                                                       child: Text("Không")),
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();

@@ -30,7 +30,7 @@ class WorkProjectInputResultState extends State<WorkProjectInputResultPage> {
                 content: Text("THÀNH CÔNG !!!",
                     style: TextStyle(color: Colors.blueAccent)),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context);
                         Navigator.push(

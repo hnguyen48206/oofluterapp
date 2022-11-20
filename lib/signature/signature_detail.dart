@@ -751,10 +751,10 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
                   webView: true, webViewJs: false)
             ]),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                   onPressed: () => Navigator.pop(context),
                   child: Text("Đóng", style: TextStyle(color: Colors.black))),
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     var text = this
                         .textReplyController
@@ -866,7 +866,7 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
               title: Text('Kết thúc trình ký'),
               content: Text('Bạn có chắc chắn muốn thực hiện ?'),
               actions: <Widget>[
-                FlatButton(
+                ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
                       FetchService.signatureFinish().then((result) {
@@ -880,7 +880,7 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
                       });
                     },
                     child: Text('Có', style: TextStyle(color: Colors.green))),
-                FlatButton(
+                ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },

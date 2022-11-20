@@ -93,11 +93,12 @@ class AccountDetailPageState extends State<AccountDetailPage> {
         persistentFooterButtons: widget.accountId != AppCache.currentUser.userId
             ? null
             : [
-                RaisedButton.icon(
+                ElevatedButton.icon(
                     label: Text("Đổi mật khẩu",
                         style: TextStyle(color: Colors.white, fontSize: 14.0)),
-                    color: Colors.redAccent,
-                    elevation: 0.0,
+                     style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent //elevated btton background color
+                  ),
                     icon: Icon(Icons.security, color: Colors.black),
                     onPressed: () {
                       Navigator.push(
@@ -106,9 +107,10 @@ class AccountDetailPageState extends State<AccountDetailPage> {
                             builder: (context) => AccountChangePasswordPage()),
                       );
                     }),
-                RaisedButton.icon(
-                    color: Colors.green,
-                    elevation: 0.0,
+                ElevatedButton.icon(
+                     style: ElevatedButton.styleFrom(
+                  primary: Colors.green //elevated btton background color
+                  ),
                     icon: Icon(Icons.edit, color: Colors.black),
                     onPressed: () {
                       Navigator.push(

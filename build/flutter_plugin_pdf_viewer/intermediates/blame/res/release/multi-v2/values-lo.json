@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\flutter_plugin_pdf_viewer\\intermediates\\res\\merged\\release\\values-lo\\values-lo.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\flutter_plugin_pdf_viewer\\intermediates\\res\\merged\\release\\values-lo\\values-lo.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\d8ef44c809d0f0b330f00fc1e7f96546\\core-1.1.0\\res\\values-lo\\values-lo.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\flutter_plugin_pdf_viewer\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lo\\values-lo.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\flutter_plugin_pdf_viewer\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\d8ef44c809d0f0b330f00fc1e7f96546\\core-1.1.0\\res\\values-lo\\values-lo.xml",

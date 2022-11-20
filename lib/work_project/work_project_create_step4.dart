@@ -71,7 +71,7 @@ class WorkProjectCreateStep4PageState
                 title: Text("Tạo công việc"),
                 content: Text("THÀNH CÔNG !!!"),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         setState(() {
                           this.isSubmitting = false;

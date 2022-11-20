@@ -1,58 +1,58 @@
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:281
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:289
 -keep class androidx.biometric.DeviceCredentialHandlerActivity { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:68
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:70
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:111
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:113
 -keep class androidx.core.content.FileProvider { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:198
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:206
 -keep class com.crazecoder.openfile.FileProvider { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:126
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:128
 -keep class com.dexterous.flutterlocalnotifications.ForegroundService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:189
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:195
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:188
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:192
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:107
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:109
 -keep class com.flutter_webview_plugin.WebviewActivity { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:285
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:293
 -keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:298
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:306
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:292
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:300
 -keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:244
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:252
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:234
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:242
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:240
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:248
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:135
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:139
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:213
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:221
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:225
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:233
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:250
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:258
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:261
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:269
 -keep class com.sangcomz.fishbun.FishBunFileProvider { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:271
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:279
 -keep class com.sangcomz.fishbun.ui.album.AlbumActivity { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:278
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:286
 -keep class com.sangcomz.fishbun.ui.detail.DetailActivity { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:275
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:283
 -keep class com.sangcomz.fishbun.ui.picker.PickerActivity { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:178
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:182
 -keep class de.esys.esysfluttershare.EsysFlutterShareFileProvider { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:130
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:132
 -keep class io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:169
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:173
 -keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:208
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:216
 -keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:68
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:70
 -keep class vn.onlineoffice.www.oomessenger.Application { <init>(); }
-# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\app_online_office\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:76
+# Referenced at C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:78
 -keep class vn.onlineoffice.www.oomessenger.MainActivity { <init>(); }
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_alert_dialog_title_material.xml:57
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_alert_dialog_material.xml:52
@@ -92,7 +92,7 @@
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_alert_dialog_material.xml:18
 -keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:22
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:22
 -keep class androidx.appcompat.widget.AppCompatImageButton { <init>(...); }
 
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_alert_dialog_button_bar_material.xml:26
@@ -115,8 +115,8 @@
 -keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
 
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout-v26\abc_screen_toolbar.xml:37
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:19
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:20
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:19
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:20
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_screen_toolbar.xml:36
 -keep class androidx.appcompat.widget.Toolbar { <init>(...); }
 
@@ -124,27 +124,27 @@
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_screen_simple.xml:25
 -keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\detail_item.xml:2
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:2
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\detail_item.xml:2
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:2
 -keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(...); }
 
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\513cff43f650969f5b97796627e84fed\material-1.0.0\res\layout\design_bottom_sheet_dialog.xml:26
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:2
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:2
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:2
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:2
 -keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
 
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fe07a7de7de03fdc58faeeb6f21800d8\appcompat-1.1.0\res\layout\abc_alert_dialog_material.xml:41
 -keep class androidx.core.widget.NestedScrollView { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:8
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:9
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:8
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:9
 -keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:10
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:10
 -keep class androidx.viewpager.widget.ViewPager { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:14
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:15
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_picker.xml:14
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_photo_album.xml:15
 -keep class com.google.android.material.appbar.AppBarLayout { <init>(...); }
 
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\513cff43f650969f5b97796627e84fed\material-1.0.0\res\layout\design_bottom_navigation_item.xml:27
@@ -167,16 +167,16 @@
 # Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\513cff43f650969f5b97796627e84fed\material-1.0.0\res\layout\design_layout_snackbar_include.xml:18
 -keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\thumb_item.xml:24
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:33
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\thumb_item.xml:24
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\activity_detail_actiivy.xml:33
 -keep class com.sangcomz.fishbun.util.RadioWithTextButton { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\thumb_item.xml:2
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\thumb_item.xml:2
 -keep class com.sangcomz.fishbun.util.SquareFrameLayout { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\album_item.xml:9
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\album_item.xml:9
 -keep class com.sangcomz.fishbun.util.SquareImageView { <init>(...); }
 
-# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\d945b68a1d856c5b06e2a0dcf788e4ac\jetified-FishBun-0.11.2\res\layout\detail_item.xml:8
+# Referenced at C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\159ace8e7e967cb0f420ec5665256a8d\jetified-FishBun-0.11.2\res\layout\detail_item.xml:8
 -keep class com.sangcomz.fishbun.util.TouchImageView { <init>(...); }
 

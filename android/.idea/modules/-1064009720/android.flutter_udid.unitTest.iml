@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":flutter_udid:unitTest" external.linked.project.path="C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="4" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../../build/flutter_udid/tmp/kotlin-classes/debugUnitTest" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9f52f6402c741bf64aa8d4368e6fba0f/jetified-flutter_embedding_debug-1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common-java8/2.2.0/cd3478503da69b1a7e0319bd2d1389943db9b364/lifecycle-common-java8-2.2.0.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/0fc9a8324a49f7844a508fbd39407641/fragment-1.1.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/cdc0e58f13dfe8552ab0ba9e736333bb/activity-1.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/f74f58a1733cfb3853fa9da1565cf416/viewpager-1.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/dbb6b9e8725c9206ce56dcdf0da9d57e/loader-1.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/a1f5eea94b0465b9d1f72ecdd678931c/customview-1.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/d8ef44c809d0f0b330f00fc1e7f96546/core-1.1.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/bca4dda29f074a43c64095c19d90044d/lifecycle-runtime-2.2.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/a1bf0bf6c08104b03a77484620715e0f/savedstate-1.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/3c9d63704c16b24abe38aa70abe269e6/lifecycle-livedata-2.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/3f19f2b0eee7bd62d31050e7a5694573/lifecycle-livedata-core-2.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.2.0/4ef09a745007778eef83b92f8f23987a8ea59496/lifecycle-common-2.2.0.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/0e86d2f011c1f665b73956f7f59d3413/core-runtime-2.0.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/a46ee0d7b0d81cefb6a247956e77f201/versionedparcelable-1.1.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar;C:/Users/HoangN/.gradle/caches/transforms-2/files-2.1/808ad2282231c00e52cc601fd22fed7f/lifecycle-viewmodel-2.1.0/jars/classes.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.50/50ad05ea1c2595fb31b800e76db464d08d599af3/kotlin-stdlib-jdk7-1.3.50.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.50/b529d1738c7e98bbfa36a4134039528f2ce78ebf/kotlin-stdlib-1.3.50.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.50/3d9cd3e1bc7b92e95f43d45be3bfbcf38e36ab87/kotlin-stdlib-common-1.3.50.jar;C:/Users/HoangN/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar;C:/Users/HoangN/AppData/Local/Android/Sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="flutter_udid_debug" />
+          <option name="jvmTarget" value="1.6" />
+          <option name="friendPaths">
+            <array>
+              <option value="$MODULE_DIR$/../../../../build/flutter_udid/intermediates/javac/debug/classes" />
+              <option value="$MODULE_DIR$/../../../../build/flutter_udid/tmp/kotlin-classes/debug" />
+            </array>
+          </option>
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android/src/main/res;file://C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android/src/debug/res;file://$MODULE_DIR$/../../../../build/flutter_udid/generated/res/rs/debug;file://$MODULE_DIR$/../../../../build/flutter_udid/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android/src/androidTest/res;file://C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android/src/androidTestDebug/res;file://$MODULE_DIR$/../../../../build/flutter_udid/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../../build/flutter_udid/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android/src/test" />
+    <content url="file://C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_udid-1.0.1/android/src/testDebug" />
+    <content url="file://$MODULE_DIR$/../../../../build/flutter_udid/generated/ap_generated_sources/debugUnitTest/out" />
+    <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-ae90085a8437c0ae94d6b5ad2741739ebc742cb4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common-java8:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.50" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.customview:customview:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-runtime:2.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.1.0@aar" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="android.flutter_udid.main" />
+</module>

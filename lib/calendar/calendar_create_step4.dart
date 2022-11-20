@@ -67,7 +67,7 @@ class CalendarCreateStep4PageState extends State<CalendarCreateStep4Page> {
                 title: Text(this._titleSave),
                 content: Text("THÀNH CÔNG !!!"),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         AppHelpers.navigatorToHome(
                             context, IndexTabHome.CalendarWeek);

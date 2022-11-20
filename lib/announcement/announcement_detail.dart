@@ -54,20 +54,22 @@ class AnnouncementDetailPageState extends State<AnnouncementDetailPage> {
     for (var button in AppCache.currentAnnouncement.buttons) {
       switch (button) {
         case "Delete":
-          this._buttons.add(RaisedButton.icon(
+          this._buttons.add(ElevatedButton.icon(
               label: Text("Xoá",
                   style: TextStyle(color: Colors.white, fontSize: 14.0)),
-              color: Colors.redAccent,
-              elevation: 0.0,
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent //elevated btton background color
+                  ),
               icon: Icon(Icons.cancel, color: Colors.black),
               onPressed: () {
                 showPopupDelete();
               }));
           break;
         case "Edit":
-          this._buttons.add(RaisedButton.icon(
-              color: Colors.green,
-              elevation: 0.0,
+          this._buttons.add(ElevatedButton.icon(
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.green //elevated btton background color
+                  ),
               icon: Icon(Icons.edit, color: Colors.black),
               onPressed: () {
                 Navigator.push(
@@ -91,12 +93,12 @@ class AnnouncementDetailPageState extends State<AnnouncementDetailPage> {
             title: Text(AppCache.currentAnnouncement.title),
             content: Text("Bạn có chắc chắn muốn xoá ?"),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
                   child: Text("Không")),
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                     FetchService.deleteAnnouncement(

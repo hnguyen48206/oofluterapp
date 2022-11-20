@@ -96,12 +96,12 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                             title: Text(AppCache.currentDiscussWork.title),
                             content: Text("Bạn có chắc chắn muốn xoá ?"),
                             actions: <Widget>[
-                              FlatButton(
+                              ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                   },
                                   child: Text("Không")),
-                              FlatButton(
+                              ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                     FetchService.deleteDiscussWork(
@@ -398,13 +398,13 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                                                 content: Text(
                                                     "Bạn có chắc chắn muốn xoá file này ?"),
                                                 actions: <Widget>[
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
                                                       child: Text("Không")),
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();

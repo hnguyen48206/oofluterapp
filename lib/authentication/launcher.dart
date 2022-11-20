@@ -106,7 +106,7 @@ class LauncherPageState extends State<LauncherPage> {
                 title: Text("Lỗi kết nối"),
                 content: Text("Không có kết nối."),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         Navigator.of(context).pop();
                         setTokenLogin();

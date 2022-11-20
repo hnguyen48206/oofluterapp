@@ -91,7 +91,7 @@ class DiscussWorkCreateStep3PageState
                 title: Text(titleAlert),
                 content: Text("THÀNH CÔNG !!!"),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         setState(() {
                           this.isSubmitting = false;
@@ -142,12 +142,12 @@ class DiscussWorkCreateStep3PageState
                                       Text(AppCache.currentDiscussWork.title),
                                   content: Text("Bạn có chắc chắn muốn xoá ?"),
                                   actions: <Widget>[
-                                    FlatButton(
+                                    ElevatedButton(
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                         },
                                         child: Text("Không")),
-                                    FlatButton(
+                                    ElevatedButton(
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                           FetchService.deleteDiscussWork(

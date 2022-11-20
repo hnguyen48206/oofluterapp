@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\release\\values-v18\\values-v18.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\flutter_webview_plugin\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\fe07a7de7de03fdc58faeeb6f21800d8\\appcompat-1.1.0\\res\\values-v18\\values-v18.xml",
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\flutter_webview_plugin\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\release\\values-v18\\values-v18.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\fe07a7de7de03fdc58faeeb6f21800d8\\appcompat-1.1.0\\res\\values-v18\\values-v18.xml",

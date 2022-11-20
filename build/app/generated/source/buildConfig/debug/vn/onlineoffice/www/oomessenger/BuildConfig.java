@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "vn.onlineoffice.www.oomessenger";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 127;
-  public static final String VERSION_NAME = "3.0.0.7";
+  public static final int VERSION_CODE = 128;
+  public static final String VERSION_NAME = "3.0.0.8";
 }

@@ -556,10 +556,10 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
               HtmlWidget(getHtmlReply(record), webView: true, webViewJs: false)
             ]),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                   onPressed: () => Navigator.pop(context),
                   child: Text("Đóng", style: TextStyle(color: Colors.black))),
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     var text = this
                         .textReplyController
@@ -977,13 +977,13 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                   title: Text('Đánh dấu đã xử lý công việc'),
                   content: Text('Bạn có chắc chắn muốn thực hiện ?'),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
                         child: Text('Không',
                             style: TextStyle(color: Colors.black))),
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           FetchService.doneWorkProject().then((result) {
@@ -1015,13 +1015,13 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                   title: Text('Đề xuất kết thúc công việc'),
                   content: Text('Bạn có chắc chắn muốn thực hiện ?'),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
                         child: Text('Không',
                             style: TextStyle(color: Colors.black))),
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           FetchService.proposeFinishWorkProject()
@@ -1048,13 +1048,13 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                   title: Text('Kết thúc công việc'),
                   content: Text('Bạn có chắc chắn muốn thực hiện ?'),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
                         child: Text('Không',
                             style: TextStyle(color: Colors.black))),
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           FetchService.finishWorkProject().then((result) {
@@ -1083,13 +1083,13 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                   title: Text('Bỏ nhắc mới công việc'),
                   content: Text('Bạn có chắc chắn muốn thực hiện ?'),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
                         child: Text('Không',
                             style: TextStyle(color: Colors.black))),
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           FetchService.workProjectRemoveNewRemind()
@@ -1116,13 +1116,13 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                   title: Text('Nhắc mới công việc'),
                   content: Text('Bạn có chắc chắn muốn thực hiện ?'),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                         },
                         child: Text('Không',
                             style: TextStyle(color: Colors.black))),
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           FetchService.workProjectRemindNew().then((result) {
@@ -1278,12 +1278,12 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
               title: Text(AppCache.currentWorkProject.title),
               content: Text('Bạn có chắc chắn muốn XÓA công việc này ?'),
               actions: <Widget>[
-                FlatButton(
+                ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     child: Text("Không", style: TextStyle(color: Colors.blue))),
-                FlatButton(
+                ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
                       FetchService.deleteWorkProject().then((result) {
@@ -1295,7 +1295,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                                   title: Text('Xóa công việc'),
                                   content: Text('THÀNH CÔNG !!!'),
                                   actions: <Widget>[
-                                    FlatButton(
+                                    ElevatedButton(
                                         onPressed: () {
                                           Navigator.of(context).popUntil(
                                               ModalRoute.withName("/HomePage"));

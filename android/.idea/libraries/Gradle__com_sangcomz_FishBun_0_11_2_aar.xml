@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b23d734c2cae2dfaba09639bf0a7b432/jetified-FishBun-0.11.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b23d734c2cae2dfaba09639bf0a7b432/jetified-FishBun-0.11.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/159ace8e7e967cb0f420ec5665256a8d/jetified-FishBun-0.11.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/159ace8e7e967cb0f420ec5665256a8d/jetified-FishBun-0.11.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/159ace8e7e967cb0f420ec5665256a8d/jetified-FishBun-0.11.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sangcomz/FishBun/0.11.2/d5472c615320f838a055d747ae529122dace4ffb/FishBun-0.11.2-javadoc.jar!/" />

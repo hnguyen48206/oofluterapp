@@ -256,10 +256,10 @@ class LoginPageState extends State<LoginPage> {
       title: this.isSubmitting
           ? Container(child: Center(child: CircularProgressIndicator()))
           : Container(
-              child: RaisedButton(
-                  color: Colors.transparent,
-                  elevation: 0.0,
-                  highlightElevation: 0.0,
+              child: ElevatedButton(
+                   style: ElevatedButton.styleFrom(
+                  primary: Colors.transparent //elevated btton background color
+                  ),
                   child: Text(
                     'Đăng nhập',
                     style: TextStyle(color: Colors.white, fontSize: 20),

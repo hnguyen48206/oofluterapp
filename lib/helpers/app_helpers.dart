@@ -408,7 +408,7 @@ class AppHelpers {
                   style: TextStyle(
                       color: isOK ? Colors.blueAccent : Colors.redAccent)),
               actions: <Widget>[
-                FlatButton(
+                ElevatedButton(
                     onPressed: () => Navigator.pop(context),
                     child: Text("Đóng", style: TextStyle(color: Colors.black)))
               ]);
@@ -440,12 +440,12 @@ class AppHelpers {
             title: Text(AppCache.currentAnnouncement.title),
             content: Text("Bạn có chắc chắn muốn hủy thao tác ?"),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
                   child: Text("Không")),
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                     AppCache.currentAnnouncement = null;

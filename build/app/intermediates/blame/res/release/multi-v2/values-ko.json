@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\7771c702ef45d6715e123c0aab653c0d\\jetified-firebase-messaging-21.1.0\\res\\values-ko\\values.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\dffa90010d6849286a7a6b997428fef6\\jetified-firebase-messaging-21.1.0\\res\\values-ko\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\d945b68a1d856c5b06e2a0dcf788e4ac\\jetified-FishBun-0.11.2\\res\\values-ko\\values-ko.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,92,131,167,213,284,344,407,466,522",
-                        "endColumns": "36,38,35,45,70,59,62,58,55,45",
-                        "endOffsets": "87,126,162,208,279,339,402,461,517,563"
-                    },
-                    "to": {
-                        "startLines": "30,31,35,36,46,47,48,49,50,53",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2797,2834,3240,3276,4284,4355,4415,4478,4537,4772",
-                        "endColumns": "36,38,35,45,70,59,62,58,55,45",
-                        "endOffsets": "2829,2868,3271,3317,4350,4410,4473,4532,4588,4813"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\39839fd33239cb413a12e2f5e1c6397d\\jetified-play-services-basement-17.0.0\\res\\values-ko\\values.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\d7e739b3bf1a645b2ea96bbc601aa84b\\jetified-play-services-basement-17.0.0\\res\\values-ko\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -69,6 +52,23 @@
                         "startOffsets": "4671",
                         "endColumns": "100",
                         "endOffsets": "4767"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\159ace8e7e967cb0f420ec5665256a8d\\jetified-FishBun-0.11.2\\res\\values-ko\\values-ko.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,92,131,167,213,284,344,407,466,522",
+                        "endColumns": "36,38,35,45,70,59,62,58,55,45",
+                        "endOffsets": "87,126,162,208,279,339,402,461,517,563"
+                    },
+                    "to": {
+                        "startLines": "30,31,35,36,46,47,48,49,50,53",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2797,2834,3240,3276,4284,4355,4415,4478,4537,4772",
+                        "endColumns": "36,38,35,45,70,59,62,58,55,45",
+                        "endOffsets": "2829,2868,3271,3317,4350,4410,4473,4532,4588,4813"
                     }
                 },
                 {

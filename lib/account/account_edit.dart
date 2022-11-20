@@ -267,7 +267,7 @@ class AccountEditPageState extends State<AccountEditPage> {
                   content: Text('THÀNH CÔNG !!!',
                       style: TextStyle(color: Colors.blueAccent)),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.pop(context);
                           Navigator.pop(context);
@@ -290,18 +290,20 @@ class AccountEditPageState extends State<AccountEditPage> {
             title: Text('Cập nhật thông tin cá nhân')),
         body: _setBodyForm(),
         persistentFooterButtons: [
-          RaisedButton.icon(
+          ElevatedButton.icon(
               label: Text("Hủy",
                   style: TextStyle(color: Colors.white, fontSize: 14.0)),
-              color: Colors.redAccent,
-              elevation: 0.0,
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent //elevated btton background color
+                  ),
               icon: Icon(Icons.cancel, color: Colors.black),
               onPressed: () {
                 Navigator.pop(context);
               }),
-          RaisedButton.icon(
-              color: Colors.green,
-              elevation: 0.0,
+          ElevatedButton.icon(
+               style: ElevatedButton.styleFrom(
+                  primary: Colors.green //elevated btton background color
+                  ),
               icon: Icon(Icons.save, color: Colors.black),
               onPressed: () {
                 onSubmit();

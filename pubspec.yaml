@@ -33,6 +33,10 @@ dependencies:
   firebase_messaging: ^7.0.3
   flutter_app_badger: ^1.1.2
   flutter_local_notifications: ^4.0.1+2
+  # flutter_local_notifications:
+  #   git:
+  #     url: https://github.com/hnguyen48206/local_noti_flutter_fork.git
+  #     ref: fix_indirect
   # flutter_local_notifications: ^1.4.4+1
   date_format: ^1.0.8
   # if (date == null) return '';
@@ -46,10 +50,7 @@ dependencies:
   # recode with last version  
   image_picker: ^0.6.7+17
   multi_image_picker: ^4.7.14
-  flutter_webview_plugin:
-    git:
-      url: https://github.com/hnguyen48206/flutter_webview_plugin.git
-      ref: my0.3.11
+  flutter_webview_plugin: ^0.3.11
   # iOS => ~/Dropbox/OnlineOffice_AppV2/Flutter_App/flutter_webview_plugin_Fix_Error_Show_Dialog_iOS.txt
   # Android => C:\Flutter\.pub-cache\hosted\pub.dartlang.org\flutter_webview_plugin-{{version}}\android\src\main\java\com\flutter_webview_plugin\WebviewManager.java => replace '\.fileprovider' to '\.fileProvider' 
   esys_flutter_share: ^1.0.2

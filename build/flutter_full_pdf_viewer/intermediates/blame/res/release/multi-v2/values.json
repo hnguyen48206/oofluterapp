@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\flutter_full_pdf_viewer\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\flutter_full_pdf_viewer\\intermediates\\res\\merged\\release\\values\\values.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\cca12290344b3f3149efc52fe7ef5ad0\\jetified-android-pdf-viewer-2.8.2\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "288",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "333",
-                        "startColumns": "4",
-                        "startOffsets": "19894",
-                        "endColumns": "288",
-                        "endOffsets": "20178"
-                    }
-                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\a95ed7eab2a0249c6f2db6ce241d1532\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
@@ -73,30 +56,30 @@
                         "startOffsets": "248,337,466,2079,2132,2185,2238,5044,5563,5739,5861,6123,6318",
                         "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
                         "endOffsets": "332,403,534,2127,2180,2233,2286,5099,5624,5856,5917,6184,6380"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\5ed7ae3570aee369b854732d545492bf\\jetified-android-pdf-viewer-2.8.2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "288",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "333",
+                        "startColumns": "4",
+                        "startOffsets": "19894",
+                        "endColumns": "288",
+                        "endOffsets": "20178"
                     }
                 }
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\app_online_office\\build\\flutter_full_pdf_viewer\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\flutter_full_pdf_viewer\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\cca12290344b3f3149efc52fe7ef5ad0\\jetified-android-pdf-viewer-2.8.2\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "288",
-                        "endOffsets": "339"
-                    },
-                    "to": {
-                        "startLines": "333",
-                        "startColumns": "4",
-                        "startOffsets": "19894",
-                        "endColumns": "288",
-                        "endOffsets": "20178"
-                    }
-                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\a95ed7eab2a0249c6f2db6ce241d1532\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
@@ -150,6 +133,23 @@
                         "startOffsets": "248,337,466,2079,2132,2185,2238,5044,5563,5739,5861,6123,6318",
                         "endColumns": "88,70,72,52,52,52,52,59,65,121,60,65,66",
                         "endOffsets": "332,403,534,2127,2180,2233,2286,5099,5624,5856,5917,6184,6380"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\5ed7ae3570aee369b854732d545492bf\\jetified-android-pdf-viewer-2.8.2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "288",
+                        "endOffsets": "339"
+                    },
+                    "to": {
+                        "startLines": "333",
+                        "startColumns": "4",
+                        "startOffsets": "19894",
+                        "endColumns": "288",
+                        "endOffsets": "20178"
                     }
                 }
             ]

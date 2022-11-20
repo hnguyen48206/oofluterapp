@@ -232,12 +232,13 @@ class CalendarPageState extends State<CalendarPage> {
             : this._calendars.any(
                     (p) => p.details.where((k) => k.checked == true).length > 0)
                 ? [
-                    RaisedButton.icon(
+                    ElevatedButton.icon(
                         label: Text("Phê duyệt",
                             style:
                                 TextStyle(color: Colors.white, fontSize: 15.0)),
-                        color: Colors.green,
-                        elevation: 0.0,
+                         style: ElevatedButton.styleFrom(
+                  primary: Colors.green //elevated btton background color
+                  ),
                         icon: Icon(Icons.send, color: Colors.black),
                         onPressed: () {
                           showCupertinoModalPopup(
@@ -248,12 +249,12 @@ class CalendarPageState extends State<CalendarPage> {
                                   content: Text(
                                       'Bạn có chắc chắn muốn duyệt các lịch tuần này ?'),
                                   actions: <Widget>[
-                                    FlatButton(
+                                    ElevatedButton(
                                         onPressed: () => Navigator.pop(context),
                                         child: Text("Không",
                                             style: TextStyle(
                                                 color: Colors.black))),
-                                    FlatButton(
+                                    ElevatedButton(
                                         onPressed: () {
                                           Navigator.pop(context);
                                           _approve();
@@ -288,7 +289,7 @@ class CalendarPageState extends State<CalendarPage> {
                 title: Text('Duyệt lịch tuần'),
                 content: Text('THÀNH CÔNG !!!'),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context);
                         setState(() {

@@ -70,7 +70,7 @@ class DocumentCreateStep5PageState extends State<DocumentCreateStep5Page> {
                 title: Text("Tạo văn bản đến"),
                 content: Text("THÀNH CÔNG !!!"),
                 actions: <Widget>[
-                  FlatButton(
+                  ElevatedButton(
                       onPressed: () {
                         // Navigator.push(
                         //     this.context,

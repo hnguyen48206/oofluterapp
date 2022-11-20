@@ -90,12 +90,12 @@ class DiscussWorkCreateStep2PageState
                             title: Text(AppCache.currentDiscussWork.title),
                             content: Text("Bạn có chắc chắn muốn xoá ?"),
                             actions: <Widget>[
-                              FlatButton(
+                              ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                   },
                                   child: Text("Không")),
-                              FlatButton(
+                              ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                     FetchService.deleteDiscussWork(

@@ -71,7 +71,7 @@ class ReportDailyCreateStep1State extends State<ReportDailyCreatePage> {
                   title: Text(AppCache.currentReportDaily.getTitleAction()),
                   content: Text("THÀNH CÔNG !!!"),
                   actions: <Widget>[
-                    FlatButton(
+                    ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).pop();
                           AppCache.currentReportDaily =
@@ -389,13 +389,13 @@ class ReportDailyCreateStep1State extends State<ReportDailyCreatePage> {
                                                 content: Text(
                                                     "Bạn có chắc chắn muốn xoá file này ?"),
                                                 actions: <Widget>[
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
                                                       child: Text("Không")),
-                                                  FlatButton(
+                                                  ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
                                                             .pop();

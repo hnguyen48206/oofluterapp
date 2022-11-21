@@ -1,6 +1,0 @@
-com/alveliu/flutterfullpdfviewer/FlutterFullPdfViewerManager.java
- com.alveliu.flutterfullpdfviewer.FlutterFullPdfViewerManager
-com/alveliu/flutterfullpdfviewer/FlutterFullPdfViewerPlugin.java
- com.alveliu.flutterfullpdfviewer.FlutterFullPdfViewerPlugin
-com/alveliu/flutterfullpdfviewer/BuildConfig.java
- com.alveliu.flutterfullpdfviewer.BuildConfig

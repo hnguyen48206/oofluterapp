@@ -31,7 +31,7 @@ class FetchService {
       body.clear();
       body['user_id'] = userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.listRole = Role.parseJson(response.body);
       }
@@ -41,7 +41,7 @@ class FetchService {
   static Future<void> setAllUser() async {
     String url = linkService + 'user/list';
     try {
-      final response = await http.post(url).timeout(durationTimeout);
+      final response = await http.post(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.allUser = Account.parseJson(response.body);
       }
@@ -51,7 +51,7 @@ class FetchService {
   static Future<bool> setAllProject() async {
     String url = linkService + 'congviec/listproject';
     try {
-      final response = await http.post(url).timeout(durationTimeout);
+      final response = await http.post(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.allProject = CategoryDb.parseJson(response.body);
         return true;
@@ -65,7 +65,7 @@ class FetchService {
   static Future<void> setAllGroupUser() async {
     String url = linkService + 'user/listgroupuser';
     try {
-      final response = await http.post(url).timeout(durationTimeout);
+      final response = await http.post(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.allGroupUser = GroupUser.parseJson(response.body);
       }
@@ -79,7 +79,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['imei'] = AppCache.imei;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         // print('Delete Token OK');
       } else {
@@ -98,7 +98,7 @@ class FetchService {
     String domainName = getDomainLink();
     try {
       // http.Response response =
-      await http.post(domainName + '/wsOOPush.asmx',
+      await http.post(Uri.parse(domainName + '/wsOOPush.asmx'),
           headers: {
             "Content-Type": "text/xml; charset=utf-8",
             "SOAPAction": "http://onlineoffice.vn/delete_device_token",
@@ -145,7 +145,8 @@ class FetchService {
       body['token'] = token ?? "";
       body['imei'] = imei;
       body['os'] = os;
-      response = await http.post(url, body: body).timeout(durationTimeout);
+      response =
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
     } on TimeoutException {
       result.error = "Không có kết nối.";
       return result;
@@ -187,14 +188,16 @@ class FetchService {
     String domainName = getDomainLink();
     String envelope =
         "<?xml version='1.0' encoding='utf-8'?><soap12:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap12='http://www.w3.org/2003/05/soap-envelope'><soap12:Body><LoginWS xmlns='http://onlineoffice.vn/'><sUser>$user</sUser><sPass>$pass</sPass></LoginWS></soap12:Body></soap12:Envelope>";
-    http.Response response = await http.post(domainName + '/wsoo.asmx',
-        headers: {
-          "Content-Type": "text/xml; charset=utf-8",
-          "SOAPAction": "http://onlineoffice.vn/LoginWS",
-          "Host":
-              domainName.replaceAll('https://', '').replaceAll('http://', '')
-        },
-        body: envelope);
+    http.Response response =
+        await http.post(Uri.parse(domainName + '/wsoo.asmx'),
+            headers: {
+              "Content-Type": "text/xml; charset=utf-8",
+              "SOAPAction": "http://onlineoffice.vn/LoginWS",
+              "Host": domainName
+                  .replaceAll('https://', '')
+                  .replaceAll('http://', '')
+            },
+            body: envelope);
     if (response.statusCode == 200) {
       if (response.body.contains('<LoginWSResult />')) {
         result.error = "Đăng nhập KHÔNG THÀNH CÔNG.";
@@ -232,14 +235,16 @@ class FetchService {
     String envelope =
         "<?xml version='1.0' encoding='utf-8'?><soap12:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap12='http://www.w3.org/2003/05/soap-envelope'><soap12:Body><add_device_token xmlns='http://onlineoffice.vn/'><DeviceTokenID>$token</DeviceTokenID><User_ID>$userId</User_ID><OS_Name>$os</OS_Name><IMEI>$imei</IMEI></add_device_token></soap12:Body></soap12:Envelope>";
     try {
-      http.Response response = await http.post(domainName + '/wsOOPush.asmx',
-          headers: {
-            "Content-Type": "text/xml; charset=utf-8",
-            "SOAPAction": "http://onlineoffice.vn/add_device_token",
-            "Host":
-                domainName.replaceAll('https://', '').replaceAll('http://', '')
-          },
-          body: envelope);
+      http.Response response =
+          await http.post(Uri.parse(domainName + '/wsOOPush.asmx'),
+              headers: {
+                "Content-Type": "text/xml; charset=utf-8",
+                "SOAPAction": "http://onlineoffice.vn/add_device_token",
+                "Host": domainName
+                    .replaceAll('https://', '')
+                    .replaceAll('http://', '')
+              },
+              body: envelope);
       if (response.statusCode != 200) {
         print('addTokenDeviceSoap ERROR');
       }
@@ -256,7 +261,7 @@ class FetchService {
       body["file_name"] = fileName;
       body["data"] = base64Encode(await file.readAsBytes());
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       print('Upload file OK');
       return response.statusCode == 200;
     } on Exception {
@@ -275,7 +280,7 @@ class FetchService {
       body["file_name"] = fileName;
       body["data"] = base64Encode(bytes);
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200 ? index : -1;
     } on Exception {
       return -1;
@@ -291,7 +296,7 @@ class FetchService {
       body["object_id"] = objectId;
       body["files_name"] = filesName.join('?');
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -310,7 +315,7 @@ class FetchService {
       body.clear();
       body["data"] = ObjectHelper.toBase64(jsonText);
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentCalendar.lichTuanId = response.body.replaceAll('"', '');
         return true;
@@ -340,7 +345,7 @@ class FetchService {
       Map<String, String> check = Map();
       check = body;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentWorkProject.id = response.body.replaceAll('"', '');
         return true;
@@ -363,7 +368,7 @@ class FetchService {
       body["phone"] = phone;
 
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentUser.birthDay = birthDay;
         AppCache.currentUser.email = email;
@@ -388,7 +393,7 @@ class FetchService {
       body["user_id"] = AppCache.currentUser.userId;
       body["data"] = pass;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -408,7 +413,7 @@ class FetchService {
       body.clear();
       body["data"] = ObjectHelper.toBase64(jsonText);
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentDocument.id = response.body.replaceAll('"', '');
         return true;
@@ -430,7 +435,7 @@ class FetchService {
       body["content"] = content;
       body["date_complete"] = dateComplete;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return true;
       } else {
@@ -451,7 +456,7 @@ class FetchService {
       body["user_forward_ids"] = userForwardIds.join(';');
       body["content"] = content;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -467,7 +472,7 @@ class FetchService {
       body["user_id"] = AppCache.currentUser.userId;
       body["date_complete"] = dateComplete;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -483,7 +488,7 @@ class FetchService {
       body["implementer_ids"] =
           AppCache.currentWorkProject.nguoiXuLysAdditional.join(';');
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentWorkProject.nguoiXuLys
             .addAll(AppCache.currentWorkProject.nguoiXuLysAdditional);
@@ -506,7 +511,7 @@ class FetchService {
       body["spectator_ids"] =
           AppCache.currentWorkProject.nguoiDuocXemsAdditional.join(';');
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentWorkProject.nguoiDuocXems
             .addAll(AppCache.currentWorkProject.nguoiDuocXemsAdditional);
@@ -526,7 +531,7 @@ class FetchService {
       body.clear();
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       }
@@ -542,7 +547,7 @@ class FetchService {
       body.clear();
       body["user_id"] = userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         var arr = response.body.replaceAll('"', '').split('!@');
         return arr[0] + ObjectHelper.timeToTextChat(arr[1]);
@@ -560,7 +565,7 @@ class FetchService {
       body["ids"] = lichTuanIds;
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -576,7 +581,7 @@ class FetchService {
       body["user_id"] = AppCache.currentUser.userId;
       body["full_name"] = AppCache.currentUser.fullName;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -592,7 +597,7 @@ class FetchService {
       body["user_id"] = AppCache.currentUser.userId;
       body["full_name"] = AppCache.currentUser.fullName;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -602,7 +607,7 @@ class FetchService {
   static Future<List<CalendarDay>> lichTuanHomNay() async {
     String url = linkService + 'lichtuan/homnay';
     try {
-      final response = await http.get(url).timeout(durationTimeout);
+      final response = await http.get(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return CalendarDay.parseJson(response.body);
       } else {
@@ -616,7 +621,8 @@ class FetchService {
   static Future<List<CalendarDay>> lichTuanNgayMai() async {
     String url = linkService + 'lichtuan/ngaymai';
     try {
-      final response = await http.get(url).timeout(Duration(seconds: 5));
+      final response =
+          await http.get(Uri.parse(url)).timeout(Duration(seconds: 5));
       if (response.statusCode == 200) {
         return CalendarDay.parseJson(response.body);
       } else {
@@ -630,7 +636,7 @@ class FetchService {
   static Future<List<CalendarDay>> lichTuan(String date) async {
     String url = linkService + 'lichtuan/duocduyet?ngay=' + date;
     try {
-      final response = await http.get(url).timeout(durationTimeout);
+      final response = await http.get(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return CalendarDay.parseJson(response.body);
       } else {
@@ -644,7 +650,7 @@ class FetchService {
   static Future<List<CalendarDay>> lichTuanChuaDuyet(String date) async {
     String url = linkService + 'lichtuan/chuaduyet?ngay=' + date;
     try {
-      final response = await http.get(url).timeout(durationTimeout);
+      final response = await http.get(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return CalendarDay.parseJson(response.body);
       } else {
@@ -665,7 +671,7 @@ class FetchService {
         '&ngayketthuc=' +
         toDate;
     try {
-      final response = await http.get(url).timeout(durationTimeout);
+      final response = await http.get(Uri.parse(url)).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return CalendarDay.parseJson(response.body);
       } else {
@@ -683,7 +689,7 @@ class FetchService {
       body['lich_tuan_id'] = lichTuanId;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return LichTuan.fromJson(json.decode(response.body));
       } else {
@@ -704,7 +710,7 @@ class FetchService {
       body['tick'] = tick.toString();
 
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return DiscussWork.parseJson(response.body);
       } else {
@@ -727,7 +733,7 @@ class FetchService {
       body['tick'] = tick.toString();
 
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return ReportDaily.parseJson(response.body);
       } else {
@@ -745,7 +751,7 @@ class FetchService {
       body['user_id'] = userId;
 
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         List<IdText> items = IdText.parseJson(response.body);
         AppCache.listParentReport =
@@ -766,7 +772,7 @@ class FetchService {
       body['tick'] = tick.toString();
 
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return Announcement.parseJson(response.body);
       } else {
@@ -784,7 +790,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return json.decode(response.body).cast<String>();
       } else {
@@ -806,7 +812,7 @@ class FetchService {
           '-' +
           count['VBNO'].toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return json.decode(response.body).cast<int>();
       } else {
@@ -822,7 +828,7 @@ class FetchService {
     try {
       body.clear();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.allDocumentSource = CategoryDb.parseJson(response.body);
         return true;
@@ -838,7 +844,7 @@ class FetchService {
     try {
       body.clear();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.allDocumentDirectories = CategoryDb.parseJson(response.body);
         return true;
@@ -857,7 +863,7 @@ class FetchService {
       body['kieuVB'] = kieuVB;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       } else {
@@ -878,7 +884,7 @@ class FetchService {
       body['text'] = textSearch == null ? '' : textSearch.trim();
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return Document.parseJson(response.body);
       } else {
@@ -899,7 +905,7 @@ class FetchService {
       body['action'] = action.toString();
 
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         if (response.body == '[]') return true;
         if (action == 0) {
@@ -935,7 +941,7 @@ class FetchService {
       body['text'] = textSearch == null ? '' : textSearch.trim();
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return WorkProject.parseJson(response.body);
       } else {
@@ -953,7 +959,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['status'] = status.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return ViewerStatus.parseJson(response.body);
       } else {
@@ -973,7 +979,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return DiscussWorkMessage.parseJson(response.body);
       } else {
@@ -993,7 +999,7 @@ class FetchService {
       body['from_id'] = fromId;
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return Comment.parseJson(response.body);
       } else {
@@ -1013,7 +1019,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return WorkProjectMessage.parseJson(response.body);
       } else {
@@ -1033,7 +1039,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return SignatureMessage.parseJson(response.body);
       } else {
@@ -1053,7 +1059,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['tick'] = maxTick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return DiscussWorkMessage.parseJson(response.body);
       } else {
@@ -1074,7 +1080,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['tick'] = maxTick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return WorkProjectMessage.parseJson(response.body);
       } else {
@@ -1096,7 +1102,7 @@ class FetchService {
       body["kind"] = kind;
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         results.add(response.body.replaceAll('"', ''));
       }
@@ -1114,7 +1120,7 @@ class FetchService {
       body["noi_dung"] = noiDung;
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       }
@@ -1134,7 +1140,7 @@ class FetchService {
       body["noidung"] = noiDung;
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       }
@@ -1154,7 +1160,7 @@ class FetchService {
       body["noidung"] = noiDung;
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       }
@@ -1174,7 +1180,7 @@ class FetchService {
       body["noidung"] = noiDung;
       body["user_id"] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       }
@@ -1192,7 +1198,7 @@ class FetchService {
       body.clear();
       body["data"] = ObjectHelper.toBase64(jsonText);
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       } else {
@@ -1211,7 +1217,7 @@ class FetchService {
       body.clear();
       body["data"] = ObjectHelper.toBase64(jsonText);
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       } else {
@@ -1230,7 +1236,7 @@ class FetchService {
       body.clear();
       body["data"] = ObjectHelper.toBase64(jsonText);
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return response.body.replaceAll('"', '');
       } else {
@@ -1248,7 +1254,7 @@ class FetchService {
       body['work_id'] = id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return WorkProject.fromJsonDetail(json.decode(response.body));
       } else {
@@ -1265,7 +1271,7 @@ class FetchService {
       body.clear();
       body['msvb'] = id;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         var result = json.decode(response.body);
         if (result.IsFound)
@@ -1287,7 +1293,7 @@ class FetchService {
       body['announcement_id'] = AppCache.currentAnnouncement.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentAnnouncement =
             Announcement.fromJsonDetail(json.decode(response.body));
@@ -1307,7 +1313,7 @@ class FetchService {
       body['trinhky_id'] = AppCache.currentSignature.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentSignature =
             Signature.fromJsonDetail(json.decode(response.body));
@@ -1327,7 +1333,7 @@ class FetchService {
       body['report_id'] = AppCache.currentReportDaily.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentReportDaily =
             ReportDaily.fromJsonDetail(json.decode(response.body));
@@ -1346,7 +1352,7 @@ class FetchService {
       body.clear();
       body['trinhky_id'] = AppCache.currentSignature.id;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentSignature.viewerStatus =
             ViewerStatus.parseJson(response.body);
@@ -1365,7 +1371,7 @@ class FetchService {
       body.clear();
       body['announcement_id'] = AppCache.currentAnnouncement.id;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentAnnouncement.viewerStatus =
             ViewerStatus.parseJson(response.body);
@@ -1384,7 +1390,7 @@ class FetchService {
       body.clear();
       body['muc_bao_cao_id'] = childrenId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         AppCache.currentReportDaily.viewerStatus =
             ViewerStatus.parseJson(response.body);
@@ -1406,7 +1412,7 @@ class FetchService {
       body['text'] = textSearch;
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return Signature.parseJson(response.body);
       } else {
@@ -1424,7 +1430,7 @@ class FetchService {
       body.clear();
       body['trinhky_id'] = signatureId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return [index, int.parse(response.body)];
       } else {
@@ -1442,7 +1448,7 @@ class FetchService {
       body['trinhky_id'] = AppCache.currentSignature.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1459,7 +1465,7 @@ class FetchService {
       body['text'] = textSearch;
       body['tick'] = tick.toString();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return Library.parseJson(response.body);
       } else {
@@ -1477,7 +1483,7 @@ class FetchService {
       body['thuvien_id'] = id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return Library.fromJsonDetail(json.decode(response.body));
       } else {
@@ -1493,7 +1499,7 @@ class FetchService {
     try {
       body.clear();
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return IdText.parseJson(response.body);
       } else {
@@ -1511,7 +1517,7 @@ class FetchService {
       body['discuss_work_id'] = id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return DiscussWork.fromJsonDetail(json.decode(response.body));
       } else {
@@ -1530,7 +1536,7 @@ class FetchService {
       body['discusswork_id'] = id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1545,7 +1551,7 @@ class FetchService {
       body['announcement_id'] = id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1560,7 +1566,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['main_people_id'] = mainPeopleId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1574,7 +1580,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1588,7 +1594,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1602,7 +1608,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1616,7 +1622,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1630,7 +1636,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1644,7 +1650,7 @@ class FetchService {
       body['work_id'] = AppCache.currentWorkProject.id;
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       return response.statusCode == 200;
     } on Exception {
       return false;
@@ -1673,7 +1679,7 @@ class FetchService {
       body.clear();
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return json.decode(response.body).cast<int>();
       }
@@ -1690,7 +1696,7 @@ class FetchService {
       body['user_id'] = AppCache.currentUser.userId;
       body['count_Work'] = counts.join('-');
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return json.decode(response.body).cast<int>();
       } else {
@@ -1707,7 +1713,7 @@ class FetchService {
       body.clear();
       body['user_id'] = AppCache.currentUser.userId;
       final response =
-          await http.post(url, body: body).timeout(durationTimeout);
+          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {
         return json.decode(response.body).cast<int>();
       } else {

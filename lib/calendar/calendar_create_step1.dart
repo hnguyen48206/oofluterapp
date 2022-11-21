@@ -104,8 +104,8 @@ class CalendarCreateStep1PageState extends State<CalendarCreateStep1Page> {
     Widget _timeStart = Padding(
         padding: EdgeInsets.all(0),
         child: DateTimeField(
+            autovalidateMode: AutovalidateMode.always,
             format: AppCache.datetimeFormat,
-            autovalidate: true,
             onShowPicker: (context, currentValue) async {
               final date = await showDatePicker(
                   context: context,
@@ -191,7 +191,7 @@ class CalendarCreateStep1PageState extends State<CalendarCreateStep1Page> {
             ]));
     Widget _timeEnd = DateTimeField(
         format: AppCache.datetimeFormat,
-        autovalidate: true,
+        autovalidateMode: AutovalidateMode.always,
         onShowPicker: (context, currentValue) async {
           final date = await showDatePicker(
               context: context,
@@ -397,21 +397,25 @@ class CalendarCreateStep1PageState extends State<CalendarCreateStep1Page> {
   }
 
   attachFiles() async {
-    FilePicker.getMultiFilePath().then((files) {
-      if (files == null || files.entries.length == 0) return;
-      setState(() {
-        for (var item in files.entries) {
-          FileAttachment file = FileAttachment.empty();
-          file.fileName = item.key;
-          file.mimeType = '';
-          file.url = '';
-          file.localPath = item.value;
-          file.isDownloading = false;
-          file.extension = file.fileName.split(".").last;
-          file.progressing = '';
-          AppCache.currentCalendar.files.add(file);
-        }
-      });
+    FilePicker.platform.pickFiles(allowMultiple: true).then((result) {
+      if (result != null) {
+        List<File> files = result.paths.map((path) => File(path)).toList();
+        setState(() {
+          for (var item in files) {
+            FileAttachment file = FileAttachment.empty();
+            file.fileName = item.path.split("/").last;
+            file.mimeType = '';
+            file.url = '';
+            file.localPath = item.path;
+            file.isDownloading = false;
+            file.extension = file.fileName.split(".").last;
+            file.progressing = '';
+            AppCache.currentCalendar.files.add(file);
+          }
+        });
+      } else {
+        return;
+      }
     });
   }
 

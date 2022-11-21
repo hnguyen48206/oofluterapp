@@ -31,7 +31,9 @@ class ImageUrlViewerPageState extends State<ImageUrlViewerPage> {
                         FileAttachment file = FileAttachment.empty();
                         file.fileName = widget.fileName;
                         if (widget.bytes == null) {
-                          http.readBytes(widget.urlImage).then((bytes) {
+                          http
+                              .readBytes(Uri.parse(widget.urlImage))
+                              .then((bytes) {
                             if (this.mounted) {
                               file.bytes = bytes;
                               AppHelpers.shareFile(file);

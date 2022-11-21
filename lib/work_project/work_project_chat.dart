@@ -25,7 +25,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart'
+    hide ImageSource;
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/dal/services.dart';
 import 'package:onlineoffice_flutter/globals.dart';
@@ -800,44 +801,48 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
   }
 
   attachFiles() async {
-    FilePicker.getMultiFilePath().then((file) {
-      if (file == null || file.entries.length == 0) return;
-      FetchService.workProjectSendMessage('', '').then((messageId) async {
-        if (messageId != null) {
-          this.filesAttachment[messageId] = <FileAttachment>[];
-          for (var item in file.entries) {
-            FileAttachment file = FileAttachment.empty();
-            file.fileName = item.key;
-            file.mimeType = '';
-            file.url = '';
-            file.localPath = item.value;
-            file.isDownloading = true;
-            file.extension = file.fileName.split(".").last;
-            file.progressing = 'Đang upload file ......';
-            this.filesAttachment[messageId].add(file);
-            this.updateFileUpload(messageId);
-            await FetchService.fileUpload(
-                    "CongViec",
-                    AppCache.currentWorkProject.id + '/' + messageId,
-                    item.key,
-                    File(item.value))
-                .then((bool value) {
-              setState(() {
-                file.url = FetchService.getDomainLink() +
-                    '/Upload/CongViec/' +
-                    AppCache.currentWorkProject.id +
-                    '/' +
-                    messageId +
-                    '/' +
-                    file.fileName;
-                file.isDownloading = false;
-                file.progressing = '';
-                this.updateFileUpload(messageId);
+    FilePicker.platform.pickFiles(allowMultiple: true).then((result) {
+      if (result != null) {
+        List<File> files = result.paths.map((path) => File(path)).toList();
+        FetchService.workProjectSendMessage('', '').then((messageId) async {
+          if (messageId != null) {
+            this.filesAttachment[messageId] = <FileAttachment>[];
+            for (var item in files) {
+              FileAttachment file = FileAttachment.empty();
+              file.fileName = item.path.split("/").last;
+              file.mimeType = '';
+              file.url = '';
+              file.localPath = item.path;
+              file.isDownloading = true;
+              file.extension = file.fileName.split(".").last;
+              file.progressing = 'Đang upload file ......';
+              this.filesAttachment[messageId].add(file);
+              this.updateFileUpload(messageId);
+              await FetchService.fileUpload(
+                      "CongViec",
+                      AppCache.currentWorkProject.id + '/' + messageId,
+                      file.fileName,
+                      File(file.localPath))
+                  .then((bool value) {
+                setState(() {
+                  file.url = FetchService.getDomainLink() +
+                      '/Upload/CongViec/' +
+                      AppCache.currentWorkProject.id +
+                      '/' +
+                      messageId +
+                      '/' +
+                      file.fileName;
+                  file.isDownloading = false;
+                  file.progressing = '';
+                  this.updateFileUpload(messageId);
+                });
               });
-            });
+            }
           }
-        }
-      });
+        });
+      } else {
+        return;
+      }
     });
   }
 

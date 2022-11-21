@@ -9,7 +9,8 @@ import 'package:path_provider/path_provider.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:multi_image_picker/multi_image_picker.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart'
+    hide ImageSource;
 import 'package:onlineoffice_flutter/report_daily/report_daily_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -350,41 +351,60 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
   }
 
   attachFiles() async {
-    FilePicker.getMultiFilePath().then((files) {
-      if (files == null || files.entries.length == 0) return;
-      FetchService.commentInsertMessage(
-              'BC', AppCache.currentReportDaily.id, '')
-          .then((messageId) async {
-        if (messageId != null) {
-          this.filesAttachment[messageId] = <FileAttachment>[];
-          for (var item in files.entries) {
+    FilePicker.platform.pickFiles(allowMultiple: true).then((result) {
+      if (result != null) {
+        List<File> files = result.paths.map((path) => File(path)).toList();
+
+        FetchService.commentInsertMessage(
+                'BC', AppCache.currentReportDaily.id, '')
+            .then((messageId) async {
+          if (messageId != null) {
+            this.filesAttachment[messageId] = <FileAttachment>[];
+            for (var item in files) {
+              FileAttachment file = FileAttachment.empty();
+              file.fileName = item.path.split("/").last;
+              file.mimeType = '';
+              file.url = '';
+              file.localPath = item.path;
+              file.isDownloading = true;
+              file.extension = file.fileName.split(".").last;
+              file.progressing = 'Đang upload file ......';
+              this.filesAttachment[messageId].add(file);
+
+              await FetchService.fileUpload("FileComment", 'BC/' + messageId,
+                      file.fileName, File(file.localPath))
+                  .then((bool value) {
+                setState(() {
+                  file.url = FetchService.getDomainLink() +
+                      '/Upload/FileComment/' +
+                      'BC/' +
+                      messageId +
+                      '/' +
+                      file.fileName;
+                  file.isDownloading = false;
+                  file.progressing = '';
+                });
+              });
+            }
+          }
+        });
+
+        setState(() {
+          for (var item in files) {
             FileAttachment file = FileAttachment.empty();
-            file.fileName = item.key;
+            file.fileName = item.path.split("/").last;
             file.mimeType = '';
             file.url = '';
-            file.localPath = item.value;
-            file.isDownloading = true;
+            file.localPath = item.path;
+            file.isDownloading = false;
             file.extension = file.fileName.split(".").last;
-            file.progressing = 'Đang upload file ......';
-            this.filesAttachment[messageId].add(file);
-
-            await FetchService.fileUpload("FileComment", 'BC/' + messageId,
-                    item.key, File(item.value))
-                .then((bool value) {
-              setState(() {
-                file.url = FetchService.getDomainLink() +
-                    '/Upload/FileComment/' +
-                    'BC/' +
-                    messageId +
-                    '/' +
-                    file.fileName;
-                file.isDownloading = false;
-                file.progressing = '';
-              });
-            });
+            file.progressing = '';
+            AppCache.currentDocument.files.add(file);
           }
-        }
-      });
+        });
+      } else {
+        return;
+      }
     });
   }
 
@@ -817,7 +837,7 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => ReportDailyPage()));
     }
-	return false;
+    return false;
   }
 
   @override

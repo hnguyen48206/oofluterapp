@@ -30,16 +30,17 @@ class NotificationPlugin {
     //    AndroidInitializationSettings('app_notf_icon');
     var initializationSettingsAndroid =
         AndroidInitializationSettings('mipmap/ic_launcher');
-    var initializationSettingsIOS = IOSInitializationSettings(
-      requestAlertPermission: true,
-      requestBadgePermission: true,
-      requestSoundPermission: false,
-      onDidReceiveLocalNotification: (id, title, body, payload) async {
-        ReceivedNotification receivedNotification = ReceivedNotification(
-            id: id, title: title, body: body, payload: payload);
-        didReceivedLocalNotificationSubject.add(receivedNotification);
-      },
-    );
+
+    var initializationSettingsIOS = DarwinInitializationSettings(
+        requestAlertPermission: false,
+        requestBadgePermission: false,
+        requestSoundPermission: false,
+        onDidReceiveLocalNotification:
+            (int id, String title, String body, String payload) async {
+          ReceivedNotification receivedNotification = ReceivedNotification(
+              id: id, title: title, body: body, payload: payload);
+          didReceivedLocalNotificationSubject.add(receivedNotification);
+        });
 
     initializationSettings = InitializationSettings(
         android: initializationSettingsAndroid,
@@ -65,21 +66,33 @@ class NotificationPlugin {
   }
 
   setOnNotificationClick(Function onNotificationClick) async {
-    await flutterLocalNotificationsPlugin.initialize(initializationSettings,
-        onSelectNotification: (String payload) async {
-      onNotificationClick(payload);
-    });
+    await flutterLocalNotificationsPlugin.initialize(
+      initializationSettings,
+      onDidReceiveNotificationResponse:
+          (NotificationResponse notificationResponse) {
+        String payload;
+        payload = notificationResponse.payload;
+        onNotificationClick(payload);
+      },
+      onDidReceiveBackgroundNotificationResponse:
+          (NotificationResponse notificationResponse) {
+        String payload;
+        payload = notificationResponse.payload;
+        onNotificationClick(payload);
+      },
+    );
   }
 
   Future<void> showNotification(String title, String body, String data) async {
     var androidChannelSpecifics = AndroidNotificationDetails(
-        'CHANNEL_ID', 'CHANNEL_NAME', "CHANNEL_DESCRIPTION",
+        'CHANNEL_ID', 'CHANNEL_NAME',
+        channelDescription: "CHANNEL_DESCRIPTION",
         importance: Importance.max,
         priority: Priority.high,
         playSound: true,
         styleInformation: DefaultStyleInformation(true, true),
         visibility: NotificationVisibility.public);
-    var iosChannelSpecifics = IOSNotificationDetails();
+    var iosChannelSpecifics = DarwinNotificationDetails();
     var platformChannelSpecifics = NotificationDetails(
         android: androidChannelSpecifics,
         iOS: iosChannelSpecifics,

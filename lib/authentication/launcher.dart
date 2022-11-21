@@ -13,6 +13,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_udid/flutter_udid.dart';
 import 'dart:io' show Platform;
+import 'package:firebase_core/firebase_core.dart';
 
 class LauncherPage extends StatefulWidget {
   LauncherPage();
@@ -23,57 +24,70 @@ class LauncherPage extends StatefulWidget {
   }
 }
 
+Future _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  print("Handling a background message: ${message.messageId}");
+  notificationPlugin.showNotification(message.notification?.title,
+      message.notification?.body, json.encode(message));
+}
+
 class LauncherPageState extends State<LauncherPage> {
-  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
 
-  static Future<void> myBackgroundMessageHandler(
-      Map<String, dynamic> message) async {
-    // if (message.containsKey('data')) {
-    //   // Handle data message
-    //   final dynamic data = message['data'];
-    // }
+  void registerNotification() async {
+    // 1. Initialize the Firebase app
+    await Firebase.initializeApp();
 
-    // if (message.containsKey('notification')) {
-    //   // Handle notification message
-    //   final dynamic notification = message['notification'];
-    // }
+    // 2. On iOS, this helps to take the user permissions
+    NotificationSettings settings = await _firebaseMessaging.requestPermission(
+      alert: true,
+      badge: true,
+      provisional: false,
+      sound: true,
+    );
 
-    // Or do other work.
+    if (settings.authorizationStatus == AuthorizationStatus.authorized) {
+      print('User granted permission');
+    } else {
+      print('User declined or has not accepted permission');
+    }
+    setTokenLogin();
+
+    //Set click action for local noti
+    notificationPlugin.setOnNotificationClick(onNotificationClick);
+
+    FirebaseMessaging.onMessage.listen((RemoteMessage message) {
+      // Parse the message received and send local notification
+      notificationPlugin.showNotification(message.notification?.title,
+          message.notification?.body, json.encode(message));
+    });
+    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   }
 
   @override
   initState() {
     super.initState();
-    setTokenLogin();
-    if (Platform.isIOS) {
-      this._firebaseMessaging.requestNotificationPermissions(
-          const IosNotificationSettings(
-              sound: true, badge: true, alert: true, provisional: true));
-    }
-    this._firebaseMessaging.configure(
-        onMessage: (Map<String, dynamic> message) async {
-          if (message['notification'] != null &&
-              (Platform.isAndroid
-                      ? message['data']['module']
-                      : message['module']) !=
-                  null) {
-            notificationPlugin.showNotification(
-                message['notification']['title'],
-                message['notification']['body'],
-                json.encode(message));
-          }
-        },
-        onBackgroundMessage: myBackgroundMessageHandler,
-        onResume: (Map<String, dynamic> message) async {
-          checkNotify(message);
-        },
-        onLaunch: (Map<String, dynamic> message) async {
-          checkNotify(message);
-        });
-    // notificationPlugin
-    //     .setListenerForLowerVersions(onNotificationInLowerVersions);
-    notificationPlugin.setOnNotificationClick(onNotificationClick);
+    registerNotification();
 
+    // this._firebaseMessaging.configure(
+    //     onMessage: (Map<String, dynamic> message) async {
+    //       if (message['notification'] != null &&
+    //           (Platform.isAndroid
+    //                   ? message['data']['module']
+    //                   : message['module']) !=
+    //               null) {
+    //         notificationPlugin.showNotification(
+    //             message['notification']['title'],
+    //             message['notification']['body'],
+    //             json.encode(message));
+    //       }
+    //     },
+    //     onBackgroundMessage: myBackgroundMessageHandler,
+    //     onResume: (Map<String, dynamic> message) async {
+    //       checkNotify(message);
+    //     },
+    //     onLaunch: (Map<String, dynamic> message) async {
+    //       checkNotify(message);
+    //     });
     AppHelpers.loadBadgeNumber();
   }
 

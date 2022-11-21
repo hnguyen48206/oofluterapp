@@ -7,16 +7,16 @@ import 'package:onlineoffice_flutter/dal/services.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/helpers/weblink_viewer.dart';
 import 'package:onlineoffice_flutter/models/models_ext.dart';
-import 'package:flutter_full_pdf_viewer/flutter_full_pdf_viewer.dart';
-import 'package:flutter_full_pdf_viewer/full_pdf_viewer_scaffold.dart';
-import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
+// import 'package:flutter_full_pdf_viewer/flutter_full_pdf_viewer.dart';
+// import 'package:flutter_full_pdf_viewer/full_pdf_viewer_scaffold.dart';
+// import 'package:flutter_plugin_pdf_viewer/flutter_plugin_pdf_viewer.dart';
 import 'package:onlineoffice_flutter/old_version.dart';
 import 'dart:io' show Platform;
 import 'package:need_resume/need_resume.dart';
 
 class PdfViewerPageState extends State<PdfViewerPage> {
   bool _isLoading = true;
-  PDFDocument document;
+  // PDFDocument document;
 
   @override
   void initState() {
@@ -25,7 +25,7 @@ class PdfViewerPageState extends State<PdfViewerPage> {
   }
 
   loadDocument() async {
-    document = await PDFDocument.fromFile(File(widget.file.localPath));
+    // document = await PDFDocument.fromFile(File(widget.file.localPath));
     try {
       setState(() => _isLoading = false);
     } catch (e) {}
@@ -53,19 +53,19 @@ class PdfViewerPageState extends State<PdfViewerPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (Platform.isIOS == true) {
-      return PDFViewerScaffold(
-          appBar: AppBar(title: Text(widget.file.fileName), actions: <Widget>[
-            IconButton(
-                icon: Icon(Icons.share),
-                onPressed: () {
-                  if (widget.file.fileName.toLowerCase().endsWith('.pdf') ==
-                      false) widget.file.fileName += '.pdf';
-                  AppHelpers.shareFile(widget.file);
-                })
-          ]),
-          path: widget.file.localPath);
-    }
+    // if (Platform.isIOS == true) {
+    //   return PDFViewerScaffold(
+    //       appBar: AppBar(title: Text(widget.file.fileName), actions: <Widget>[
+    //         IconButton(
+    //             icon: Icon(Icons.share),
+    //             onPressed: () {
+    //               if (widget.file.fileName.toLowerCase().endsWith('.pdf') ==
+    //                   false) widget.file.fileName += '.pdf';
+    //               AppHelpers.shareFile(widget.file);
+    //             })
+    //       ]),
+    //       path: widget.file.localPath);
+    // }
     if (widget.linkWebView.isEmpty) {
       return Scaffold(
           appBar: AppBar(title: Text(widget.file.fileName), actions: <Widget>[
@@ -79,7 +79,8 @@ class PdfViewerPageState extends State<PdfViewerPage> {
           ]),
           body: _isLoading
               ? Center(child: CircularProgressIndicator())
-              : PDFViewer(document: document, showPicker: document.count > 1));
+              : Text('thay tạm cho viewer'));
+      // : PDFViewer(document: document, showPicker: document.count > 1));
     } else {
       return WillPopScope(
           onWillPop: () => onBackClick(),
@@ -104,8 +105,8 @@ class PdfViewerPageState extends State<PdfViewerPage> {
                   ]),
               body: _isLoading
                   ? Center(child: CircularProgressIndicator())
-                  : PDFViewer(
-                      document: document, showPicker: document.count > 1)));
+                  : Text('thay tạm cho viewer')));
+      // : PDFViewer(document: document, showPicker: document.count > 1)));
     }
   }
 }

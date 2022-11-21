@@ -2,13 +2,9 @@
 //  Generated file. Do not edit.
 //
 
-#import "GeneratedPluginRegistrant.h"
+// clang-format off
 
-#if __has_include(<esys_flutter_share/EsysFlutterSharePlugin.h>)
-#import <esys_flutter_share/EsysFlutterSharePlugin.h>
-#else
-@import esys_flutter_share;
-#endif
+#import "GeneratedPluginRegistrant.h"
 
 #if __has_include(<file_picker/FilePickerPlugin.h>)
 #import <file_picker/FilePickerPlugin.h>
@@ -34,22 +30,10 @@
 @import flutter_app_badger;
 #endif
 
-#if __has_include(<flutter_full_pdf_viewer/FlutterFullPdfViewerPlugin.h>)
-#import <flutter_full_pdf_viewer/FlutterFullPdfViewerPlugin.h>
-#else
-@import flutter_full_pdf_viewer;
-#endif
-
 #if __has_include(<flutter_local_notifications/FlutterLocalNotificationsPlugin.h>)
 #import <flutter_local_notifications/FlutterLocalNotificationsPlugin.h>
 #else
 @import flutter_local_notifications;
-#endif
-
-#if __has_include(<flutter_plugin_pdf_viewer/FlutterPluginPdfViewerPlugin.h>)
-#import <flutter_plugin_pdf_viewer/FlutterPluginPdfViewerPlugin.h>
-#else
-@import flutter_plugin_pdf_viewer;
 #endif
 
 #if __has_include(<flutter_udid/FlutterUdidPlugin.h>)
@@ -133,14 +117,11 @@
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
-  [EsysFlutterSharePlugin registerWithRegistrar:[registry registrarForPlugin:@"EsysFlutterSharePlugin"]];
   [FilePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FilePickerPlugin"]];
   [FLTFirebaseCorePlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseCorePlugin"]];
   [FLTFirebaseMessagingPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseMessagingPlugin"]];
   [FlutterAppBadgerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterAppBadgerPlugin"]];
-  [FlutterFullPdfViewerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterFullPdfViewerPlugin"]];
   [FlutterLocalNotificationsPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterLocalNotificationsPlugin"]];
-  [FlutterPluginPdfViewerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterPluginPdfViewerPlugin"]];
   [FlutterUdidPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterUdidPlugin"]];
   [FlutterWebviewPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterWebviewPlugin"]];
   [FLTImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTImagePickerPlugin"]];

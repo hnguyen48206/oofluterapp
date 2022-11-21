@@ -170,7 +170,7 @@ class OldVersionPageState extends State<OldVersionPage> {
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () {
-          return new Future(() => flutterWebviewPlugin.goBack());
+          return flutterWebviewPlugin.goBack();
         },
         child: WebviewScaffold(
             withJavascript: true,

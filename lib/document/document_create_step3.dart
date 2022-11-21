@@ -23,8 +23,8 @@ class DocumentCreateStep3PageState extends State<DocumentCreateStep3Page> {
   ]));
 
   void onNextClick() {
-     Navigator.push(this.context,
-         MaterialPageRoute(builder: (context) => DocumentCreateStep4Page()));
+    Navigator.push(this.context,
+        MaterialPageRoute(builder: (context) => DocumentCreateStep4Page()));
   }
 
   attachImageSource(ImageSource imageSource) async {
@@ -45,21 +45,25 @@ class DocumentCreateStep3PageState extends State<DocumentCreateStep3Page> {
   }
 
   attachFiles() async {
-    FilePicker.getMultiFilePath().then((files) {
-      if (files == null || files.entries.length == 0) return;
-      setState(() {
-        for (var item in files.entries) {
-          FileAttachment file = FileAttachment.empty();
-          file.fileName = item.key;
-          file.mimeType = '';
-          file.url = '';
-          file.localPath = item.value;
-          file.isDownloading = false;
-          file.extension = file.fileName.split(".").last;
-          file.progressing = '';
-          AppCache.currentDocument.files.add(file);
-        }
-      });
+    FilePicker.platform.pickFiles(allowMultiple: true).then((result) {
+      if (result != null) {
+        List<File> files = result.paths.map((path) => File(path)).toList();
+        setState(() {
+          for (var item in files) {
+            FileAttachment file = FileAttachment.empty();
+            file.fileName = item.path.split("/").last;
+            file.mimeType = '';
+            file.url = '';
+            file.localPath = item.path;
+            file.isDownloading = false;
+            file.extension = file.fileName.split(".").last;
+            file.progressing = '';
+            AppCache.currentDocument.files.add(file);
+          }
+        });
+      } else {
+        return;
+      }
     });
   }
 

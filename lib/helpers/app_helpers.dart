@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'dart:async';
 import 'package:dio/dio.dart';
-import 'package:esys_flutter_share/esys_flutter_share.dart';
+// import 'package:esys_flutter_share/esys_flutter_share.dart';
+import 'package:esys_flutter_share_plus/esys_flutter_share_plus.dart';
 import 'package:mime_type/mime_type.dart';
 import 'package:onlineoffice_flutter/announcement/announcement_detail.dart';
 import 'package:onlineoffice_flutter/calendar/calendar_detail.dart';

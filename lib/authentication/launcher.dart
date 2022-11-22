@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
 import 'package:onlineoffice_flutter/authentication/login.dart';
 import 'package:onlineoffice_flutter/dal/services.dart';
 import 'package:onlineoffice_flutter/globals.dart';
@@ -13,7 +12,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_udid/flutter_udid.dart';
 import 'dart:io' show Platform;
-import 'package:firebase_core/firebase_core.dart';
+
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+
+import 'package:rxdart/subjects.dart';
+
+NotificationPlugin notificationPlugin = new NotificationPlugin();
 
 class LauncherPage extends StatefulWidget {
   LauncherPage();
@@ -35,7 +39,6 @@ class LauncherPageState extends State<LauncherPage> {
 
   void registerNotification() async {
     // 1. Initialize the Firebase app
-    await Firebase.initializeApp();
 
     // 2. On iOS, this helps to take the user permissions
     NotificationSettings settings = await _firebaseMessaging.requestPermission(
@@ -57,8 +60,12 @@ class LauncherPageState extends State<LauncherPage> {
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       // Parse the message received and send local notification
-      notificationPlugin.showNotification(message.notification?.title,
-          message.notification?.body, json.encode(message));
+      print('Nhận Firebase');
+
+      print(message.notification.title);
+
+      notificationPlugin.showNotification(message.notification.title,
+          message.notification.body, json.encode(message));
     });
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   }
@@ -68,26 +75,6 @@ class LauncherPageState extends State<LauncherPage> {
     super.initState();
     registerNotification();
 
-    // this._firebaseMessaging.configure(
-    //     onMessage: (Map<String, dynamic> message) async {
-    //       if (message['notification'] != null &&
-    //           (Platform.isAndroid
-    //                   ? message['data']['module']
-    //                   : message['module']) !=
-    //               null) {
-    //         notificationPlugin.showNotification(
-    //             message['notification']['title'],
-    //             message['notification']['body'],
-    //             json.encode(message));
-    //       }
-    //     },
-    //     onBackgroundMessage: myBackgroundMessageHandler,
-    //     onResume: (Map<String, dynamic> message) async {
-    //       checkNotify(message);
-    //     },
-    //     onLaunch: (Map<String, dynamic> message) async {
-    //       checkNotify(message);
-    //     });
     AppHelpers.loadBadgeNumber();
   }
 
@@ -277,4 +264,167 @@ class LauncherPageState extends State<LauncherPage> {
       });
     });
   }
+}
+
+
+
+
+
+void notificationTapBackground(NotificationResponse notificationResponse) {
+  // ignore: avoid_print
+  print('notification(${notificationResponse.id}) action tapped: '
+      '${notificationResponse.actionId} with'
+      ' payload: ${notificationResponse.payload}');
+  if (notificationResponse.input?.isNotEmpty ?? false) {
+    // ignore: avoid_print
+    print(
+        'notification action tapped with input: ${notificationResponse.input}');
+  }
+}
+
+class NotificationPlugin {
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+  final BehaviorSubject<ReceivedNotification>
+      didReceivedLocalNotificationSubject =
+      BehaviorSubject<ReceivedNotification>();
+  var initializationSettings;
+
+  NotificationPlugin() {
+    init();
+  }
+
+  init() async {
+    flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+    if (Platform.isIOS) {
+      _requestIOSPermission();
+    }
+    initializePlatformSpecifics();
+  }
+
+  initializePlatformSpecifics() async {
+    //var initializationSettingsAndroid =
+    //    AndroidInitializationSettings('app_notf_icon');
+    var initializationSettingsAndroid =
+        AndroidInitializationSettings('mipmap/ic_launcher');
+
+    var initializationSettingsIOS = DarwinInitializationSettings(
+        requestAlertPermission: false,
+        requestBadgePermission: false,
+        requestSoundPermission: false,
+        onDidReceiveLocalNotification:
+            (int id, String title, String body, String payload) async {
+          ReceivedNotification receivedNotification = ReceivedNotification(
+              id: id, title: title, body: body, payload: payload);
+          didReceivedLocalNotificationSubject.add(receivedNotification);
+        });
+
+    initializationSettings = InitializationSettings(
+        android: initializationSettingsAndroid,
+        iOS: initializationSettingsIOS,
+        macOS: null);
+  }
+
+  _requestIOSPermission() {
+    flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<
+            IOSFlutterLocalNotificationsPlugin>()
+        .requestPermissions(
+          alert: false,
+          badge: true,
+          sound: true,
+        );
+  }
+
+  setListenerForLowerVersions(Function onNotificationInLowerVersions) {
+    didReceivedLocalNotificationSubject.listen((receivedNotification) {
+      onNotificationInLowerVersions(receivedNotification);
+    });
+  }
+
+  setOnNotificationClick(Function onNotificationClick) async {
+    await flutterLocalNotificationsPlugin.initialize(
+      initializationSettings,
+      onDidReceiveNotificationResponse:
+          (NotificationResponse notificationResponse) {
+        String payload;
+        payload = notificationResponse.payload;
+        onNotificationClick(payload);
+      },
+      onDidReceiveBackgroundNotificationResponse: notificationTapBackground,
+    );
+  }
+
+  Future<void> showNotification(String title, String body, String data) async {
+    var androidChannelSpecifics = AndroidNotificationDetails(
+        'CHANNEL_ID', 'CHANNEL_NAME',
+        channelDescription: "CHANNEL_DESCRIPTION",
+        importance: Importance.max,
+        priority: Priority.high,
+        playSound: true,
+        styleInformation: DefaultStyleInformation(true, true),
+        visibility: NotificationVisibility.public);
+    var iosChannelSpecifics = DarwinNotificationDetails();
+    var platformChannelSpecifics = NotificationDetails(
+        android: androidChannelSpecifics,
+        iOS: iosChannelSpecifics,
+        macOS: null);
+    await flutterLocalNotificationsPlugin.show(
+        0,
+        title,
+        body, //null
+        platformChannelSpecifics,
+        payload: data);
+  }
+
+  // Future<void> showDailyAtTime() async {
+  //   var time = Time(21, 3, 0);
+  //   var androidChannelSpecifics = AndroidNotificationDetails(
+  //     'CHANNEL_ID 4',
+  //     'CHANNEL_NAME 4',
+  //     "CHANNEL_DESCRIPTION 4",
+  //     importance: Importance.Max,
+  //     priority: Priority.High,
+  //   );
+  //   var iosChannelSpecifics = IOSNotificationDetails();
+  //   var platformChannelSpecifics =
+  //       NotificationDetails(androidChannelSpecifics, iosChannelSpecifics);
+  //   await flutterLocalNotificationsPlugin.showDailyAtTime(
+  //     0,
+  //     'Test Title at ${time.hour}:${time.minute}.${time.second}',
+  //     'Test Body', //null
+  //     time,
+  //     platformChannelSpecifics,
+  //     payload: 'Test Payload',
+  //   );
+  // }
+
+  // Future<int> getPendingNotificationCount() async {
+  //   List<PendingNotificationRequest> p =
+  //       await flutterLocalNotificationsPlugin.pendingNotificationRequests();
+  //   return p.length;
+  // }
+
+  // Future<void> cancelNotification() async {
+  //   await flutterLocalNotificationsPlugin.cancel(0);
+  // }
+
+  // Future<void> cancelAllNotification() async {
+  //   await flutterLocalNotificationsPlugin.cancelAll();
+  // }
+}
+
+// NotificationPlugin notificationPlugin = NotificationPlugin._();
+
+class ReceivedNotification {
+  final int id;
+  final String title;
+  final String body;
+  final String payload;
+
+  ReceivedNotification({
+    @required this.id,
+    @required this.title,
+    @required this.body,
+    @required this.payload,
+  });
 }

@@ -1,0 +1,1 @@
+C:\FlutterSDK\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_udid-2.0.1\android\src\main\kotlin\de\gigadroid\flutter_udid\FlutterUdidPlugin.kt

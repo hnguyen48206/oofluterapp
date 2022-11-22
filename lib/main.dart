@@ -3,18 +3,21 @@ import 'package:onlineoffice_flutter/authentication/auth_service.dart';
 import 'package:onlineoffice_flutter/authentication/launcher.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/home.dart';
-import 'package:onlineoffice_flutter/notification_plugin.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 AuthService appAuth = new AuthService();
-NotificationPlugin notificationPlugin = new NotificationPlugin();
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
+
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AppHelpers.getBadgeNumberRepeater();
-
     return GestureDetector(
         onTapDown: (detail) {
           AppHelpers.loadBadgeNumber();

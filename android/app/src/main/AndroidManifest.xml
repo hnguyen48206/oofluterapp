@@ -55,7 +55,6 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <application
-        android:name=".Application"
         android:label="Online Office"
         android:icon="@mipmap/ic_launcher"
 		android:requestLegacyExternalStorage="true"
@@ -76,9 +75,7 @@
                  until Flutter renders its first frame. It can be removed if
                  there is no splash screen (such as the default splash screen
                  defined in @style/LaunchTheme). -->
-            <meta-data
-                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-                android:value="true" />
+      
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -87,6 +84,9 @@
 				<action android:name="FLUTTER_NOTIFICATION_CLICK" />
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
+
+      
+
         </activity>
         <activity android:name="com.flutter_webview_plugin.WebviewActivity"
                   android:parentActivityName=".MainActivity"/>
@@ -111,4 +111,7 @@
             android:exported="false"
             android:stopWithTask="false"/>
     </application>
+    <meta-data
+    android:name="flutterEmbedding"
+    android:value="2" />
 </manifest>

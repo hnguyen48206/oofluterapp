@@ -57,15 +57,34 @@ class LauncherPageState extends State<LauncherPage> {
 
     //Set click action for local noti
     notificationPlugin.setOnNotificationClick(onNotificationClick);
-
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       // Parse the message received and send local notification
       print('Nhận Firebase');
+      if (message.notification != null) {
+        print(message.notification.title);
+        var androidChannelSpecifics = AndroidNotificationDetails(
+            'CHANNEL_ID', 'CHANNEL_NAME',
+            channelDescription: "CHANNEL_DESCRIPTION",
+            importance: Importance.max,
+            priority: Priority.high,
+            playSound: true,
+            styleInformation: DefaultStyleInformation(true, true),
+            visibility: NotificationVisibility.public);
+        var iosChannelSpecifics = DarwinNotificationDetails();
+        var platformChannelSpecifics = NotificationDetails(
+            android: androidChannelSpecifics,
+            iOS: iosChannelSpecifics,
+            macOS: null);
+        notificationPlugin.flutterLocalNotificationsPlugin.show(
+            0,
+            message.notification.title,
+            message.notification.body, //null
+            platformChannelSpecifics,
+            payload: json.encode(message.notification));
+      }
 
-      print(message.notification.title);
-
-      notificationPlugin.showNotification(message.notification.title,
-          message.notification.body, json.encode(message));
+      // notificationPlugin.showNotification(message.notification.title,
+      //     message.notification.body, json.encode(message));
     });
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   }
@@ -265,10 +284,6 @@ class LauncherPageState extends State<LauncherPage> {
     });
   }
 }
-
-
-
-
 
 void notificationTapBackground(NotificationResponse notificationResponse) {
   // ignore: avoid_print

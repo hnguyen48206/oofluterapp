@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onlineoffice_flutter/authentication/auth_service.dart';
 import 'package:onlineoffice_flutter/authentication/launcher.dart';
+import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/home.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -12,7 +13,6 @@ void main() async {
   await Firebase.initializeApp();
   runApp(MyApp());
 }
-
 
 class MyApp extends StatelessWidget {
   @override
@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
           AppHelpers.loadBadgeNumber();
         },
         child: MaterialApp(
+            navigatorKey: AppCache.navigatorKey,
             debugShowCheckedModeBanner: false,
             title: "Online Office",
             onGenerateRoute: (settings) {

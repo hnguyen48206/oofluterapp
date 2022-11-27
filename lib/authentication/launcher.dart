@@ -28,13 +28,14 @@ class LauncherPage extends StatefulWidget {
   }
 }
 
-Future _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  print("Handling a background message: ${message.messageId}");
-  notificationPlugin.showNotification(message.notification?.title,
-      message.notification?.body, json.encode(message));
-}
-
 class LauncherPageState extends State<LauncherPage> {
+  static Future _firebaseMessagingBackgroundHandler(
+      RemoteMessage message) async {
+    print("Handling a background message: ${message.messageId}");
+    notificationPlugin.showNotification(message.notification?.title,
+        message.notification?.body, json.encode(message));
+  }
+
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
 
   void registerNotification() async {
@@ -60,31 +61,15 @@ class LauncherPageState extends State<LauncherPage> {
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       // Parse the message received and send local notification
       print('Nhận Firebase');
-      if (message.notification != null) {
-        print(message.notification.title);
-        var androidChannelSpecifics = AndroidNotificationDetails(
-            'CHANNEL_ID', 'CHANNEL_NAME',
-            channelDescription: "CHANNEL_DESCRIPTION",
-            importance: Importance.max,
-            priority: Priority.high,
-            playSound: true,
-            styleInformation: DefaultStyleInformation(true, true),
-            visibility: NotificationVisibility.public);
-        var iosChannelSpecifics = DarwinNotificationDetails();
-        var platformChannelSpecifics = NotificationDetails(
-            android: androidChannelSpecifics,
-            iOS: iosChannelSpecifics,
-            macOS: null);
-        notificationPlugin.flutterLocalNotificationsPlugin.show(
-            0,
-            message.notification.title,
-            message.notification.body, //null
-            platformChannelSpecifics,
-            payload: json.encode(message.notification));
+      try {
+        if (message.notification != null) {
+          // print(json.encode(message.data));
+          notificationPlugin.showNotification(message.notification.title,
+              message.notification.body, json.encode(message.data));
+        }
+      } catch (error) {
+        print(error);
       }
-
-      // notificationPlugin.showNotification(message.notification.title,
-      //     message.notification.body, json.encode(message));
     });
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
   }
@@ -361,9 +346,18 @@ class NotificationPlugin {
       initializationSettings,
       onDidReceiveNotificationResponse:
           (NotificationResponse notificationResponse) {
-        String payload;
-        payload = notificationResponse.payload;
-        onNotificationClick(payload);
+        dynamic payload;
+        payload = json.decode(notificationResponse.payload);
+        if ((Platform.isAndroid
+                ? payload['data']['module']
+                : payload['module']) !=
+            null) {
+          AppCache.messageNotify = payload;
+          AppHelpers.openNextForm(AppCache.navigatorKey.currentContext);
+        } else {
+          AppCache.messageNotify = null;
+        }
+        ;
       },
       onDidReceiveBackgroundNotificationResponse: notificationTapBackground,
     );
@@ -390,45 +384,7 @@ class NotificationPlugin {
         platformChannelSpecifics,
         payload: data);
   }
-
-  // Future<void> showDailyAtTime() async {
-  //   var time = Time(21, 3, 0);
-  //   var androidChannelSpecifics = AndroidNotificationDetails(
-  //     'CHANNEL_ID 4',
-  //     'CHANNEL_NAME 4',
-  //     "CHANNEL_DESCRIPTION 4",
-  //     importance: Importance.Max,
-  //     priority: Priority.High,
-  //   );
-  //   var iosChannelSpecifics = IOSNotificationDetails();
-  //   var platformChannelSpecifics =
-  //       NotificationDetails(androidChannelSpecifics, iosChannelSpecifics);
-  //   await flutterLocalNotificationsPlugin.showDailyAtTime(
-  //     0,
-  //     'Test Title at ${time.hour}:${time.minute}.${time.second}',
-  //     'Test Body', //null
-  //     time,
-  //     platformChannelSpecifics,
-  //     payload: 'Test Payload',
-  //   );
-  // }
-
-  // Future<int> getPendingNotificationCount() async {
-  //   List<PendingNotificationRequest> p =
-  //       await flutterLocalNotificationsPlugin.pendingNotificationRequests();
-  //   return p.length;
-  // }
-
-  // Future<void> cancelNotification() async {
-  //   await flutterLocalNotificationsPlugin.cancel(0);
-  // }
-
-  // Future<void> cancelAllNotification() async {
-  //   await flutterLocalNotificationsPlugin.cancelAll();
-  // }
 }
-
-// NotificationPlugin notificationPlugin = NotificationPlugin._();
 
 class ReceivedNotification {
   final int id;

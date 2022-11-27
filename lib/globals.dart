@@ -19,6 +19,8 @@ import 'package:onlineoffice_flutter/models/work_project_model.dart';
 import 'package:onlineoffice_flutter/models/report_daily_model.dart';
 
 class AppCache {
+  static final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
+
   static String webviewLastURL = '';
   static bool isCreatedFromDocs = false;
   static List<int> badges = <int>[0, 0, 0, 0, 0, 0, 0, 0, 0];

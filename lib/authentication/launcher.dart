@@ -31,9 +31,20 @@ class LauncherPage extends StatefulWidget {
 class LauncherPageState extends State<LauncherPage> {
   static Future _firebaseMessagingBackgroundHandler(
       RemoteMessage message) async {
-    print("Handling a background message: ${message.messageId}");
-    notificationPlugin.showNotification(message.notification?.title,
-        message.notification?.body, json.encode(message));
+    // print("Handling a background message: ${message.messageId}");
+    // notificationPlugin.showNotification(message.notification?.title,
+    //     message.notification?.body, json.encode(message));
+
+    print('Nhận Firebase');
+    try {
+      if (message.notification != null) {
+        // print(json.encode(message.data));
+        notificationPlugin.showNotification(message.notification.title,
+            message.notification.body, json.encode(message.data));
+      }
+    } catch (error) {
+      print(error);
+    }
   }
 
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
@@ -92,8 +103,7 @@ class LauncherPageState extends State<LauncherPage> {
   }
 
   Future<void> checkNotify(Map<String, dynamic> message) async {
-    if ((Platform.isAndroid ? message['data']['module'] : message['module']) !=
-        null) {
+    if (message['module'] != null) {
       AppCache.messageNotify = message;
       AppHelpers.openNextForm(context);
     } else {
@@ -272,14 +282,21 @@ class LauncherPageState extends State<LauncherPage> {
 
 void notificationTapBackground(NotificationResponse notificationResponse) {
   // ignore: avoid_print
-  print('notification(${notificationResponse.id}) action tapped: '
-      '${notificationResponse.actionId} with'
-      ' payload: ${notificationResponse.payload}');
-  if (notificationResponse.input?.isNotEmpty ?? false) {
-    // ignore: avoid_print
-    print(
-        'notification action tapped with input: ${notificationResponse.input}');
-  }
+  // print('notification(${notificationResponse.id}) action tapped: '
+  //     '${notificationResponse.actionId} with'
+  //     ' payload: ${notificationResponse.payload}');
+  // if (notificationResponse.input?.isNotEmpty ?? false) {
+  //   // ignore: avoid_print
+  //   print(
+  //       'notification action tapped with input: ${notificationResponse.input}');
+  // }
+  dynamic payload;
+  payload = json.decode(notificationResponse.payload);
+  if (payload['module'] != null) {
+    AppCache.messageNotify = payload;
+    AppHelpers.openNextForm(AppCache.navigatorKey.currentContext);
+  } else
+    AppCache.messageNotify = null;
 }
 
 class NotificationPlugin {
@@ -348,16 +365,11 @@ class NotificationPlugin {
           (NotificationResponse notificationResponse) {
         dynamic payload;
         payload = json.decode(notificationResponse.payload);
-        if ((Platform.isAndroid
-                ? payload['data']['module']
-                : payload['module']) !=
-            null) {
+        if (payload['module'] != null) {
           AppCache.messageNotify = payload;
           AppHelpers.openNextForm(AppCache.navigatorKey.currentContext);
-        } else {
+        } else
           AppCache.messageNotify = null;
-        }
-        ;
       },
       onDidReceiveBackgroundNotificationResponse: notificationTapBackground,
     );

@@ -97,7 +97,7 @@ class AnnouncementDetailPageState extends State<AnnouncementDetailPage> {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text("Không")),
+                  child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -117,7 +117,7 @@ class AnnouncementDetailPageState extends State<AnnouncementDetailPage> {
                       }
                     });
                   },
-                  child: Text("Có"))
+                  child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
             ],
           );
         });

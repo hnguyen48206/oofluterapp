@@ -1,6 +1,52 @@
 1. Dung luong file duoi 1MB => hien thi Byte hoac KB
 2. Test doi pass tren web, sau do mo app xem co tu logout ?
 3. Test Trinh Ky tren Android
-4. Them button 'Ket thuc trinh ky' trong signature_detail.dart
+4. Them button "Ket thuc trinh ky" trong signature_detail.dart
 
 309a au duong lan
+
+{
+      "getAllRights":"/api/Rights/GetAllRights/", 
+    "getAllRightsByUserld":"/api/Users/GetAllRightsByUserId/",
+    "getAllGroupsByUserld":"/api/Users/GetAllGroupsByUserId/", 
+    "deleteUser":"/api/Users/DeleteUser", 
+    "addNewUser":"/api/Users/AddNewUser/",
+    "removeOneSelectedGroupFromUser":"/api/Users/RemoveOneSelectedGroupFromUser",
+    "assignMultiRightsToUser":"/api/Users/AssignMultiRightsToUser" , 
+    "removeAllRightFromUser":"/api/Users/RemoveOneRightFromUser", 
+    "assignMultiGroupsToUser":"/api/Users/AssignOneGroupToUser",  
+​    "removeMultiSelectedGroupsFromUser":"/api/Users/RemoveMultiSelectedGroupsFromUser",
+    "getUserByUserName" : "/api/Users/GetUserByUserName/"
+    "GetAllTasksCategoryByUserId": "/api/Tasks/GetAllTasksCategoryByUserId",
+    "UpdateTaskTitle": "/api/Tasks/UpdateTaskTitle",
+    "AddCategoryToTask": "/api/Tasks/AddCategoryToTask",
+    "AssignNewParticipantToTask": "/api/Tasks/AssignNewParticipantToTask",
+    "AssignNewViewerToTask": "/api/Tasks/AssignNewViewerToTask",
+    "DelayTask": "/api/Tasks/DelayTask",
+    "AssignNewListParticipantToTask": "/api/Tasks/AssignNewListParticipantToTask",
+    "AssignNewListViewerToTask": "/api/Tasks/AssignNewListViewerToTask",
+    "FollowATask": "/api/Tasks/FollowATask",
+    "ChangeMajorAssignment": "/api/Tasks/ChangeMajorAssignment",
+    "RequestFinishATask": "/api/Tasks/RequestFinishATask",
+    "FinishATask": "/api/Tasks/FinishATask",
+    "AddNewTaskHistory": "/api/Tasks/AddNewTaskHistory",
+    "GetAllTasksProject": "/api/Tasks/GetAllTasksProject",
+    "getAllRights": "/api/Rights/GetAllRights",
+    "getAllRightsByUserld": "/api/Users/GetAllRightsByUserId/",
+    "UpdateTasksCategory": "/api/Tasks/UpdateTasksCategory",
+    "DeleteATasksCategory": "/api/Tasks/DeleteATasksCategory",
+    "CreateNewTasksCategory": "/api/Tasks/CreateNewTasksCategory",
+    "GetAllTasksByCategory": "/api/Tasks/GetAllTasksByCategory",
+    "RemoveListOfTasksFromCategory": "/api/Tasks/RemoveListOfTasksFromCategory",
+    "GetAllTasksNotInAnyCategory": "/api/Tasks/GetAllTasksNotInAnyCategory",
+    "AddTasksToCategory": "/api/Tasks/AddTasksToCategory",
+    "GetAllTasksByProjectId": "/api/Tasks/GetAllTasksByProjectId",
+    "UpdateTasksProject": "/api/Tasks/UpdateTasksProject",
+    "CreateATasksProject": "/api/Tasks/CreateATasksProject",
+    "DeleteTasksProject": "/api/Tasks/DeleteTasksProject",
+    "RemoveTasksFromProject": "api/Tasks/RemoveTasksFromProject",
+    "GetAllTasksNotInAnyProject": "/api/Tasks/GetAllTasksNotInAnyProject",
+    "AddTasksToProject": "/api/Tasks/AddTasksToProject",
+    "GetAllTasksSample: "/api/Tasks/GetAllTasksSample",
+    TasksSampleDetail: "/api/Tasks/TasksSampleDetail"
+}

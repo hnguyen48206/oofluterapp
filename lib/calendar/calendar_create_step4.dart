@@ -73,7 +73,7 @@ class CalendarCreateStep4PageState extends State<CalendarCreateStep4Page> {
                             context, IndexTabHome.CalendarWeek);
                         CalendarPage.globalKey.currentState.loadData();
                       },
-                      child: Text("OK", style: TextStyle(color: Colors.blue)))
+                      child: Text("OK", style: TextStyle(color: Colors.white)))
                 ],
               );
             });

@@ -12,6 +12,12 @@
 @import audio_session;
 #endif
 
+#if __has_include(<easy_pdf_viewer/EasyPdfViewerPlugin.h>)
+#import <easy_pdf_viewer/EasyPdfViewerPlugin.h>
+#else
+@import easy_pdf_viewer;
+#endif
+
 #if __has_include(<esys_flutter_share_plus/EsysFlutterSharePlugin.h>)
 #import <esys_flutter_share_plus/EsysFlutterSharePlugin.h>
 #else
@@ -136,6 +142,7 @@
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [AudioSessionPlugin registerWithRegistrar:[registry registrarForPlugin:@"AudioSessionPlugin"]];
+  [EasyPdfViewerPlugin registerWithRegistrar:[registry registrarForPlugin:@"EasyPdfViewerPlugin"]];
   [EsysFlutterSharePlugin registerWithRegistrar:[registry registrarForPlugin:@"EsysFlutterSharePlugin"]];
   [FilePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FilePickerPlugin"]];
   [FLTFirebaseCorePlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTFirebaseCorePlugin"]];

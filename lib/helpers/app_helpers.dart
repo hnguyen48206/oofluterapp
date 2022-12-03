@@ -67,13 +67,8 @@ class AppHelpers {
       } else {
         String module;
         String id;
-        if (Platform.isAndroid == true) {
-          module = AppCache.messageNotify['data']['module'];
-          id = AppCache.messageNotify['data']['id'];
-        } else {
-          module = AppCache.messageNotify['module'];
+         module = AppCache.messageNotify['module'];
           id = AppCache.messageNotify['id'];
-        }
         AppCache.messageNotify = null;
         Navigator.push(
             context,
@@ -88,13 +83,8 @@ class AppHelpers {
         if (resultOpenDetailFromNotify == false) {
           String module;
           String id;
-          if (Platform.isAndroid == true) {
-            module = AppCache.messageNotify['data']['module'];
-            id = AppCache.messageNotify['data']['id'];
-          } else {
-            module = AppCache.messageNotify['module'];
-            id = AppCache.messageNotify['id'];
-          }
+          module = AppCache.messageNotify['module'];
+          id = AppCache.messageNotify['id'];
           String linkWeb =
               FetchService.getLinkMobileLogin() + "&L=" + module + "&I=" + id;
           Navigator.push(
@@ -108,15 +98,11 @@ class AppHelpers {
   }
 
   static Future<bool> _openDetailFromNotify(BuildContext context) async {
-    String module = Platform.isAndroid
-        ? AppCache.messageNotify['data']['module']
-        : AppCache.messageNotify['module'];
+    String module = AppCache.messageNotify['module'];
     if (module == 'TraoDoi') module = 'TraoDoiCV';
     if (AppCache.currentUser.modulesActive.contains(module) == false)
       return false;
-    String id = Platform.isAndroid
-        ? AppCache.messageNotify['data']['id']
-        : AppCache.messageNotify['id'];
+    String id = AppCache.messageNotify['id'];
     if (module == 'BaoCao') {
       AppCache.messageNotify = null;
       AppCache.currentReportDaily = ReportDaily(id, '', '');
@@ -445,7 +431,7 @@ class AppHelpers {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text("Không")),
+                  child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -455,7 +441,7 @@ class AppHelpers {
                         MaterialPageRoute(
                             builder: (context) => AnnouncementPage()));
                   },
-                  child: Text("Có"))
+                  child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
             ],
           );
         });

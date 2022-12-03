@@ -83,7 +83,7 @@ class ReportDailyCreateStep1State extends State<ReportDailyCreatePage> {
                               MaterialPageRoute(
                                   builder: (context) => ReportDailyPage()));
                         },
-                        child: Text("OK", style: TextStyle(color: Colors.blue)))
+                        child: Text("OK", style: TextStyle(color: Colors.white)))
                   ],
                 );
               });
@@ -399,7 +399,7 @@ class ReportDailyCreateStep1State extends State<ReportDailyCreatePage> {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
-                                                      child: Text("Không")),
+                                                      child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
                                                   ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
@@ -411,7 +411,7 @@ class ReportDailyCreateStep1State extends State<ReportDailyCreatePage> {
                                                               .remove(item);
                                                         });
                                                       },
-                                                      child: Text("Có"))
+                                                      child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
                                                 ],
                                               );
                                             });

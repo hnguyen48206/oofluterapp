@@ -13,7 +13,8 @@ import 'package:onlineoffice_flutter/models/models_ext.dart';
 import 'package:onlineoffice_flutter/old_version.dart';
 import 'dart:io' show Platform;
 import 'package:need_resume/need_resume.dart';
-
+import 'package:flutter/material.dart';
+import 'package:easy_pdf_viewer/easy_pdf_viewer.dart';
 class PdfViewerPageState extends State<PdfViewerPage> {
   bool _isLoading = true;
   // PDFDocument document;

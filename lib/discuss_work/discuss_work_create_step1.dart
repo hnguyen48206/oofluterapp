@@ -101,7 +101,7 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                   },
-                                  child: Text("Không")),
+                                  child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
                               ElevatedButton(
                                   onPressed: () {
                                     Navigator.of(context).pop();
@@ -119,7 +119,7 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                                       }
                                     });
                                   },
-                                  child: Text("Có"))
+                                  child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
                             ],
                           );
                         });
@@ -408,7 +408,7 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
-                                                      child: Text("Không")),
+                                                      child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
                                                   ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
@@ -420,7 +420,7 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                                                               .remove(item);
                                                         });
                                                       },
-                                                      child: Text("Có"))
+                                                      child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
                                                 ],
                                               );
                                             });

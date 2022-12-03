@@ -1287,7 +1287,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text("Không", style: TextStyle(color: Colors.blue))),
+                    child: Text("Không", style: TextStyle(color: Colors.white))),
                 ElevatedButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -1312,7 +1312,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                                         },
                                         child: Text("Đóng",
                                             style:
-                                                TextStyle(color: Colors.blue)))
+                                                TextStyle(color: Colors.white)))
                                   ],
                                 );
                               });

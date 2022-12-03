@@ -27,6 +27,7 @@ MERGED from [:open_file] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\
 MERGED from [:multi_image_picker] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\multi_image_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:audio_session] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\audio_session\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:video_player_android] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\video_player_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:easy_pdf_viewer] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\easy_pdf_viewer\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e6031270423b205c8d8ed9f1c76ef359\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c6b0548eb22578dd421b14e5dd0283b0\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.biometric:biometric:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:17:1-29:12
@@ -512,6 +513,8 @@ MERGED from [:audio_session] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\bu
 MERGED from [:audio_session] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\audio_session\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:video_player_android] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\video_player_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:video_player_android] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\video_player_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:easy_pdf_viewer] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\easy_pdf_viewer\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:easy_pdf_viewer] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\easy_pdf_viewer\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e6031270423b205c8d8ed9f1c76ef359\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e6031270423b205c8d8ed9f1c76ef359\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c6b0548eb22578dd421b14e5dd0283b0\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41

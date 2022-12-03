@@ -123,7 +123,7 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
                   }
                 });
               },
-              child: Text('Theo Dõi Xử Lý'),
+              child: Text('Theo Dõi Xử Lý', style: TextStyle(color: Colors.white, fontSize: 14.0)),
               style: ElevatedButton.styleFrom(
                   shape: StadiumBorder(), primary: Colors.orangeAccent),
             ),
@@ -196,7 +196,7 @@ class DocumentDetailPageState extends State<DocumentDetailPage> {
                     MaterialPageRoute(
                         builder: (context) => WorkProjectCreateStep1Page()));
               },
-              child: Text('Chuyển Xử Lý'),
+              child: Text('Chuyển Xử Lý', style: TextStyle(color: Colors.white, fontSize: 14.0)),
               style: ElevatedButton.styleFrom(
                   shape: StadiumBorder(), primary: Colors.orangeAccent),
             ),

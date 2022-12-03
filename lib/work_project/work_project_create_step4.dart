@@ -83,7 +83,7 @@ class WorkProjectCreateStep4PageState
                         AppCache.tabIndexWorkList = 2;
                         WorkProjectPage.globalKey.currentState.loadData();
                       },
-                      child: Text("OK", style: TextStyle(color: Colors.blue)))
+                      child: Text("OK", style: TextStyle(color: Colors.white)))
                 ],
               );
             });

@@ -490,7 +490,7 @@ class CalendarCreateStep1PageState extends State<CalendarCreateStep1Page> {
                                                         Navigator.of(context)
                                                             .pop();
                                                       },
-                                                      child: Text("Không")),
+                                                      child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
                                                   ElevatedButton(
                                                       onPressed: () {
                                                         Navigator.of(context)
@@ -502,7 +502,7 @@ class CalendarCreateStep1PageState extends State<CalendarCreateStep1Page> {
                                                               .remove(item);
                                                         });
                                                       },
-                                                      child: Text("Có"))
+                                                      child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
                                                 ],
                                               );
                                             });

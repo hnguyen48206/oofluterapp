@@ -23,6 +23,11 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin audio_session, com.ryanheise.audio_session.AudioSessionPlugin", e);
     }
     try {
+      flutterEngine.getPlugins().add(new com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin easy_pdf_viewer, com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin", e);
+    }
+    try {
       flutterEngine.getPlugins().add(new de.esys.esysfluttershare.EsysFlutterSharePlugin());
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin esys_flutter_share_plus, de.esys.esysfluttershare.EsysFlutterSharePlugin", e);

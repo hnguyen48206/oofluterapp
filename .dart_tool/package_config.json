@@ -140,6 +140,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "easy_pdf_viewer",
+      "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/easy_pdf_viewer-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "esys_flutter_share_plus",
       "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/esys_flutter_share_plus-2.2.0",
       "packageUri": "lib/",
@@ -404,6 +410,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "infinite_listview",
+      "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/infinite_listview-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "intl",
       "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
       "packageUri": "lib/",
@@ -502,6 +514,12 @@
     {
       "name": "nested",
       "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "numberpicker",
+      "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/numberpicker-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -920,7 +938,7 @@
       "languageVersion": "2.8"
     }
   ],
-  "generated": "2022-11-23T11:43:12.155741Z",
+  "generated": "2022-12-03T09:48:16.126169Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }

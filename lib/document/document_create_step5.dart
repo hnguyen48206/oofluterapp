@@ -77,7 +77,7 @@ class DocumentCreateStep5PageState extends State<DocumentCreateStep5Page> {
                         //     MaterialPageRoute(
                         //         builder: (context) => WorkProjectChatPage()));
                       },
-                      child: Text("OK", style: TextStyle(color: Colors.blue)))
+                      child: Text("OK", style: TextStyle(color: Colors.white)))
                 ],
               );
             });

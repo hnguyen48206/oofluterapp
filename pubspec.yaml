@@ -51,7 +51,12 @@ dependencies:
   # recode with last version  
   image_picker: ^0.8.6
   multi_image_picker: ^4.8.01
-  flutter_webview_plugin: ^0.4.0
+  flutter_webview_plugin:
+    git:
+      url: https://github.com/hnguyen48206/flutter_webview_plugin.git
+      ref: master
+
+  # flutter_webview_plugin: ^0.4.0
   # iOS => ~/Dropbox/OnlineOffice_AppV2/Flutter_App/flutter_webview_plugin_Fix_Error_Show_Dialog_iOS.txt
   # Android => C:\Flutter\.pub-cache\hosted\pub.dartlang.org\flutter_webview_plugin-{{version}}\android\src\main\java\com\flutter_webview_plugin\WebviewManager.java => replace '\.fileprovider' to '\.fileProvider' 
   # esys_flutter_share: ^1.0.2

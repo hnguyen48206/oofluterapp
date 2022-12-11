@@ -1,4 +1,4 @@
-#Sat Dec 03 17:17:44 ICT 2022
+#Sun Dec 11 13:25:47 ICT 2022
 base.1=C\:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\desugar_lib_dex\\release\\classes1000.dex
 path.1=classes1000.dex
 base.0=C\:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex

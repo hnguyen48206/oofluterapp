@@ -297,7 +297,7 @@
     },
     {
       "name": "flutter_webview_plugin",
-      "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_webview_plugin-0.4.0",
+      "rootUri": "file:///C:/FlutterSDK/flutter/.pub-cache/git/flutter_webview_plugin-cd7943f72a3f20132d81af87a474d5fadff917b4/",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -938,7 +938,7 @@
       "languageVersion": "2.8"
     }
   ],
-  "generated": "2022-12-03T09:48:16.126169Z",
+  "generated": "2022-12-04T07:06:47.451828Z",
   "generator": "pub",
   "generatorVersion": "2.18.4"
 }

@@ -71,10 +71,10 @@ class WorkProjectCreateStep1PageState
 
   @override
   initState() {
-    if (AppCache.isCreatedFromDocs)
-      this._isEnableEditting = false;
-    else
-      this._isEnableEditting = true;
+    // if (AppCache.isCreatedFromDocs)
+    //   this._isEnableEditting = false;
+    // else
+    //   this._isEnableEditting = true;
     this._batDauController = TextEditingController();
     this._ketThucController = TextEditingController();
     this._chuDeController = TextEditingController();

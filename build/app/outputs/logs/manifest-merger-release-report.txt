@@ -27,6 +27,8 @@ MERGED from [:multi_image_picker] C:\Users\HoangN\Desktop\OnlineOffice\ooflutera
 MERGED from [:audio_session] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\audio_session\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:video_player_android] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\video_player_android\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:easy_pdf_viewer] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\easy_pdf_viewer\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-java:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e5a6e5441c830596a778a8bfc5b602f8\jetified-window-java-1.1.0-alpha04\AndroidManifest.xml:17:1-21:12
+MERGED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e6031270423b205c8d8ed9f1c76ef359\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c6b0548eb22578dd421b14e5dd0283b0\jetified-glide-4.11.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.biometric:biometric:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:17:1-29:12
@@ -70,7 +72,6 @@ MERGED from [com.google.android.exoplayer:exoplayer-dash:2.18.1] C:\Users\HoangN
 MERGED from [com.google.android.exoplayer:exoplayer-hls:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8c6f23bd843abc081a818715b3c8b56d\jetified-exoplayer-hls-2.18.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\62f3f282a25db0ecb6b3a95817807002\jetified-exoplayer-smoothstreaming-2.18.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f62787ac053fcce18c5f3593f06bfcc3\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\393145efb14019e76a83003c31253875\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\33234dca1c34fde82a5698ecb27d00b8\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:17:1-36:12
 MERGED from [androidx.media2:media2-common:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\40cb2273ba8e92c0c3ab3e6d3c0f0a68\jetified-media2-common-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -80,7 +81,6 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\HoangN
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\b41b27844191cc3143be92c7b635d4ed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9efc17acd4af6b9a5c347a4783b3a734\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\dd65ce3284f6ce94f7cd61812232b7b8\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fee791b1168eaf055ba63adac795a9f9\transition-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.4.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\51c262c21c2038b62b0cdd8e8588b521\media-1.4.1\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fec5c304b83895ed4f61061da521226\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -89,6 +89,7 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\HoangN\.grad
 MERGED from [androidx.core:core:1.8.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e2666b02ee80a9a95527f57908739565\core-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\0820b6dc504825dcdc8f93f546e52c4c\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9c6c1afa88b1b3fa8838aa4710f08998\localbroadcastmanager-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8bac7e55a96d3f8e4cec91fc0cfa70ef\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13d414556f56ce74b7a131a6ddd753af\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.exoplayer:exoplayer-datasource:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\bdea9e81419d368dc8fb86533425e2c4\jetified-exoplayer-datasource-2.18.1\AndroidManifest.xml:17:1-24:12
@@ -97,7 +98,6 @@ MERGED from [com.google.android.exoplayer:exoplayer-decoder:2.18.1] C:\Users\Hoa
 MERGED from [com.google.android.exoplayer:exoplayer-database:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\6d1137e4769afae4930b454e3ccb487b\jetified-exoplayer-database-2.18.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aa198a908a58c504b35b3d9933fa03f1\jetified-exoplayer-common-2.18.1\AndroidManifest.xml:17:1-26:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\92ae834f4ec03dcb675fed9acdac4ffc\jetified-savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\2f38905bfc278b7b388c21c2b1a629d1\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\1ac055591ac1ea2ab6159d1263094fc8\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
@@ -305,6 +305,8 @@ MERGED from [:flutter_webview_plugin] C:\Users\HoangN\Desktop\OnlineOffice\ooflu
 MERGED from [:flutter_webview_plugin] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\flutter_webview_plugin\intermediates\merged_manifest\release\AndroidManifest.xml:8:5-19:19
 MERGED from [:open_file] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-22:19
 MERGED from [:open_file] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-22:19
+MERGED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:22:5-29:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c6b0548eb22578dd421b14e5dd0283b0\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c6b0548eb22578dd421b14e5dd0283b0\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
 MERGED from [com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:11:5-32:19
@@ -349,14 +351,12 @@ MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-base:21.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\569b769294ff9b2f9b8b4c0953e231c7\jetified-play-services-measurement-base-21.2.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.8.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e2666b02ee80a9a95527f57908739565\core-1.8.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.8.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e2666b02ee80a9a95527f57908739565\core-1.8.0\AndroidManifest.xml:24:5-89
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:25:5-39:19
@@ -509,6 +509,10 @@ MERGED from [:video_player_android] C:\Users\HoangN\Desktop\OnlineOffice\ooflute
 MERGED from [:video_player_android] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\video_player_android\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:easy_pdf_viewer] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\easy_pdf_viewer\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:easy_pdf_viewer] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\easy_pdf_viewer\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-java:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e5a6e5441c830596a778a8bfc5b602f8\jetified-window-java-1.1.0-alpha04\AndroidManifest.xml:19:5-44
+MERGED from [androidx.window:window-java:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e5a6e5441c830596a778a8bfc5b602f8\jetified-window-java-1.1.0-alpha04\AndroidManifest.xml:19:5-44
+MERGED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e6031270423b205c8d8ed9f1c76ef359\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e6031270423b205c8d8ed9f1c76ef359\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c6b0548eb22578dd421b14e5dd0283b0\jetified-glide-4.11.0\AndroidManifest.xml:6:5-8:41
@@ -595,8 +599,6 @@ MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1] C:\U
 MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\62f3f282a25db0ecb6b3a95817807002\jetified-exoplayer-smoothstreaming-2.18.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f62787ac053fcce18c5f3593f06bfcc3\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f62787ac053fcce18c5f3593f06bfcc3\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\393145efb14019e76a83003c31253875\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\393145efb14019e76a83003c31253875\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\33234dca1c34fde82a5698ecb27d00b8\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\33234dca1c34fde82a5698ecb27d00b8\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:20:5-22:41
@@ -615,8 +617,6 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hoan
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9efc17acd4af6b9a5c347a4783b3a734\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\dd65ce3284f6ce94f7cd61812232b7b8\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\dd65ce3284f6ce94f7cd61812232b7b8\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fee791b1168eaf055ba63adac795a9f9\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fee791b1168eaf055ba63adac795a9f9\transition-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.4.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\51c262c21c2038b62b0cdd8e8588b521\media-1.4.1\AndroidManifest.xml:20:5-22:41
@@ -633,6 +633,8 @@ MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\HoangN\.gradle
 MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\0820b6dc504825dcdc8f93f546e52c4c\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9c6c1afa88b1b3fa8838aa4710f08998\localbroadcastmanager-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9c6c1afa88b1b3fa8838aa4710f08998\localbroadcastmanager-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8bac7e55a96d3f8e4cec91fc0cfa70ef\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8bac7e55a96d3f8e4cec91fc0cfa70ef\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13d414556f56ce74b7a131a6ddd753af\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -649,8 +651,6 @@ MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.1] C:\Users\Hoan
 MERGED from [com.google.android.exoplayer:exoplayer-common:2.18.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aa198a908a58c504b35b3d9933fa03f1\jetified-exoplayer-common-2.18.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\4347119ea547a6306926daca67c20df7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\fd20426a457a9db7113dc3b2c414c355\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\92ae834f4ec03dcb675fed9acdac4ffc\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\92ae834f4ec03dcb675fed9acdac4ffc\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\2f38905bfc278b7b388c21c2b1a629d1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
@@ -943,6 +943,18 @@ ADDED from [:open_file] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\o
 		ADDED from [:open_file] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-48
 	android:name
 		ADDED from [:open_file] C:\Users\HoangN\Desktop\OnlineOffice\oofluterapp\build\open_file\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-64
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:27:13-51
 uses-permission#android.permission.USE_FINGERPRINT
 ADDED from [androidx.biometric:biometric:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:5-74
 	android:name
@@ -1117,18 +1129,6 @@ action#androidx.media2.session.MediaLibraryService
 ADDED from [androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
 	android:name
 		ADDED from [androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
-uses-library#androidx.window.extensions
-ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
-	android:required
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
-	android:name
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
-uses-library#androidx.window.sidecar
-ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
-	android:required
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
-	android:name
-		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\13ba7c8d9f219a761a7cb70393ee8b74\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
 service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
 ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:36:9-38:40

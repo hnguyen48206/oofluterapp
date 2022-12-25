@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="vn.onlineoffice.www.oomessenger"
-    android:versionCode="134"
-    android:versionName="3.0.1.4" >
+    android:versionCode="136"
+    android:versionName="3.0.1.6" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -254,6 +254,14 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/filepaths" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+
         <provider
             android:name="com.sangcomz.fishbun.FishBunFileProvider"
             android:authorities="vn.onlineoffice.www.oomessenger.fishbunfileprovider"
@@ -327,13 +335,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-
-        <uses-library
-            android:name="androidx.window.extensions"
-            android:required="false" />
-        <uses-library
-            android:name="androidx.window.sidecar"
-            android:required="false" />
 
         <service
             android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"

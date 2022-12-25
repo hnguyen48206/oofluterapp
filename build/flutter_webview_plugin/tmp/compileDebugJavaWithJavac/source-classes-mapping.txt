@@ -1,3 +1,5 @@
+com/flutter_webview_plugin/BuildConfig.java
+ com.flutter_webview_plugin.BuildConfig
 com/flutter_webview_plugin/WebviewManager.java
  com.flutter_webview_plugin.WebviewManager
  com.flutter_webview_plugin.WebviewManager$1
@@ -10,8 +12,6 @@ com/flutter_webview_plugin/WebviewManager.java
 com/flutter_webview_plugin/ObservableWebView.java
  com.flutter_webview_plugin.ObservableWebView
  com.flutter_webview_plugin.ObservableWebView$OnScrollChangedCallback
-com/flutter_webview_plugin/BuildConfig.java
- com.flutter_webview_plugin.BuildConfig
 com/flutter_webview_plugin/BrowserClient.java
  com.flutter_webview_plugin.BrowserClient
 com/flutter_webview_plugin/JavaScriptChannel.java

@@ -5,30 +5,30 @@ library {
   maven_library {
     groupId: "org.jetbrains.kotlin"
     artifactId: "kotlin-stdlib-jdk7"
-    version: "1.6.10"
+    version: "1.6.21"
   }
   digests {
-    sha256: "*\355\315\306\266\2333\275\365\314#[\316\250\216|\366`\021F\273k\315\377\3331+\272\315{\342a"
+    sha256: "\361\260cM\273\224\027 8F0 \273-\324\\\242hI\370\316)\326%\254\260\361V\235\021\333\356"
   }
 }
 library {
   maven_library {
     groupId: "org.jetbrains.kotlin"
     artifactId: "kotlin-stdlib"
-    version: "1.7.10"
+    version: "1.7.20"
   }
   digests {
-    sha256: "\347q\376t%\n\224>\217cFq2\001\377\035\214\271\\:]\032\221\242+e\251\340Oj\211\001"
+    sha256: "wy\354\226\271\254\277\222\312\0028X\254\004T?\235,;\337\027\"B_\377B\362_\363\254\374\233"
   }
 }
 library {
   maven_library {
     groupId: "org.jetbrains.kotlin"
     artifactId: "kotlin-stdlib-common"
-    version: "1.7.10"
+    version: "1.7.20"
   }
   digests {
-    sha256: "\031\361\002\357\351b\237\216\253\3068S\255\025\3053\344|G\371\037\312\t(\\[\336\206\345\237\221\324"
+    sha256: "\340\351\031b\274\000\a3\213\365\261s\237b\222z\303-\024\272=\202\177\246\b\253NSQr\235]"
   }
 }
 library {
@@ -125,10 +125,10 @@ library {
   maven_library {
     groupId: "androidx.window"
     artifactId: "window-java"
-    version: "1.0.0-beta04"
+    version: "1.1.0-alpha04"
   }
   digests {
-    sha256: "\034&i\247_`\027\275E\344C6\037(\302\204(e+\230_e\361[\205\253_\347\222\247\270\026"
+    sha256: "\375O\272\213\321\236d\033\023\335\323\227uX\017@\200\350\277x\016\257\320\331\223&\216W7\017\344\273"
   }
 }
 library {
@@ -285,44 +285,44 @@ library {
   maven_library {
     groupId: "org.jetbrains.kotlinx"
     artifactId: "kotlinx-coroutines-android"
-    version: "1.6.1"
+    version: "1.6.4"
   }
   digests {
-    sha256: "\226\036\275\350\023\207y\242\231C\f\243%\250n(\304\220Rz\207\272Q\203b\372E\304L~~\225"
+    sha256: "?\334\016\355[\304\270>\351b\'tR\n-\262Tp7\016\254\321X\034\254\0367pO\t[\000"
   }
 }
 library {
   maven_library {
     groupId: "org.jetbrains.kotlinx"
     artifactId: "kotlinx-coroutines-core"
-    version: "1.6.1"
+    version: "1.6.4"
   }
 }
 library {
   maven_library {
     groupId: "org.jetbrains.kotlinx"
     artifactId: "kotlinx-coroutines-bom"
-    version: "1.6.1"
+    version: "1.6.4"
   }
 }
 library {
   maven_library {
     groupId: "org.jetbrains.kotlin"
     artifactId: "kotlin-stdlib-jdk8"
-    version: "1.6.0"
+    version: "1.6.21"
   }
   digests {
-    sha256: "\253\005G\304\225\2252\024\245\362\262\201P\001ON\002\0236x\325+w\327cu\352#^D=\275"
+    sha256: "\332\264T\211\264w6\325\237\316D\270\006v\361\224z\233k\312\261\017\326\016\207\212\203\275\202\246\225L"
   }
 }
 library {
   maven_library {
     groupId: "org.jetbrains.kotlinx"
     artifactId: "kotlinx-coroutines-core-jvm"
-    version: "1.6.1"
+    version: "1.6.4"
   }
   digests {
-    sha256: ":\223\377\320R\204FC\300\376\371P\256Ux\333G\314\313\351\347\027mh\0233\030.#+\260\361"
+    sha256: "\302L\213\262{\263 \304\2518qP\032~^\fa`v8\220{\031z\357gU\023\324\310 \276"
   }
 }
 library {
@@ -349,10 +349,10 @@ library {
   maven_library {
     groupId: "androidx.window"
     artifactId: "window"
-    version: "1.0.0-beta04"
+    version: "1.1.0-alpha04"
   }
   digests {
-    sha256: "\315\2257\241x\364\2457\241\247\337\320hJ\311\256\271|D\031\235\263|@\354\274\315J|]\340\025"
+    sha256: "\315\2263\023\315\213\005\3567\356Ld>\346%\210c@\0229\312\b\t\020\022^P\0347\2479Y"
   }
 }
 library {
@@ -1244,7 +1244,7 @@ library {
 }
 library {
   digests {
-    sha256: "Vx\301E\300Y\aV^6`\355w\213\366C\320\213\345?\221C:\223\360\271j\304\303\005\246\270"
+    sha256: "T\351H\230\037:\343j\336\353\b\307\353\243\030\212\307\243\004\252\242\231r\266\032\242\253\221Y>I\375"
   }
 }
 library_dependencies {
@@ -1400,8 +1400,8 @@ library_dependencies {
 library_dependencies {
   library_index: 30
   library_dep_index: 28
-  library_dep_index: 29
   library_dep_index: 32
+  library_dep_index: 29
 }
 library_dependencies {
   library_index: 31
@@ -1438,18 +1438,18 @@ library_dependencies {
 }
 library_dependencies {
   library_index: 12
+  library_dep_index: 11
+  library_dep_index: 35
   library_dep_index: 1
   library_dep_index: 29
-  library_dep_index: 35
-  library_dep_index: 11
 }
 library_dependencies {
   library_index: 35
-  library_dep_index: 1
-  library_dep_index: 28
   library_dep_index: 9
   library_dep_index: 17
   library_dep_index: 11
+  library_dep_index: 1
+  library_dep_index: 28
 }
 library_dependencies {
   library_index: 36
@@ -1948,11 +1948,13 @@ library_dependencies {
 module_dependencies {
   module_name: "base"
   dependency_index: 0
+  dependency_index: 35
+  dependency_index: 36
+  dependency_index: 9
+  dependency_index: 12
   dependency_index: 18
   dependency_index: 52
-  dependency_index: 36
   dependency_index: 120
-  dependency_index: 9
   dependency_index: 121
   dependency_index: 122
   dependency_index: 123

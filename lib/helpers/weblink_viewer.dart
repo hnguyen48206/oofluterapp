@@ -201,8 +201,17 @@ class WebLinkViewerPageState extends ResumableState<WebLinkViewerPage> {
 
   @override
   Widget build(BuildContext context) {
-    flutterWebviewPlugin.onUrlChanged.listen((String url) {
+      flutterWebviewPlugin.onUrlChanged.listen((String url) {
+      print(url);
       AppCache.webviewLastURL = url;
+      if (url.contains('MobileTrinhKy')) {
+        try {
+          flutterWebviewPlugin.evalJavascript(
+              "document.getElementsByTagName('canvas')[0].style.cssText='width:100%;height:auto'");
+        } catch (error) {
+          print(error);
+        }
+      }
     });
     final widgetList = [
       // Container(

@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-da\\values-da.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-da\\values-da.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-da\\values-da.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,127,189,253,322,399,473,573,664",
+                        "endColumns": "71,61,63,68,76,73,99,90,67",
+                        "endOffsets": "122,184,248,317,394,468,568,659,727"
+                    },
+                    "to": {
+                        "startLines": "50,51,52,53,54,55,56,57,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5262,5334,5396,5460,5529,5606,5680,5780,5871",
+                        "endColumns": "71,61,63,68,76,73,99,90,67",
+                        "endOffsets": "5329,5391,5455,5524,5601,5675,5775,5866,5934"
+                    }
+                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\7fb10b9c80ffef167c62f37eb27b4804\\appcompat-1.2.0\\res\\values-da\\values-da.xml",
                     "from": {
@@ -35,23 +52,6 @@
                         "startOffsets": "5157,7265,7369,7545,7669",
                         "endColumns": "104,103,95,123,129",
                         "endOffsets": "5257,7364,7460,7664,7794"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-da\\values-da.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,127,189,253,322,399,473,573,664",
-                        "endColumns": "71,61,63,68,76,73,99,90,67",
-                        "endOffsets": "122,184,248,317,394,468,568,659,727"
-                    },
-                    "to": {
-                        "startLines": "50,51,52,53,54,55,56,57,58",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5262,5334,5396,5460,5529,5606,5680,5780,5871",
-                        "endColumns": "71,61,63,68,76,73,99,90,67",
-                        "endOffsets": "5329,5391,5455,5524,5601,5675,5775,5866,5934"
                     }
                 },
                 {
@@ -89,7 +89,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-da\\values-da.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-da\\values-da.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

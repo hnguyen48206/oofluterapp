@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ka\\values-ka.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ka\\values-ka.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\7fb10b9c80ffef167c62f37eb27b4804\\appcompat-1.2.0\\res\\values-ka\\values-ka.xml",
@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-ka\\values-ka.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "42",
+                        "startColumns": "4",
+                        "startOffsets": "4426",
+                        "endColumns": "100",
+                        "endOffsets": "4522"
+                    }
+                },
+                {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\ebb866ddfc7f56e513b1a2db0ab37c96\\biometric-1.1.0\\res\\values-ka\\values-ka.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
@@ -35,29 +52,12 @@
                         "startOffsets": "2808,2920,3011,3132,3265,3404,3546,3679,3817,3921,4073,4223",
                         "endColumns": "111,90,120,132,138,141,132,137,103,151,149,120",
                         "endOffsets": "2915,3006,3127,3260,3399,3541,3674,3812,3916,4068,4218,4339"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-ka\\values-ka.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "42",
-                        "startColumns": "4",
-                        "startOffsets": "4426",
-                        "endColumns": "100",
-                        "endOffsets": "4522"
                     }
                 }
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\values-ka\\values-ka.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\values-ka\\values-ka.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\7fb10b9c80ffef167c62f37eb27b4804\\appcompat-1.2.0\\res\\values-ka\\values-ka.xml",
@@ -77,6 +77,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-ka\\values-ka.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "42",
+                        "startColumns": "4",
+                        "startOffsets": "4426",
+                        "endColumns": "100",
+                        "endOffsets": "4522"
+                    }
+                },
+                {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\ebb866ddfc7f56e513b1a2db0ab37c96\\biometric-1.1.0\\res\\values-ka\\values-ka.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
@@ -91,23 +108,6 @@
                         "startOffsets": "2808,2920,3011,3132,3265,3404,3546,3679,3817,3921,4073,4223",
                         "endColumns": "111,90,120,132,138,141,132,137,103,151,149,120",
                         "endOffsets": "2915,3006,3127,3260,3399,3541,3674,3812,3916,4068,4218,4339"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-ka\\values-ka.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "42",
-                        "startColumns": "4",
-                        "startOffsets": "4426",
-                        "endColumns": "100",
-                        "endOffsets": "4522"
                     }
                 }
             ]

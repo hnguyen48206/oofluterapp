@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "42",
+                        "startColumns": "4",
+                        "startOffsets": "4417",
+                        "endColumns": "100",
+                        "endOffsets": "4513"
+                    }
+                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\ebb866ddfc7f56e513b1a2db0ab37c96\\biometric-1.1.0\\res\\values-sq\\values-sq.xml",
                     "from": {
@@ -18,23 +35,6 @@
                         "startOffsets": "2801,2914,3007,3132,3271,3414,3548,3683,3827,3923,4066,4214",
                         "endColumns": "112,92,124,138,142,133,134,143,95,142,147,120",
                         "endOffsets": "2909,3002,3127,3266,3409,3543,3678,3822,3918,4061,4209,4330"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "42",
-                        "startColumns": "4",
-                        "startOffsets": "4417",
-                        "endColumns": "100",
-                        "endOffsets": "4513"
                     }
                 },
                 {
@@ -57,8 +57,25 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\values-sq\\values-sq.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "42",
+                        "startColumns": "4",
+                        "startOffsets": "4417",
+                        "endColumns": "100",
+                        "endOffsets": "4513"
+                    }
+                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\ebb866ddfc7f56e513b1a2db0ab37c96\\biometric-1.1.0\\res\\values-sq\\values-sq.xml",
                     "from": {
@@ -74,23 +91,6 @@
                         "startOffsets": "2801,2914,3007,3132,3271,3414,3548,3683,3827,3923,4066,4214",
                         "endColumns": "112,92,124,138,142,133,134,143,95,142,147,120",
                         "endOffsets": "2909,3002,3127,3266,3409,3543,3678,3822,3918,4061,4209,4330"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "42",
-                        "startColumns": "4",
-                        "startOffsets": "4417",
-                        "endColumns": "100",
-                        "endOffsets": "4513"
                     }
                 },
                 {

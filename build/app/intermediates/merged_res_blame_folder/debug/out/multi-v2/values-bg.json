@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\99f878fcfc536708b6f9aec6b88651dc\\jetified-play-services-basement-18.1.0\\res\\values-bg\\values.xml",
@@ -18,23 +18,6 @@
                         "startOffsets": "3904",
                         "endColumns": "137",
                         "endOffsets": "4037"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-bg\\values-bg.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,126,189,253,327,405,478,575,666",
-                        "endColumns": "70,62,63,73,77,72,96,90,75",
-                        "endOffsets": "121,184,248,322,400,473,570,661,737"
-                    },
-                    "to": {
-                        "startLines": "50,51,52,53,54,55,56,57,58",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5488,5559,5622,5686,5760,5838,5911,6008,6099",
-                        "endColumns": "70,62,63,73,77,72,96,90,75",
-                        "endOffsets": "5554,5617,5681,5755,5833,5906,6003,6094,6170"
                     }
                 },
                 {
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-bg\\values-bg.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-bg\\values-bg.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -86,6 +69,23 @@
                         "startOffsets": "5161,5275,6175,6297,6427,6560,6696,6818,6981,7082,7216,7353",
                         "endColumns": "113,93,121,129,132,135,121,162,100,133,136,130",
                         "endOffsets": "5270,5364,6292,6422,6555,6691,6813,6976,7077,7211,7348,7479"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-bg\\values-bg.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,126,189,253,327,405,478,575,666",
+                        "endColumns": "70,62,63,73,77,72,96,90,75",
+                        "endOffsets": "121,184,248,322,400,473,570,661,737"
+                    },
+                    "to": {
+                        "startLines": "50,51,52,53,54,55,56,57,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5488,5559,5622,5686,5760,5838,5911,6008,6099",
+                        "endColumns": "70,62,63,73,77,72,96,90,75",
+                        "endOffsets": "5554,5617,5681,5755,5833,5906,6003,6094,6170"
                     }
                 },
                 {

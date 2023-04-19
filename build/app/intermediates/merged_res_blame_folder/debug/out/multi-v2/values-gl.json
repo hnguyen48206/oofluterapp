@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-gl\\values-gl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "74",
+                        "startColumns": "4",
+                        "startOffsets": "8070",
+                        "endColumns": "100",
+                        "endOffsets": "8166"
+                    }
+                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\7fb10b9c80ffef167c62f37eb27b4804\\appcompat-1.2.0\\res\\values-gl\\values-gl.xml",
                     "from": {
@@ -72,40 +89,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-gl\\values-gl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "74",
-                        "startColumns": "4",
-                        "startOffsets": "8070",
-                        "endColumns": "100",
-                        "endOffsets": "8166"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-gl\\values-gl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,129,192,257,336,413,489,588,684",
-                        "endColumns": "73,62,64,78,76,75,98,95,68",
-                        "endOffsets": "124,187,252,331,408,484,583,679,748"
-                    },
-                    "to": {
-                        "startLines": "50,51,52,53,54,55,56,57,58",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5456,5530,5593,5658,5737,5814,5890,5989,6085",
-                        "endColumns": "73,62,64,78,76,75,98,95,68",
-                        "endOffsets": "5525,5588,5653,5732,5809,5885,5984,6080,6149"
-                    }
-                },
-                {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\99f878fcfc536708b6f9aec6b88651dc\\jetified-play-services-basement-18.1.0\\res\\values-gl\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -120,6 +103,23 @@
                         "startOffsets": "3878",
                         "endColumns": "133",
                         "endOffsets": "4007"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-gl\\values-gl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,129,192,257,336,413,489,588,684",
+                        "endColumns": "73,62,64,78,76,75,98,95,68",
+                        "endOffsets": "124,187,252,331,408,484,583,679,748"
+                    },
+                    "to": {
+                        "startLines": "50,51,52,53,54,55,56,57,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5456,5530,5593,5658,5737,5814,5890,5989,6085",
+                        "endColumns": "73,62,64,78,76,75,98,95,68",
+                        "endOffsets": "5525,5588,5653,5732,5809,5885,5984,6080,6149"
                     }
                 }
             ]

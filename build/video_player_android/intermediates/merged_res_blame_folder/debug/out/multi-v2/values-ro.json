@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\video_player_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\video_player_android\\intermediates\\res\\merged\\debug\\values-ro\\values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\6f83379224923f39c4b945682921b169\\core-1.7.0\\res\\values-ro\\values-ro.xml",
@@ -15,25 +15,25 @@
                     "to": {
                         "startLines": "11",
                         "startColumns": "4",
-                        "startOffsets": "752",
+                        "startOffsets": "750",
                         "endColumns": "100",
-                        "endOffsets": "848"
+                        "endOffsets": "846"
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,136,200,265,337,415,495,585,678",
-                        "endColumns": "80,63,64,71,77,79,89,92,73",
-                        "endOffsets": "131,195,260,332,410,490,580,673,747"
+                        "startOffsets": "55,136,198,263,335,413,493,583,676",
+                        "endColumns": "80,61,64,71,77,79,89,92,73",
+                        "endOffsets": "131,193,258,330,408,488,578,671,745"
                     }
                 }
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\video_player_android\\intermediates\\res\\merged\\debug\\values-ro\\values-ro.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\video_player_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\6f83379224923f39c4b945682921b169\\core-1.7.0\\res\\values-ro\\values-ro.xml",
@@ -47,19 +47,19 @@
                     "to": {
                         "startLines": "11",
                         "startColumns": "4",
-                        "startOffsets": "752",
+                        "startOffsets": "750",
                         "endColumns": "100",
-                        "endOffsets": "848"
+                        "endOffsets": "846"
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-ro\\values-ro.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-ro\\values-ro.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,136,200,265,337,415,495,585,678",
-                        "endColumns": "80,63,64,71,77,79,89,92,73",
-                        "endOffsets": "131,195,260,332,410,490,580,673,747"
+                        "startOffsets": "55,136,198,263,335,413,493,583,676",
+                        "endColumns": "80,61,64,71,77,79,89,92,73",
+                        "endOffsets": "131,193,258,330,408,488,578,671,745"
                     }
                 }
             ]

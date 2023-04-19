@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-lv\\values-lv.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,130,196,268,338,418,495,596,694",
-                        "endColumns": "74,65,71,69,79,76,100,97,78",
-                        "endOffsets": "125,191,263,333,413,490,591,689,768"
-                    },
-                    "to": {
-                        "startLines": "50,51,52,53,54,55,56,57,58",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5599,5674,5740,5812,5882,5962,6039,6140,6238",
-                        "endColumns": "74,65,71,69,79,76,100,97,78",
-                        "endOffsets": "5669,5735,5807,5877,5957,6034,6135,6233,6312"
-                    }
-                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\ebb866ddfc7f56e513b1a2db0ab37c96\\biometric-1.1.0\\res\\values-lv\\values-lv.xml",
                     "from": {
@@ -55,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-lv\\values-lv.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-lv\\values-lv.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,196,268,338,418,495,596,694",
+                        "endColumns": "74,65,71,69,79,76,100,97,78",
+                        "endOffsets": "125,191,263,333,413,490,591,689,768"
                     },
                     "to": {
-                        "startLines": "74",
-                        "startColumns": "4",
-                        "startOffsets": "8189",
-                        "endColumns": "100",
-                        "endOffsets": "8285"
+                        "startLines": "50,51,52,53,54,55,56,57,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5599,5674,5740,5812,5882,5962,6039,6140,6238",
+                        "endColumns": "74,65,71,69,79,76,100,97,78",
+                        "endOffsets": "5669,5735,5807,5877,5957,6034,6135,6233,6312"
                     }
                 },
                 {
@@ -120,6 +103,23 @@
                         "startOffsets": "5493,7644,7743,7924,8052",
                         "endColumns": "105,98,97,127,136",
                         "endOffsets": "5594,7738,7836,8047,8184"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "74",
+                        "startColumns": "4",
+                        "startOffsets": "8189",
+                        "endColumns": "100",
+                        "endOffsets": "8285"
                     }
                 }
             ]

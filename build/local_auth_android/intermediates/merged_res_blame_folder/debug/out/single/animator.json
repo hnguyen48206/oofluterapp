@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_fade_enter.xml",
-        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e04e42138eeead8d140d83b337315da7\\fragment-1.5.4\\res\\animator\\fragment_fade_enter.xml"
+        "merged": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_fade_exit.xml",
+        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\69c02b3ae8a54f9e4cf0a77f49555118\\fragment-1.5.5\\res\\animator\\fragment_fade_exit.xml"
     },
     {
-        "merged": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_open_enter.xml",
-        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e04e42138eeead8d140d83b337315da7\\fragment-1.5.4\\res\\animator\\fragment_open_enter.xml"
+        "merged": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_open_enter.xml",
+        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\69c02b3ae8a54f9e4cf0a77f49555118\\fragment-1.5.5\\res\\animator\\fragment_open_enter.xml"
     },
     {
-        "merged": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_open_exit.xml",
-        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e04e42138eeead8d140d83b337315da7\\fragment-1.5.4\\res\\animator\\fragment_open_exit.xml"
+        "merged": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_close_exit.xml",
+        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\69c02b3ae8a54f9e4cf0a77f49555118\\fragment-1.5.5\\res\\animator\\fragment_close_exit.xml"
     },
     {
-        "merged": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_fade_exit.xml",
-        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e04e42138eeead8d140d83b337315da7\\fragment-1.5.4\\res\\animator\\fragment_fade_exit.xml"
+        "merged": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_fade_enter.xml",
+        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\69c02b3ae8a54f9e4cf0a77f49555118\\fragment-1.5.5\\res\\animator\\fragment_fade_enter.xml"
     },
     {
-        "merged": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_close_enter.xml",
-        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e04e42138eeead8d140d83b337315da7\\fragment-1.5.4\\res\\animator\\fragment_close_enter.xml"
+        "merged": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_open_exit.xml",
+        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\69c02b3ae8a54f9e4cf0a77f49555118\\fragment-1.5.5\\res\\animator\\fragment_open_exit.xml"
     },
     {
-        "merged": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_close_exit.xml",
-        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e04e42138eeead8d140d83b337315da7\\fragment-1.5.4\\res\\animator\\fragment_close_exit.xml"
+        "merged": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\local_auth_android\\intermediates\\res\\merged\\debug\\animator\\fragment_close_enter.xml",
+        "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\69c02b3ae8a54f9e4cf0a77f49555118\\fragment-1.5.5\\res\\animator\\fragment_close_enter.xml"
     }
 ]

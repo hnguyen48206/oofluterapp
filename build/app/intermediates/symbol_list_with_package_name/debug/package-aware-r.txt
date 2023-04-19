@@ -278,6 +278,7 @@ attr fastScrollHorizontalThumbDrawable
 attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
+attr finishPrimaryWithPlaceholder
 attr finishPrimaryWithSecondary
 attr finishSecondaryWithPrimary
 attr firstBaselineToTopHeight
@@ -511,6 +512,7 @@ attr state_liftable
 attr state_lifted
 attr statusBarBackground
 attr statusBarScrim
+attr stickyPlaceholder
 attr strokeColor
 attr strokeWidth
 attr subMenuArrow
@@ -1224,6 +1226,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adjacent
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2256,7 +2259,7 @@ styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
 styleable SplitPairFilter primaryActivityName secondaryActivityAction secondaryActivityName
 styleable SplitPairRule clearTop finishPrimaryWithSecondary finishSecondaryWithPrimary splitLayoutDirection splitMinSmallestWidth splitMinWidth splitRatio
-styleable SplitPlaceholderRule placeholderActivityName splitLayoutDirection splitMinSmallestWidth splitMinWidth splitRatio
+styleable SplitPlaceholderRule finishPrimaryWithPlaceholder placeholderActivityName splitLayoutDirection splitMinSmallestWidth splitMinWidth splitRatio stickyPlaceholder
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable
 styleable SwitchCompat android_textOn android_textOff android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode

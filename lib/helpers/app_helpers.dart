@@ -16,6 +16,7 @@ import 'package:onlineoffice_flutter/models/discuss_work_model.dart';
 import 'package:onlineoffice_flutter/models/document_model.dart';
 import 'package:onlineoffice_flutter/models/library_model.dart';
 import 'package:onlineoffice_flutter/models/report_daily_model.dart';
+import 'package:onlineoffice_flutter/models/signature_model.dart';
 import 'package:onlineoffice_flutter/models/work_project_model.dart';
 import 'package:onlineoffice_flutter/old_version.dart';
 import 'package:onlineoffice_flutter/report_daily/report_daily_detail.dart';
@@ -33,6 +34,9 @@ import 'package:onlineoffice_flutter/helpers/image_viewer.dart';
 import 'package:onlineoffice_flutter/helpers/pdf_viewer.dart';
 import 'package:onlineoffice_flutter/announcement/announcement_list.dart';
 import 'package:onlineoffice_flutter/dal/enums.dart';
+
+import '../signature/signature_detail.dart';
+import '../signature/signature_list.dart';
 
 class AppHelpers {
   static getBadgeNumberRepeater() {
@@ -67,8 +71,8 @@ class AppHelpers {
       } else {
         String module;
         String id;
-         module = AppCache.messageNotify['module'];
-          id = AppCache.messageNotify['id'];
+        module = AppCache.messageNotify['module'];
+        id = AppCache.messageNotify['id'];
         AppCache.messageNotify = null;
         Navigator.push(
             context,
@@ -99,18 +103,18 @@ class AppHelpers {
 
   static Future<bool> _openDetailFromNotify(BuildContext context) async {
     String module = AppCache.messageNotify['module'];
-    if (module == 'TraoDoi') module = 'TraoDoiCV';
+    String id = AppCache.messageNotify['id'];
+
     if (AppCache.currentUser.modulesActive.contains(module) == false)
       return false;
-    String id = AppCache.messageNotify['id'];
-    if (module == 'BaoCao') {
+    if (module.toLowerCase() == 'baocao') {
       AppCache.messageNotify = null;
       AppCache.currentReportDaily = ReportDaily(id, '', '');
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => ReportDailyDetailPage()));
       return true;
     }
-    if (module == 'LichTuan') {
+    if (module.toLowerCase() == 'lichtuan') {
       AppCache.messageNotify = null;
       Navigator.push(
         context,
@@ -119,7 +123,7 @@ class AppHelpers {
       );
       return true;
     }
-    if (module == 'TraoDoiCV') {
+    if (module.toLowerCase() == 'traodoi') {
       AppCache.messageNotify = null;
       DiscussWork result = await FetchService.getDiscussWorkById(id);
       if (result != null) {
@@ -130,7 +134,7 @@ class AppHelpers {
       }
       return false;
     }
-    if (module == 'CongViec') {
+    if (module.toLowerCase() == 'congviec') {
       AppCache.messageNotify = null;
       WorkProject result = await FetchService.workProjectGetById(id);
       if (result != null) {
@@ -141,7 +145,7 @@ class AppHelpers {
       }
       return false;
     }
-    if (module == 'VanBan') {
+    if (module.toLowerCase() == 'vanban') {
       AppCache.messageNotify = null;
       AppCache.currentDocumentDetail = DocumentDetail(id);
       Navigator.push(
@@ -150,20 +154,35 @@ class AppHelpers {
               builder: (context) => DocumentDetailPage(kind: '')));
       return true;
     }
-    if (module == 'ThongBao') {
+    if (module.toLowerCase() == 'thongbao') {
       AppCache.messageNotify = null;
       AppCache.currentAnnouncement = Announcement(id);
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => AnnouncementDetailPage()));
       return true;
     }
-    if (module == 'ThuVien') {
+    if (module.toLowerCase() == 'thuvien') {
       AppCache.messageNotify = null;
       Navigator.push(
           context,
           MaterialPageRoute(
               builder: (context) => LibraryDetailPage(
                   library: Library(id), isFromFormList: false)));
+      return true;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+    if (module.toLowerCase() == 'xe') {
+      AppCache.messageNotify = null;
+      return true;
+    }
+     if (module.toLowerCase() == 'trinhky') {
+      AppCache.messageNotify = null;
+      AppCache.currentSignature = Signature(id);
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => SignatureDetailPage()));
       return true;
     }
     return false;
@@ -431,7 +450,8 @@ class AppHelpers {
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
-                  child: Text("Không", style: TextStyle(color: Colors.white, fontSize: 14.0))),
+                  child: Text("Không",
+                      style: TextStyle(color: Colors.white, fontSize: 14.0))),
               ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
@@ -441,7 +461,8 @@ class AppHelpers {
                         MaterialPageRoute(
                             builder: (context) => AnnouncementPage()));
                   },
-                  child: Text("Có", style: TextStyle(color: Colors.white, fontSize: 14.0)))
+                  child: Text("Có",
+                      style: TextStyle(color: Colors.white, fontSize: 14.0)))
             ],
           );
         });

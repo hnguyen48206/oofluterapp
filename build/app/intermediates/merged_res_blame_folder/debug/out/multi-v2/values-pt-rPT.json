@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,130,194,261,332,414,496,591,680",
+                        "endColumns": "74,63,66,70,81,81,94,88,78",
+                        "endOffsets": "125,189,256,327,409,491,586,675,754"
+                    },
+                    "to": {
+                        "startLines": "50,51,52,53,54,55,56,57,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5498,5573,5637,5704,5775,5857,5939,6034,6123",
+                        "endColumns": "74,63,66,70,81,81,94,88,78",
+                        "endOffsets": "5568,5632,5699,5770,5852,5934,6029,6118,6197"
+                    }
+                },
+                {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\ebb866ddfc7f56e513b1a2db0ab37c96\\biometric-1.1.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
@@ -35,23 +52,6 @@
                         "startOffsets": "5182,5298,6202,6331,6470,6617,6752,6881,7028,7130,7270,7419",
                         "endColumns": "115,94,128,138,146,134,128,146,101,139,148,125",
                         "endOffsets": "5293,5388,6326,6465,6612,6747,6876,7023,7125,7265,7414,7540"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-pt-rPT\\values-pt-rPT.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,130,194,261,332,414,496,591,680",
-                        "endColumns": "74,63,66,70,81,81,94,88,78",
-                        "endOffsets": "125,189,256,327,409,491,586,675,754"
-                    },
-                    "to": {
-                        "startLines": "50,51,52,53,54,55,56,57,58",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5498,5573,5637,5704,5775,5857,5939,6034,6123",
-                        "endColumns": "74,63,66,70,81,81,94,88,78",
-                        "endOffsets": "5568,5632,5699,5770,5852,5934,6029,6118,6197"
                     }
                 },
                 {
@@ -106,7 +106,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-pt-rPT\\values-pt-rPT.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

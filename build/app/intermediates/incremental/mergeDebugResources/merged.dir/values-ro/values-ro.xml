@@ -49,7 +49,7 @@
     <string msgid="4776854077120974966" name="default_error_msg">"Eroare necunoscută"</string>
     <string msgid="7213672915724563695" name="default_notification_channel_name">"Now Playing"</string>
     <string name="exo_download_completed">Descărcarea a fost finalizată</string>
-    <string name="exo_download_description">Descărcați</string>
+    <string name="exo_download_description">Descarcă</string>
     <string name="exo_download_downloading">Se descarcă</string>
     <string name="exo_download_failed">Descărcarea nu a reușit</string>
     <string name="exo_download_notification_channel_name">Descărcări</string>

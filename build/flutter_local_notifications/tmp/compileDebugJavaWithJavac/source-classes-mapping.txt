@@ -4,6 +4,8 @@ com/dexterous/flutterlocalnotifications/NotificationStyle.java
  com.dexterous.flutterlocalnotifications.NotificationStyle
 com/dexterous/flutterlocalnotifications/models/Time.java
  com.dexterous.flutterlocalnotifications.models.Time
+com/dexterous/flutterlocalnotifications/utils/LongUtils.java
+ com.dexterous.flutterlocalnotifications.utils.LongUtils
 com/dexterous/flutterlocalnotifications/FlutterLocalNotificationsPlugin.java
  com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin
  com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin$1

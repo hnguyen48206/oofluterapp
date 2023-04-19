@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e2666b02ee80a9a95527f57908739565\\core-1.8.0\\res\\values-sl\\values-sl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "74",
-                        "startColumns": "4",
-                        "startOffsets": "7910",
-                        "endColumns": "100",
-                        "endOffsets": "8006"
-                    }
-                },
                 {
                     "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\7fb10b9c80ffef167c62f37eb27b4804\\appcompat-1.2.0\\res\\values-sl\\values-sl.xml",
                     "from": {
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\f62787ac053fcce18c5f3593f06bfcc3\\jetified-exoplayer-core-2.18.1\\res\\values-sl\\values-sl.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e336fdab8a752c56186c1310f3dc6272\\jetified-play-services-base-18.0.1\\res\\values-sl\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,295,456,581,684,827,953,1063,1163,1317,1420,1583,1709,1857,2005,2071,2129",
+                        "endColumns": "101,160,124,102,142,125,109,99,153,102,162,125,147,147,65,57,79",
+                        "endOffsets": "294,455,580,683,826,952,1062,1162,1316,1419,1582,1708,1856,2004,2070,2128,2208"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2851,2957,3122,3251,3358,3505,3635,3749,3993,4151,4258,4425,4555,4707,4859,4929,4991",
+                        "endColumns": "105,164,128,106,146,129,113,103,157,106,166,129,151,151,69,61,83",
+                        "endOffsets": "2952,3117,3246,3353,3500,3630,3744,3848,4146,4253,4420,4550,4702,4854,4924,4986,5070"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-sl\\values-sl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -89,20 +89,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\e336fdab8a752c56186c1310f3dc6272\\jetified-play-services-base-18.0.1\\res\\values-sl\\values.xml",
+                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\c676ee2da664d7a1f42fb9f042dd2453\\core-1.9.0\\res\\values-sl\\values-sl.xml",
                     "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,295,456,581,684,827,953,1063,1163,1317,1420,1583,1709,1857,2005,2071,2129",
-                        "endColumns": "101,160,124,102,142,125,109,99,153,102,162,125,147,147,65,57,79",
-                        "endOffsets": "294,455,580,683,826,952,1062,1162,1316,1419,1582,1708,1856,2004,2070,2128,2208"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2851,2957,3122,3251,3358,3505,3635,3749,3993,4151,4258,4425,4555,4707,4859,4929,4991",
-                        "endColumns": "105,164,128,106,146,129,113,103,157,106,166,129,151,151,69,61,83",
-                        "endOffsets": "2952,3117,3246,3353,3500,3630,3744,3848,4146,4253,4420,4550,4702,4854,4924,4986,5070"
+                        "startLines": "74",
+                        "startColumns": "4",
+                        "startOffsets": "7910",
+                        "endColumns": "100",
+                        "endOffsets": "8006"
                     }
                 },
                 {

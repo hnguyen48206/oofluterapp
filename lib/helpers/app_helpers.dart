@@ -123,7 +123,7 @@ class AppHelpers {
       );
       return true;
     }
-    if (module.toLowerCase() == 'traodoi') {
+    if (module.toLowerCase() == 'traodoicv') {
       AppCache.messageNotify = null;
       DiscussWork result = await FetchService.getDiscussWorkById(id);
       if (result != null) {

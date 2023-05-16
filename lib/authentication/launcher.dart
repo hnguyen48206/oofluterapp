@@ -19,6 +19,8 @@ import 'package:rxdart/subjects.dart';
 
 NotificationPlugin notificationPlugin = new NotificationPlugin();
 
+Future _firebaseMessagingBackgroundHandler(RemoteMessage message) async {}
+
 class LauncherPage extends StatefulWidget {
   LauncherPage();
 
@@ -29,24 +31,6 @@ class LauncherPage extends StatefulWidget {
 }
 
 class LauncherPageState extends State<LauncherPage> {
-  static Future _firebaseMessagingBackgroundHandler(
-      RemoteMessage message) async {
-    // print("Handling a background message: ${message.messageId}");
-    // notificationPlugin.showNotification(message.notification?.title,
-    //     message.notification?.body, json.encode(message));
-
-    print('Nhận Firebase');
-    try {
-      if (message.notification != null) {
-        // print(json.encode(message.data));
-        notificationPlugin.showNotification(message.notification.title,
-            message.notification.body, json.encode(message.data));
-      }
-    } catch (error) {
-      print(error);
-    }
-  }
-
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
 
   void registerNotification() async {
@@ -69,9 +53,11 @@ class LauncherPageState extends State<LauncherPage> {
 
     //Set click action for local noti
     notificationPlugin.setOnNotificationClick(onNotificationClick);
+
+    //Set handler when recieving message in foreground
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       // Parse the message received and send local notification
-      print('Nhận Firebase');
+      print('Nhận Firebase từ foreground');
       try {
         if (message.notification != null) {
           // print(json.encode(message.data));
@@ -82,7 +68,30 @@ class LauncherPageState extends State<LauncherPage> {
         print(error);
       }
     });
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      // Parse the message received and send local notification
+      print('Nhận Firebase từ wakeup');
+      // try {
+      //   if (message.notification != null) {
+      //     // print(json.encode(message.data));
+      //     notificationPlugin.showNotification(message.notification.title,
+      //         message.notification.body, json.encode(message.data));
+      //   }
+      // } catch (error) {
+      //   print(error);
+      // }
+      onNotificationClick(json.encode(message.data));
+    });
+
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+    _firebaseMessaging.getInitialMessage().then((message) {
+      print('Nhận Firebase từ terminated');
+      if (message != null) {
+             onNotificationClick(json.encode(message.data));
+      }
+    });
   }
 
   @override

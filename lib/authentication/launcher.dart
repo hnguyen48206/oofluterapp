@@ -89,8 +89,11 @@ class LauncherPageState extends State<LauncherPage> {
     _firebaseMessaging.getInitialMessage().then((message) {
       print('Nhận Firebase từ terminated');
       if (message != null) {
-             onNotificationClick(json.encode(message.data));
+        onNotificationClick(json.encode(message.data));
       }
+    });
+    _firebaseMessaging.subscribeToTopic('all').then((message) {
+      print("subscribe ok");
     });
   }
 
@@ -122,6 +125,8 @@ class LauncherPageState extends State<LauncherPage> {
 
   void setTokenLogin() {
     this._firebaseMessaging.getToken().then((token) {
+      print(token);
+
       if (token == null) {
         showCupertinoModalPopup(
             context: context,

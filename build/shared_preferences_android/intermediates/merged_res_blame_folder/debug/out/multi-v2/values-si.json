@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\values-si\\values-si.xml",
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\shared_preferences_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-si\\values-si.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-si\\values-si.xml",
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-si\\values-si.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\shared_preferences_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-si\\values-si.xml",
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\values-si\\values-si.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-si\\values-si.xml",
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-si\\values-si.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

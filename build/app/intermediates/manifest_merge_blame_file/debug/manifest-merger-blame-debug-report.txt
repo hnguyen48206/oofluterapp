@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="vn.onlineoffice.www.oomessenger"
-4    android:versionCode="136"
-5    android:versionName="3.0.1.6" >
+4    android:versionCode="138"
+5    android:versionName="3.0.1.8" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -12,162 +12,162 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:9:5-66
-14-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:9:22-64
+14-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:8:5-66
+14-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:8:22-64
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:10:5-79
-15-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:10:22-77
+15-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:9:22-77
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:11:5-80
-16-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:11:22-78
+16-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:10:22-78
 17    <uses-permission android:name="android.permission.CAMERA" />
-17-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:12:5-64
-17-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:12:22-62
+17-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:11:5-64
+17-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:11:22-62
 18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-18-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:13:5-77
-18-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:13:22-74
+18-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:12:5-77
+18-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:12:22-74
 19    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
-19-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:15:2-82
-19-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:15:19-79
+19-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:14:2-82
+19-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:14:19-79
 20    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" /> <!-- for Samsung -->
-20-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:16:2-83
-20-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:16:19-80
+20-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:15:2-83
+20-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:15:19-80
 21    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-21-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:19:2-83
-21-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:19:19-80
+21-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:18:2-83
+21-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:18:19-80
 22    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
-22-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:20:2-84
-22-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:20:19-81
+22-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:19:2-84
+22-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:19:19-81
 23    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-23-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:23:2-78
-23-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:23:19-75
+23-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:22:2-78
+23-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:22:19-75
 24    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
-24-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:24:2-80
-24-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:24:19-77
+24-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:23:2-80
+24-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:23:19-77
 25    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-25-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:27:2-85
-25-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:27:19-82
+25-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:26:2-85
+25-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:26:19-82
 26    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
-26-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:28:2-89
-26-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:28:19-86
+26-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:27:2-89
+26-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:27:19-86
 27    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
-27-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:31:2-81
-27-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:31:19-78
+27-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:30:2-81
+27-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:30:19-78
 28    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
-28-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:34:2-80
-28-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:34:19-77
+28-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:33:2-80
+28-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:33:19-77
 29    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
-29-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:37:2-88
-29-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:37:19-85
+29-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:36:2-88
+29-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:36:19-85
 30    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-30-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:38:2-89
-30-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:38:19-86
+30-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:37:2-89
+30-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:37:19-86
 31    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
-31-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:39:2-90
-31-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:39:19-87
+31-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:38:2-90
+31-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:38:19-87
 32    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
-32-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:42:2-70
-32-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:42:19-67
+32-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:41:2-70
+32-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:41:19-67
 33    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
-33-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:45:2-79
-33-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:45:19-76
+33-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:44:2-79
+33-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:44:19-76
 34    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
-34-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:46:2-80
-34-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:46:19-77
+34-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:45:2-80
+34-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:45:19-77
 35    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
-35-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:49:2-85
-35-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:49:19-82
+35-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:48:2-85
+35-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:48:19-82
 36    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
-36-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:50:2-86
-36-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:50:19-83
+36-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:49:2-86
+36-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:49:19-83
 37
 38    <meta-data
-38-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:114:5-116:25
+38-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:113:5-115:25
 39        android:name="flutterEmbedding"
-39-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:115:5-36
+39-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:114:5-36
 40        android:value="2" />
-40-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:116:5-22
+40-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:115:5-22
 41
 42    <uses-permission android:name="android.permission.WAKE_LOCK" />
-42-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-42-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-65
+42-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+42-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-65
 43    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-43-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-43-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+43-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+43-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
 44    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-44-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
-44-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+44-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+44-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
 45
 46    <queries>
-46-->[:file_picker] C:\Users\HoangN\Desktop\OO\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:15
+46-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:15
 47        <intent>
-47-->[:file_picker] C:\Users\HoangN\Desktop\OO\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:18
+47-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:18
 48            <action android:name="android.intent.action.GET_CONTENT" />
-48-->[:file_picker] C:\Users\HoangN\Desktop\OO\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
-48-->[:file_picker] C:\Users\HoangN\Desktop\OO\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
+48-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
+48-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
 49
 50            <data android:mimeType="*/*" />
-50-->[:file_picker] C:\Users\HoangN\Desktop\OO\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-44
-50-->[:file_picker] C:\Users\HoangN\Desktop\OO\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:19-41
+50-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-44
+50-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:19-41
 51        </intent>
 52        <intent>
-52-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
+52-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
 53            <action android:name="android.media.browse.MediaBrowserService" />
-53-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
-53-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
+53-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+53-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
 54        </intent>
 55        <intent>
-55-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
+55-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
 56            <action android:name="androidx.media2.session.MediaSessionService" />
-56-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
-56-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
+56-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+56-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
 57        </intent>
 58        <intent>
-58-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
+58-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
 59            <action android:name="androidx.media2.session.MediaLibraryService" />
-59-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
-59-->[androidx.media2:media2-session:1.2.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
+59-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+59-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
 60        </intent>
 61    </queries>
 62
 63    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-63-->[:local_auth_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-72
-63-->[:local_auth_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-69
+63-->[:local_auth_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-72
+63-->[:local_auth_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-69
 64    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-64-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
-64-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+64-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+64-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
 65    <uses-permission android:name="android.permission.VIBRATE" />
-65-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-66
-65-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-63
+65-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-66
+65-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-63
 66    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-66-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
-66-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+66-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+66-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
 67    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- suppress DeprecatedClassUsageInspection -->
-67-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
-67-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
+67-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
+67-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
 68    <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-68-->[androidx.biometric:biometric:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:5-74
-68-->[androidx.biometric:biometric:1.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:22-71
+68-->[androidx.biometric:biometric:1.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:5-74
+68-->[androidx.biometric:biometric:1.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:22-71
 69    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-69-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
-69-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+69-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+69-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
 70    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-70-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
-70-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+70-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+70-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
 71    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-71-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
-71-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
+71-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+71-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
 72
 73    <permission
-73-->[androidx.core:core:1.9.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:22:5-24:47
+73-->[androidx.core:core:1.9.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:22:5-24:47
 74        android:name="vn.onlineoffice.www.oomessenger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-74-->[androidx.core:core:1.9.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:23:9-81
+74-->[androidx.core:core:1.9.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:23:9-81
 75        android:protectionLevel="signature" />
-75-->[androidx.core:core:1.9.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:24:9-44
+75-->[androidx.core:core:1.9.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:24:9-44
 76
 77    <uses-permission android:name="vn.onlineoffice.www.oomessenger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-77-->[androidx.core:core:1.9.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:26:5-97
-77-->[androidx.core:core:1.9.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:26:22-94
+77-->[androidx.core:core:1.9.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:26:5-97
+77-->[androidx.core:core:1.9.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:26:22-94
 78    <!--
 79 io.flutter.app.FlutterApplication is an android.app.Application that
 80         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -176,38 +176,38 @@
 83         FlutterApplication and put your custom class here.
 84    -->
 85    <application
-85-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:57:5-113:19
+85-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:56:5-112:19
 86        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-86-->[androidx.core:core:1.9.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:28:18-86
+86-->[androidx.core:core:1.9.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\c676ee2da664d7a1f42fb9f042dd2453\core-1.9.0\AndroidManifest.xml:28:18-86
 87        android:debuggable="true"
 88        android:hardwareAccelerated="true"
-88-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:61:9-43
+88-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:60:9-43
 89        android:icon="@mipmap/ic_launcher"
-89-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:59:9-43
+89-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:58:9-43
 90        android:label="Online Office"
-90-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:58:9-38
+90-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:57:9-38
 91        android:requestLegacyExternalStorage="true"
-91-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:60:3-46
+91-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:59:3-46
 92        android:usesCleartextTraffic="true" >
-92-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:62:9-44
+92-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:61:9-44
 93        <activity
-93-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:65:9-90:20
+93-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:64:9-89:20
 94            android:name="vn.onlineoffice.www.oomessenger.MainActivity"
-94-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:66:13-41
+94-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:65:13-41
 95            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-95-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:69:13-163
+95-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:68:13-163
 96            android:exported="true"
-96-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:73:13-36
+96-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:72:13-36
 97            android:launchMode="singleTop"
-97-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:67:13-43
+97-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:66:13-43
 98            android:showWhenLocked="true"
-98-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:71:13-42
+98-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:70:13-42
 99            android:theme="@style/LaunchTheme"
-99-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:68:13-47
+99-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:67:13-47
 100            android:turnScreenOn="true"
-100-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:72:13-40
+100-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:71:13-40
 101            android:windowSoftInputMode="adjustResize" >
-101-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:70:13-55
+101-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:69:13-55
 102
 103            <!--
 104                 This keeps the window background of the activity showing
@@ -217,49 +217,49 @@
 108            -->
 109
 110            <intent-filter>
-110-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:79:13-82:29
+110-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:78:13-81:29
 111                <action android:name="android.intent.action.MAIN" />
-111-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:80:17-68
-111-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:80:25-66
+111-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:79:17-68
+111-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:79:25-66
 112
 113                <category android:name="android.intent.category.LAUNCHER" />
-113-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:81:17-76
-113-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:81:27-74
+113-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:80:17-76
+113-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:80:27-74
 114            </intent-filter>
 115            <intent-filter>
-115-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:83:4-86:20
+115-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:82:4-85:20
 116                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
-116-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:84:5-57
-116-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:84:13-54
+116-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:83:5-57
+116-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:83:13-54
 117
 118                <category android:name="android.intent.category.DEFAULT" />
-118-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:85:5-64
-118-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:85:15-61
+118-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:84:5-64
+118-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:84:15-61
 119            </intent-filter>
 120        </activity>
 121        <activity
-121-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:91:9-92:63
+121-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:90:9-91:63
 122            android:name="com.flutter_webview_plugin.WebviewActivity"
-122-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:91:19-76
+122-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:90:19-76
 123            android:parentActivityName="vn.onlineoffice.www.oomessenger.MainActivity" />
-123-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:92:19-61
+123-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:91:19-61
 124
 125        <provider
-125-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:94:9-104:20
+125-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:93:9-103:20
 126            android:name="androidx.core.content.FileProvider"
-126-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:95:13-62
+126-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:94:13-62
 127            android:authorities="vn.onlineoffice.www.oomessenger.fileProvider"
-127-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:96:13-79
+127-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:95:13-79
 128            android:exported="false"
-128-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:97:13-37
+128-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:96:13-37
 129            android:grantUriPermissions="true" >
-129-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:98:13-47
+129-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:97:13-47
 130            <meta-data
-130-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:100:13-103:52
+130-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
 131                android:name="android.support.FILE_PROVIDER_PATHS"
-131-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-67
+131-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
 132                android:resource="@xml/file_paths" />
-132-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:102:17-51
+132-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
 133        </provider>
 134
 135        <!--
@@ -268,277 +268,277 @@
 138             See https://developer.android.com/reference/android/R.attr#stopWithTask
 139        -->
 140        <service
-140-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:109:9-112:43
+140-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:108:9-111:43
 141            android:name="com.dexterous.flutterlocalnotifications.ForegroundService"
-141-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:110:13-85
+141-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:109:13-85
 142            android:exported="false"
-142-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:111:13-37
+142-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:110:13-37
 143            android:stopWithTask="false" />
-143-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:112:13-41
+143-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:111:13-41
 144
 145        <provider
-145-->[:esys_flutter_share_plus] C:\Users\HoangN\Desktop\OO\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+145-->[:esys_flutter_share_plus] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 146            android:name="de.esys.esysfluttershare.EsysFlutterShareFileProvider"
-146-->[:esys_flutter_share_plus] C:\Users\HoangN\Desktop\OO\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-81
+146-->[:esys_flutter_share_plus] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-81
 147            android:authorities="vn.onlineoffice.www.oomessenger.fileprovider.github.com/orgs/esysberlin/esys-flutter-share"
-147-->[:esys_flutter_share_plus] C:\Users\HoangN\Desktop\OO\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-110
+147-->[:esys_flutter_share_plus] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-110
 148            android:exported="false"
-148-->[:esys_flutter_share_plus] C:\Users\HoangN\Desktop\OO\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+148-->[:esys_flutter_share_plus] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 149            android:grantUriPermissions="true" >
-149-->[:esys_flutter_share_plus] C:\Users\HoangN\Desktop\OO\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+149-->[:esys_flutter_share_plus] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\esys_flutter_share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 150            <meta-data
-150-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:100:13-103:52
+150-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
 151                android:name="android.support.FILE_PROVIDER_PATHS"
-151-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-67
+151-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
 152                android:resource="@xml/esys_flutter_share_filepaths" />
-152-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:102:17-51
+152-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
 153        </provider>
 154
 155        <service
-155-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+155-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
 156            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-156-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+156-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
 157            android:exported="false"
-157-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+157-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 158            android:permission="android.permission.BIND_JOB_SERVICE" />
-158-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+158-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
 159        <service
-159-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+159-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
 160            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-160-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+160-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
 161            android:exported="false" >
-161-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+161-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
 162            <intent-filter>
-162-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+162-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 163                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-163-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-163-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+163-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+163-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 164            </intent-filter>
 165        </service>
 166
 167        <receiver
-167-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+167-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
 168            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-168-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+168-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
 169            android:exported="true"
-169-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+169-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
 170            android:permission="com.google.android.c2dm.permission.SEND" >
-170-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+170-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
 171            <intent-filter>
-171-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+171-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 172                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-172-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-172-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+172-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+172-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 173            </intent-filter>
 174        </receiver>
 175
 176        <service
-176-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
+176-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
 177            android:name="com.google.firebase.components.ComponentDiscoveryService"
-177-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:18-89
+177-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:18-89
 178            android:directBootAware="true"
-178-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+178-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
 179            android:exported="false" >
-179-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
+179-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
 180            <meta-data
-180-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+180-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
 181                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-181-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+181-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
 182                android:value="com.google.firebase.components.ComponentRegistrar" />
-182-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+182-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
 183            <meta-data
-183-->[:firebase_core] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+183-->[:firebase_core] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 184                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-184-->[:firebase_core] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+184-->[:firebase_core] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 185                android:value="com.google.firebase.components.ComponentRegistrar" />
-185-->[:firebase_core] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+185-->[:firebase_core] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 186            <meta-data
-186-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+186-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
 187                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-187-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+187-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
 188                android:value="com.google.firebase.components.ComponentRegistrar" />
-188-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+188-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\8fa9d4ac5728084592213e20b9e3402a\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
 189            <meta-data
-189-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+189-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
 190                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-190-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+190-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
 191                android:value="com.google.firebase.components.ComponentRegistrar" />
-191-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+191-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
 192            <meta-data
-192-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+192-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
 193                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-193-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+193-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
 194                android:value="com.google.firebase.components.ComponentRegistrar" />
-194-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+194-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a4a12d66141512e2357ee17a74eb9def\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
 195            <meta-data
-195-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9c8f40698d2bdc3d345fb413a905feae\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+195-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\9c8f40698d2bdc3d345fb413a905feae\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
 196                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-196-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9c8f40698d2bdc3d345fb413a905feae\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+196-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\9c8f40698d2bdc3d345fb413a905feae\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
 197                android:value="com.google.firebase.components.ComponentRegistrar" />
-197-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\9c8f40698d2bdc3d345fb413a905feae\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+197-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\9c8f40698d2bdc3d345fb413a905feae\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
 198            <meta-data
-198-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\b389f7750235b0b89c966585dd8e6f82\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+198-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\b389f7750235b0b89c966585dd8e6f82\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
 199                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-199-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\b389f7750235b0b89c966585dd8e6f82\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+199-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\b389f7750235b0b89c966585dd8e6f82\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
 200                android:value="com.google.firebase.components.ComponentRegistrar" />
-200-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\b389f7750235b0b89c966585dd8e6f82\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+200-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\b389f7750235b0b89c966585dd8e6f82\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
 201        </service>
 202
 203        <provider
-203-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+203-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
 204            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-204-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+204-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
 205            android:authorities="vn.onlineoffice.www.oomessenger.flutterfirebasemessaginginitprovider"
-205-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+205-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
 206            android:exported="false"
-206-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+206-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 207            android:initOrder="99" />
-207-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+207-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
 208        <provider
-208-->[:image_picker_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+208-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 209            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-209-->[:image_picker_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+209-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
 210            android:authorities="vn.onlineoffice.www.oomessenger.flutter.image_provider"
-210-->[:image_picker_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+210-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
 211            android:exported="false"
-211-->[:image_picker_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+211-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 212            android:grantUriPermissions="true" >
-212-->[:image_picker_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+212-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 213            <meta-data
-213-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:100:13-103:52
+213-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
 214                android:name="android.support.FILE_PROVIDER_PATHS"
-214-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-67
+214-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
 215                android:resource="@xml/flutter_image_picker_file_paths" />
-215-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:102:17-51
+215-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
 216        </provider>
 217
 218        <receiver
-218-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-16:40
+218-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-16:40
 219            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
-219-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-91
+219-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-91
 220            android:exported="false" />
-220-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+220-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 221        <receiver
-221-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-19:40
+221-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-19:40
 222            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
-222-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-97
+222-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-97
 223            android:exported="false" />
-223-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+223-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
 224        <receiver
-224-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-29:20
+224-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-29:20
 225            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
-225-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-101
+225-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-101
 226            android:exported="false" >
-226-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+226-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
 227            <intent-filter>
-227-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-28:29
+227-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-28:29
 228                <action android:name="android.intent.action.BOOT_COMPLETED" />
-228-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-79
-228-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-76
+228-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-79
+228-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-76
 229                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-229-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-84
-229-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-81
+229-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-84
+229-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-81
 230                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-230-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
-230-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
+230-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
+230-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
 231                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-231-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-82
-231-->[:flutter_local_notifications] C:\Users\HoangN\Desktop\OO\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-79
+231-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-82
+231-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-79
 232            </intent-filter>
 233        </receiver>
 234
 235        <activity
-235-->[:url_launcher_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+235-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 236            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-236-->[:url_launcher_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+236-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 237            android:exported="false"
-237-->[:url_launcher_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+237-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 238            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-238-->[:url_launcher_android] C:\Users\HoangN\Desktop\OO\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+238-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 239
 240        <provider
-240-->[:open_file] C:\Users\HoangN\Desktop\OO\oofluterapp\build\open_file\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-21:20
+240-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-20:20
 241            android:name="com.crazecoder.openfile.FileProvider"
-241-->[:open_file] C:\Users\HoangN\Desktop\OO\oofluterapp\build\open_file\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-64
+241-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
 242            android:authorities="vn.onlineoffice.www.oomessenger.fileProvider.com.crazecoder.openfile"
-242-->[:open_file] C:\Users\HoangN\Desktop\OO\oofluterapp\build\open_file\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-88
+242-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-88
 243            android:exported="false"
-243-->[:open_file] C:\Users\HoangN\Desktop\OO\oofluterapp\build\open_file\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+243-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
 244            android:grantUriPermissions="true" >
-244-->[:open_file] C:\Users\HoangN\Desktop\OO\oofluterapp\build\open_file\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-47
+244-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
 245            <meta-data
-245-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:100:13-103:52
+245-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
 246                android:name="android.support.FILE_PROVIDER_PATHS"
-246-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-67
+246-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
 247                android:resource="@xml/filepaths" />
-247-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:102:17-51
+247-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
 248        </provider>
 249
 250        <uses-library
-250-->[androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:23:9-25:40
+250-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:23:9-25:40
 251            android:name="androidx.window.extensions"
-251-->[androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:24:13-54
+251-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:24:13-54
 252            android:required="false" />
-252-->[androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:25:13-37
+252-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:25:13-37
 253        <uses-library
-253-->[androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:26:9-28:40
+253-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:26:9-28:40
 254            android:name="androidx.window.sidecar"
-254-->[androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:27:13-51
+254-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:27:13-51
 255            android:required="false" />
-255-->[androidx.window:window:1.1.0-alpha04] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:28:13-37
+255-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:28:13-37
 256
 257        <provider
-257-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:12:9-20:20
+257-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:12:9-20:20
 258            android:name="com.sangcomz.fishbun.FishBunFileProvider"
-258-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:13:13-68
+258-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:13:13-68
 259            android:authorities="vn.onlineoffice.www.oomessenger.fishbunfileprovider"
-259-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:14:13-71
+259-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:14:13-71
 260            android:exported="false"
-260-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:15:13-37
+260-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:15:13-37
 261            android:grantUriPermissions="true" >
-261-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:16:13-47
+261-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:16:13-47
 262            <meta-data
-262-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:100:13-103:52
+262-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
 263                android:name="android.support.FILE_PROVIDER_PATHS"
-263-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-67
+263-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
 264                android:resource="@xml/provider_paths" />
-264-->C:\Users\HoangN\Desktop\OO\oofluterapp\android\app\src\main\AndroidManifest.xml:102:17-51
+264-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
 265        </provider>
 266
 267        <activity
-267-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:22:9-25:51
+267-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:22:9-25:51
 268            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
-268-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:23:13-71
+268-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:23:13-71
 269            android:label="@string/album"
-269-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:24:13-42
+269-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:24:13-42
 270            android:theme="@style/FishBunTheme" />
-270-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:25:13-48
+270-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:25:13-48
 271        <activity
-271-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:26:9-28:51
+271-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:26:9-28:51
 272            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
-272-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:27:13-73
+272-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:27:13-73
 273            android:theme="@style/FishBunTheme" />
-273-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:28:13-48
+273-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:28:13-48
 274        <activity
-274-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:29:9-31:54
+274-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:29:9-31:54
 275            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
-275-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:30:13-73
+275-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:30:13-73
 276            android:theme="@style/DetailViewTheme" />
-276-->[com.sangcomz:FishBun:0.11.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:31:13-51
+276-->[com.sangcomz:FishBun:0.11.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\56563c76338d9025c8ac081bc0417b65\jetified-FishBun-0.11.2\AndroidManifest.xml:31:13-51
 277
 278        <receiver
-278-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+278-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
 279            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-279-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+279-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
 280            android:exported="true"
-280-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+280-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
 281            android:permission="com.google.android.c2dm.permission.SEND" >
-281-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+281-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
 282            <intent-filter>
-282-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+282-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 283                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-283-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-283-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+283-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+283-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 284            </intent-filter>
 285        </receiver>
 286        <!--
@@ -546,108 +546,108 @@
 288             but set to not exported to explicitly avoid allowing another app to call it.
 289        -->
 290        <service
-290-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+290-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
 291            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-291-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+291-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
 292            android:directBootAware="true"
-292-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+292-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
 293            android:exported="false" >
-293-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+293-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\81cba7b607fd8a787b597efe9a6090cf\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
 294            <intent-filter android:priority="-500" >
-294-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+294-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 295                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-295-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-295-->[:firebase_messaging] C:\Users\HoangN\Desktop\OO\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+295-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+295-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 296            </intent-filter>
 297        </service>
 298
 299        <provider
-299-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+299-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
 300            android:name="com.google.firebase.provider.FirebaseInitProvider"
-300-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+300-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
 301            android:authorities="vn.onlineoffice.www.oomessenger.firebaseinitprovider"
-301-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+301-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
 302            android:directBootAware="true"
-302-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+302-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
 303            android:exported="false"
-303-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+303-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
 304            android:initOrder="100" />
-304-->[com.google.firebase:firebase-common:20.3.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+304-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ba2192d15bd47e3a7ae792a17103e568\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
 305
 306        <receiver
-306-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+306-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
 307            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-307-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+307-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
 308            android:enabled="true"
-308-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+308-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
 309            android:exported="false" >
-309-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+309-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
 310        </receiver>
 311
 312        <service
-312-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+312-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
 313            android:name="com.google.android.gms.measurement.AppMeasurementService"
-313-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+313-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
 314            android:enabled="true"
-314-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+314-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
 315            android:exported="false" />
-315-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+315-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
 316        <service
-316-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+316-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
 317            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-317-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+317-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
 318            android:enabled="true"
-318-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+318-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
 319            android:exported="false"
-319-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+319-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
 320            android:permission="android.permission.BIND_JOB_SERVICE" />
-320-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+320-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\828020c90d41d518e5da5944afdd913e\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
 321
 322        <activity
-322-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+322-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 323            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-323-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+323-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 324            android:exported="false"
-324-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+324-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 325            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-325-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+325-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\e336fdab8a752c56186c1310f3dc6272\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 326
 327        <meta-data
-327-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+327-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 328            android:name="com.google.android.gms.version"
-328-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+328-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
 329            android:value="@integer/google_play_services_version" />
-329-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+329-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\99f878fcfc536708b6f9aec6b88651dc\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
 330
 331        <service
-331-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+331-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
 332            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-332-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+332-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
 333            android:exported="false" >
-333-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+333-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
 334            <meta-data
-334-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+334-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
 335                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-335-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+335-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
 336                android:value="cct" />
-336-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+336-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\f700e86184e4cd32e6c949e46ff63095\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
 337        </service>
 338        <service
-338-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+338-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
 339            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-339-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+339-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
 340            android:exported="false"
-340-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+340-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
 341            android:permission="android.permission.BIND_JOB_SERVICE" >
-341-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+341-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
 342        </service>
 343
 344        <receiver
-344-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+344-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
 345            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-345-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+345-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
 346            android:exported="false" />
-346-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\HoangN\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+346-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\aec668d52d24604d5080b58d1b119f82\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
 347    </application>
 348
 349</manifest>

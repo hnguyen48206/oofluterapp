@@ -47,7 +47,6 @@
             <option value="$PROJECT_DIR$/android/app" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

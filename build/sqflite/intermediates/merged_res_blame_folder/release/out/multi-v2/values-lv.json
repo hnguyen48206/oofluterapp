@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\sqflite\\intermediates\\res\\merged\\release\\values-lv\\values-lv.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\sqflite\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lv\\values-lv.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

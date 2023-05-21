@@ -28,7 +28,7 @@ import 'package:flutter_app_badger/flutter_app_badger.dart';
 import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/models/models_ext.dart';
 import 'package:onlineoffice_flutter/models/user_group_model.dart';
-import 'package:open_file/open_file.dart';
+import 'package:open_file_safe/open_file_safe.dart';
 import 'package:onlineoffice_flutter/home.dart';
 import 'package:onlineoffice_flutter/helpers/image_viewer.dart';
 import 'package:onlineoffice_flutter/helpers/pdf_viewer.dart';
@@ -104,7 +104,7 @@ class AppHelpers {
   static Future<bool> _openDetailFromNotify(BuildContext context) async {
     String module = AppCache.messageNotify['module'];
     String id = AppCache.messageNotify['id'];
-
+    if (module == 'TraoDoi') module = 'TraoDoiCV';
     if (AppCache.currentUser.modulesActive.contains(module) == false)
       return false;
     if (module.toLowerCase() == 'baocao') {
@@ -176,13 +176,11 @@ class AppHelpers {
       AppCache.messageNotify = null;
       return true;
     }
-     if (module.toLowerCase() == 'trinhky') {
+    if (module.toLowerCase() == 'trinhky') {
       AppCache.messageNotify = null;
       AppCache.currentSignature = Signature(id);
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => SignatureDetailPage()));
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => SignatureDetailPage()));
       return true;
     }
     return false;

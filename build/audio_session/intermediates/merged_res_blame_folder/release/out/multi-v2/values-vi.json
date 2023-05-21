@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\audio_session\\intermediates\\res\\merged\\release\\values-vi\\values-vi.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "609",
+                        "endColumns": "100",
+                        "endOffsets": "705"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,157,257,351,479",
+                        "endColumns": "101,99,93,127,129",
+                        "endOffsets": "152,252,346,474,604"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\audio_session\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-vi\\values-vi.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "609",
+                        "endColumns": "100",
+                        "endOffsets": "705"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\values-vi\\values-vi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,157,257,351,479",
+                        "endColumns": "101,99,93,127,129",
+                        "endOffsets": "152,252,346,474,604"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\video_player_android\\intermediates\\res\\merged\\debug\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\video_player_android\\intermediates\\res\\merged\\debug\\values-sq\\values-sq.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,126,187,254,320,398,477,569,655",
-                        "endColumns": "70,60,66,65,77,78,91,85,69",
-                        "endOffsets": "121,182,249,315,393,472,564,650,720"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\6f83379224923f39c4b945682921b169\\core-1.7.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\6f83379224923f39c4b945682921b169\\core-1.7.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,25 +18,25 @@
                         "startOffsets": "725",
                         "endColumns": "100",
                         "endOffsets": "821"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,126,187,254,320,398,477,569,655",
+                        "endColumns": "70,60,66,65,77,78,91,85,69",
+                        "endOffsets": "121,182,249,315,393,472,564,650,720"
                     }
                 }
             ]
         },
         {
-            "outputFile": "C:\\Users\\HoangN\\Desktop\\OO\\oofluterapp\\build\\video_player_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\video_player_android\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-sq\\values-sq.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,126,187,254,320,398,477,569,655",
-                        "endColumns": "70,60,66,65,77,78,91,85,69",
-                        "endOffsets": "121,182,249,315,393,472,564,650,720"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\HoangN\\.gradle\\caches\\transforms-2\\files-2.1\\6f83379224923f39c4b945682921b169\\core-1.7.0\\res\\values-sq\\values-sq.xml",
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\6f83379224923f39c4b945682921b169\\core-1.7.0\\res\\values-sq\\values-sq.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -60,6 +50,16 @@
                         "startOffsets": "725",
                         "endColumns": "100",
                         "endOffsets": "821"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\23f94ce7910553796a442d156f2ba181\\jetified-exoplayer-core-2.18.5\\res\\values-sq\\values-sq.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,126,187,254,320,398,477,569,655",
+                        "endColumns": "70,60,66,65,77,78,91,85,69",
+                        "endOffsets": "121,182,249,315,393,472,564,650,720"
                     }
                 }
             ]

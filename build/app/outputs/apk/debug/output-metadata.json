@@ -10,8 +10,8 @@
     {
       "type": "SINGLE",
       "filters": [],
-      "versionCode": 136,
-      "versionName": "3.0.1.6",
+      "versionCode": 138,
+      "versionName": "3.0.1.8",
       "outputFile": "app-debug.apk"
     }
   ]

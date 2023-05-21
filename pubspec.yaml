@@ -46,9 +46,9 @@ dependencies:
   # flutter_full_pdf_viewer: ^1.0.6
   # flutter_plugin_pdf_viewer: ^1.0.7
   easy_pdf_viewer: ^1.0.6
-  open_file: ^3.2.1
+  open_file_safe: ^3.2.3
   file_picker: ^4.6.1
-  # recode with last version  
+  # recode with last version
   image_picker: ^0.8.6
   multi_image_picker: ^4.8.01
   flutter_webview_plugin:
@@ -58,7 +58,7 @@ dependencies:
 
   # flutter_webview_plugin: ^0.4.0
   # iOS => ~/Dropbox/OnlineOffice_AppV2/Flutter_App/flutter_webview_plugin_Fix_Error_Show_Dialog_iOS.txt
-  # Android => C:\Flutter\.pub-cache\hosted\pub.dartlang.org\flutter_webview_plugin-{{version}}\android\src\main\java\com\flutter_webview_plugin\WebviewManager.java => replace '\.fileprovider' to '\.fileProvider' 
+  # Android => C:\Flutter\.pub-cache\hosted\pub.dartlang.org\flutter_webview_plugin-{{version}}\android\src\main\java\com\flutter_webview_plugin\WebviewManager.java => replace '\.fileprovider' to '\.fileProvider'
   # esys_flutter_share: ^1.0.2
   esys_flutter_share_plus: ^2.2.0
   photo_view: ^0.14.0
@@ -78,23 +78,19 @@ dependencies:
   #    url: https://github.com/ArcticZeroo/flutter-search-bar.git
   # flutter_search_bar_base.dart => buildSearchBar(...) => TextField(...) => add property 'textAlign: TextAlign.right'
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
 
   # To add assets to your application, add an assets section, like this:
   assets:

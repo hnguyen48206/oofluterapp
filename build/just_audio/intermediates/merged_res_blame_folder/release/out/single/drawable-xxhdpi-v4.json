@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\media_session_service_notification_ic_skip_to_next.png",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\drawable-xxhdpi-v4\\media_session_service_notification_ic_skip_to_next.png"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\media_session_service_notification_ic_skip_to_previous.png",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\drawable-xxhdpi-v4\\media_session_service_notification_ic_skip_to_previous.png"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\media_session_service_notification_ic_play.png",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\drawable-xxhdpi-v4\\media_session_service_notification_ic_play.png"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\media_session_service_notification_ic_pause.png",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\drawable-xxhdpi-v4\\media_session_service_notification_ic_pause.png"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\just_audio\\intermediates\\res\\merged\\release\\drawable-xxhdpi-v4\\media_session_service_notification_ic_music_note.png",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\535e40d51e926600780a3e88946dbbab\\jetified-media2-session-1.2.0\\res\\drawable-xxhdpi-v4\\media_session_service_notification_ic_music_note.png"
+    }
+]

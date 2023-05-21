@@ -518,8 +518,8 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "open_file",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/open_file-3.2.1",
+      "name": "open_file_safe",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/open_file_safe-3.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -914,7 +914,7 @@
       "languageVersion": "2.8"
     }
   ],
-  "generated": "2023-04-19T02:51:40.481405Z",
+  "generated": "2023-05-21T07:15:44.523546Z",
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }

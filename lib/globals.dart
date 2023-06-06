@@ -19,7 +19,8 @@ import 'package:onlineoffice_flutter/models/work_project_model.dart';
 import 'package:onlineoffice_flutter/models/report_daily_model.dart';
 
 class AppCache {
-  static final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
+  static final GlobalKey<NavigatorState> navigatorKey =
+      new GlobalKey<NavigatorState>();
 
   static String webviewLastURL = '';
   static bool isCreatedFromDocs = false;
@@ -179,8 +180,12 @@ class AppCache {
     Uint8List uint8list = responseData.bodyBytes;
     var buffer = uint8list.buffer;
     ByteData byteData = ByteData.view(buffer);
-    var tempDir = await getTemporaryDirectory();
-    File file = await File('${tempDir.path}/onlineoffice').writeAsBytes(
+    var downloadDir = null;
+    if (Platform.isIOS == true)
+      downloadDir = await getDownloadsDirectory();
+    else
+      downloadDir = await getExternalStorageDirectory();
+    File file = await File('${downloadDir.path}/onlineoffice').writeAsBytes(
         buffer.asUint8List(byteData.offsetInBytes, byteData.lengthInBytes));
     return file;
   }

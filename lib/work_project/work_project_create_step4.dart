@@ -220,7 +220,7 @@ class WorkProjectCreateStep4PageState
                       borderRadius: BorderRadius.circular(8.0)),
                   child: SingleChildScrollView(
                       child: HtmlWidget(AppCache.currentWorkProject.content,
-                          webView: true, webViewJs: false))),
+                         ))),
               AppCache.currentWorkProject.files.length == 0
                   ? SizedBox(height: 0.0)
                   : Container(

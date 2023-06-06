@@ -210,8 +210,7 @@ class DiscussWorkCreateStep3PageState
                       border: Border.all(color: Colors.grey[300]),
                       borderRadius: BorderRadius.circular(8.0)),
                   child: SingleChildScrollView(
-                      child: HtmlWidget(AppCache.currentDiscussWork.content,
-                          webView: true, webViewJs: false))),
+                      child: HtmlWidget(AppCache.currentDiscussWork.content))),
               Container(
                   child: new Column(
                 children: <Widget>[

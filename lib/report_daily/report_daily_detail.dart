@@ -167,8 +167,7 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
               itemBuilder: (context, index) {
                 if (index == 0) {
                   return SingleChildScrollView(
-                      child: HtmlWidget(AppCache.currentReportDaily.content,
-                          webView: true, webViewJs: false));
+                      child: HtmlWidget(AppCache.currentReportDaily.content));
                 }
                 FileAttachment item =
                     AppCache.currentReportDaily.files[index - 1];
@@ -680,7 +679,7 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
                   padding: EdgeInsets.fromLTRB(5, 1, 0, 0),
                   child: Text(AppCache.getFullNameById(record.userId),
                       style: TextStyle(color: Colors.blue))),
-              HtmlWidget(record.message, webView: true, webViewJs: false),
+              HtmlWidget(record.message),
               Padding(
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(record.getTimeInChat(),
@@ -728,8 +727,7 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
                     this.textReplyController.text = text;
                   },
                   controller: this.textReplyController),
-              HtmlWidget(AppCache.getHtmlReply(record.userId, record.message),
-                  webView: true, webViewJs: false)
+              HtmlWidget(AppCache.getHtmlReply(record.userId, record.message))
             ]),
             actions: <Widget>[
               ElevatedButton(
@@ -770,7 +768,7 @@ class ReportDailyDetailPageState extends State<ReportDailyDetailPage> {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              HtmlWidget(record.message, webView: true, webViewJs: false),
+              HtmlWidget(record.message),
               Padding(
                   padding: EdgeInsets.fromLTRB(5.0, 0, 0, 0),
                   child: Text(record.getTimeInChat(),

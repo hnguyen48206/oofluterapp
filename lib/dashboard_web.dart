@@ -5,6 +5,8 @@ import 'package:onlineoffice_flutter/dal/services.dart';
 import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/home.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter_android/webview_flutter_android.dart';
+import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
 
 class DashboardWebPage extends StatefulWidget {
   @override
@@ -14,6 +16,32 @@ class DashboardWebPage extends StatefulWidget {
 }
 
 class DashboardWebPageState extends State<DashboardWebPage> {
+  final controller = WebViewController()
+    ..addJavaScriptChannel("OnlineOfficeChannel", onMessageReceived: (message) {
+      print('Channel push');
+      print(message);
+    })
+    ..setJavaScriptMode(JavaScriptMode.unrestricted)
+    ..setBackgroundColor(const Color(0x00000000))
+    ..setNavigationDelegate(
+      NavigationDelegate(
+        onProgress: (int progress) {
+          // Update loading bar.
+        },
+        onPageStarted: (String url) {},
+        onPageFinished: (String url) {},
+        onWebResourceError: (WebResourceError error) {
+          print(error);
+        },
+        onNavigationRequest: (NavigationRequest request) {
+          // if (request.url.startsWith('https://www.youtube.com/')) {
+          //   return NavigationDecision.prevent;
+          // }
+          return NavigationDecision.navigate;
+        },
+      ),
+    )
+    ..loadRequest(Uri.parse('https://flutter.dev'));
   final _key = UniqueKey();
   String _url = FetchService.linkService.replaceAll('api/api/', '') +
       'Dashboard.aspx?token=' +
@@ -31,26 +59,8 @@ class DashboardWebPageState extends State<DashboardWebPage> {
             // appBar: AppBar(),
             body: Column(children: [
           Expanded(
-              child: WebView(
-                  key: _key,
-                  javascriptMode: JavascriptMode.unrestricted,
-                  // ignore: sdk_version_set_literal
-                  javascriptChannels: <JavascriptChannel>{
-                    JavascriptChannel(
-                        name: 'MessageInvoker',
-                        onMessageReceived: (s) {
-                          if (s.message.startsWith('VB')) {
-                            AppCache.tabIndexDocumentList = s.message;
-                            HomePage.globalKey.currentState
-                                .setFromDashboard(IndexTabHome.Document);
-                          } else {
-                            AppCache.tabIndexWorkList = int.parse(s.message);
-                            HomePage.globalKey.currentState
-                                .setFromDashboard(IndexTabHome.WorkProject);
-                          }
-                        })
-                  },
-                  initialUrl: this._url))
+            child: WebViewWidget(controller: controller),
+          )
         ])));
   }
 }

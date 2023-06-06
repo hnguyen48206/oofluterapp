@@ -497,7 +497,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                   padding: EdgeInsets.fromLTRB(5.0, 1.0, 0, 0),
                   child: Text(AppCache.getFullNameById(record.userId),
                       style: TextStyle(color: Colors.blue))),
-              HtmlWidget(record.message, webView: true, webViewJs: false),
+              HtmlWidget(record.message),
               Padding(
                   padding: EdgeInsets.fromLTRB(5.0, 0, 0, 0),
                   child: Text(record.getTimeInChat(),
@@ -554,7 +554,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
                     this.textReplyController.text = text;
                   },
                   controller: this.textReplyController),
-              HtmlWidget(getHtmlReply(record), webView: true, webViewJs: false)
+              HtmlWidget(getHtmlReply(record))
             ]),
             actions: <Widget>[
               ElevatedButton(
@@ -593,7 +593,7 @@ class WorkProjectChatPageState extends State<WorkProjectChatPage> {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              HtmlWidget(record.message, webView: true, webViewJs: false),
+              HtmlWidget(record.message),
               Padding(
                   padding: EdgeInsets.only(right: 5),
                   child: Text(record.getTimeInChat(),

@@ -88,6 +88,11 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin local_auth_android, io.flutter.plugins.localauth.LocalAuthPlugin", e);
     }
     try {
+      flutterEngine.getPlugins().add(new com.sayegh.move_to_background.MoveToBackgroundPlugin());
+    } catch(Exception e) {
+      Log.e(TAG, "Error registering plugin move_to_background, com.sayegh.move_to_background.MoveToBackgroundPlugin", e);
+    }
+    try {
       flutterEngine.getPlugins().add(new com.vitanov.multiimagepicker.MultiImagePickerPlugin());
     } catch(Exception e) {
       Log.e(TAG, "Error registering plugin multi_image_picker, com.vitanov.multiimagepicker.MultiImagePickerPlugin", e);

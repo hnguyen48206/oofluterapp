@@ -1,0 +1,1 @@
+C:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_app_minimizer-0.0.2\android\src\main\kotlin\dev\codecity\flutter_app_minimizer\FlutterAppMinimizerPlugin.kt

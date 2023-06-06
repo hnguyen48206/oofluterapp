@@ -141,8 +141,7 @@ class AnnouncementCreateStep1State extends State<AnnouncementCreateStep1Page> {
                             borderRadius: BorderRadius.circular(8.0)),
                         child: SingleChildScrollView(
                             child: HtmlWidget(
-                                AppCache.currentAnnouncement.content,
-                                webView: true)))
+                                AppCache.currentAnnouncement.content)))
                     : TextFormField(
                         autocorrect: true,
                         maxLines: 6,

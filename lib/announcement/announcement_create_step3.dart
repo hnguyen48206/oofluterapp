@@ -134,8 +134,7 @@ class AnnouncementCreateStep3PageState
                       border: Border.all(color: Colors.grey[300]),
                       borderRadius: BorderRadius.circular(8.0)),
                   child: SingleChildScrollView(
-                      child: HtmlWidget(AppCache.currentAnnouncement.content,
-                          webView: true, webViewJs: false))),
+                      child: HtmlWidget(AppCache.currentAnnouncement.content))),
               Container(
                   child: new Column(
                 children: <Widget>[

@@ -190,9 +190,7 @@ class DiscussWorkCreateStep1State extends State<DiscussWorkCreateStep1Page> {
                             borderRadius: BorderRadius.circular(8.0)),
                         child: SingleChildScrollView(
                             child: HtmlWidget(
-                                AppCache.currentDiscussWork.content,
-                                webView: true,
-                                webViewJs: false)))
+                                AppCache.currentDiscussWork.content)))
                     : TextFormField(
                         autocorrect: true,
                         maxLines: 6,

@@ -197,9 +197,7 @@ class ReportDailyCreateStep1State extends State<ReportDailyCreatePage> {
                             borderRadius: BorderRadius.circular(8.0)),
                         child: SingleChildScrollView(
                             child: HtmlWidget(
-                                AppCache.currentReportDaily.content,
-                                webView: true,
-                                webViewJs: false)))
+                                AppCache.currentReportDaily.content)))
                     : TextFormField(
                         autocorrect: true,
                         maxLines: 6,

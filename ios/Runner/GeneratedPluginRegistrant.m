@@ -84,6 +84,12 @@
 @import local_auth_ios;
 #endif
 
+#if __has_include(<move_to_background/MoveToBackgroundPlugin.h>)
+#import <move_to_background/MoveToBackgroundPlugin.h>
+#else
+@import move_to_background;
+#endif
+
 #if __has_include(<multi_image_picker/MultiImagePickerPlugin.h>)
 #import <multi_image_picker/MultiImagePickerPlugin.h>
 #else
@@ -154,6 +160,7 @@
   [FLTImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTImagePickerPlugin"]];
   [JustAudioPlugin registerWithRegistrar:[registry registrarForPlugin:@"JustAudioPlugin"]];
   [FLTLocalAuthPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTLocalAuthPlugin"]];
+  [MoveToBackgroundPlugin registerWithRegistrar:[registry registrarForPlugin:@"MoveToBackgroundPlugin"]];
   [MultiImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"MultiImagePickerPlugin"]];
   [OpenFilePlugin registerWithRegistrar:[registry registrarForPlugin:@"OpenFilePlugin"]];
   [PathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"PathProviderPlugin"]];

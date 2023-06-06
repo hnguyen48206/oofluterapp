@@ -704,7 +704,7 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
                   padding: EdgeInsets.fromLTRB(5, 1, 0, 0),
                   child: Text(AppCache.getFullNameById(record.userId),
                       style: TextStyle(color: Colors.blue))),
-              HtmlWidget(record.message, webView: true, webViewJs: false),
+              HtmlWidget(record.message),
               Padding(
                   padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
                   child: Text(record.getTimeInChat(),
@@ -752,8 +752,8 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
                     this.textReplyController.text = text;
                   },
                   controller: this.textReplyController),
-              HtmlWidget(AppCache.getHtmlReply(record.userId, record.message),
-                  webView: true, webViewJs: false)
+              HtmlWidget(AppCache.getHtmlReply(record.userId, record.message)
+                  )
             ]),
             actions: <Widget>[
               ElevatedButton(
@@ -793,7 +793,7 @@ class SignatureDetailPageState extends State<SignatureDetailPage> {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
-              HtmlWidget(record.message, webView: true, webViewJs: false),
+              HtmlWidget(record.message),
               Padding(
                   padding: EdgeInsets.fromLTRB(5.0, 0, 0, 0),
                   child: Text(record.getTimeInChat(),

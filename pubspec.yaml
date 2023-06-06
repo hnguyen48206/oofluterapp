@@ -41,7 +41,7 @@ dependencies:
   date_format: ^2.0.7
   # if (date == null) return '';
   datetime_picker_formfield: ^2.0.1
-  flutter_widget_from_html: ^0.8.5
+  flutter_widget_from_html: ^0.9.1
   dio: ^4.0.6
   # flutter_full_pdf_viewer: ^1.0.6
   # flutter_plugin_pdf_viewer: ^1.0.7
@@ -55,6 +55,8 @@ dependencies:
     git:
       url: https://github.com/hnguyen48206/flutter_webview_plugin.git
       ref: master
+  webview_flutter: ^4.2.2
+  internet_file: ^1.2.0
 
   # flutter_webview_plugin: ^0.4.0
   # iOS => ~/Dropbox/OnlineOffice_AppV2/Flutter_App/flutter_webview_plugin_Fix_Error_Show_Dialog_iOS.txt
@@ -72,6 +74,7 @@ dependencies:
   need_resume: ^1.0.7+1
   diacritic: ^0.1.3
   firebase_core: ^2.3.0
+  move_to_background: ^1.0.2
 
   #flutter_search_bar:
   #  git:

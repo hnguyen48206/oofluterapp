@@ -5,9 +5,10 @@ import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/home.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:onlineoffice_flutter/webapp.dart';
 
 AuthService appAuth = new AuthService();
-
+String webURL='https://oodemo.web.app/';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -36,15 +37,11 @@ class MyApp extends StatelessWidget {
             onGenerateRoute: (settings) {
               switch (settings.name) {
                 case '/HomePage':
-                  return MaterialPageRoute(builder: (context) => HomePage());
-                // case '/TraoDoiCV':
-                //   return MaterialPageRoute(
-                //       builder: (_) =>
-                //           HomePage(startTabIndex: IndexTabHome.DiscussWork));
+                  return MaterialPageRoute(builder: (context) => WebAppPage(webURL));     
                 default:
-                  return MaterialPageRoute(builder: (context) => HomePage());
+                  return MaterialPageRoute(builder: (context) => WebAppPage(webURL));
               }
             },
-            home: LauncherPage()));
+            home: WebAppPage(webURL)));
   }
 }

@@ -166,8 +166,7 @@ class AnnouncementDetailPageState extends State<AnnouncementDetailPage> {
               itemBuilder: (context, index) {
                 if (index == 0) {
                   return SingleChildScrollView(
-                      child: HtmlWidget(AppCache.currentAnnouncement.content,
-                          webView: true, webViewJs: false));
+                      child: HtmlWidget(AppCache.currentAnnouncement.content));
                 }
                 FileAttachment item =
                     AppCache.currentAnnouncement.files[index - 1];

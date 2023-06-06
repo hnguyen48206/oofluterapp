@@ -1,0 +1,9 @@
+com/aboutkai/easy_pdf_viewer/EasyPdfViewerPlugin.java
+ com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin
+ com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin$1
+ com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin$1$1
+ com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin$1$2
+ com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin$1$3
+ com.aboutkai.easy_pdf_viewer.EasyPdfViewerPlugin$2
+com/aboutkai/easy_pdf_viewer/BuildConfig.java
+ com.aboutkai.easy_pdf_viewer.BuildConfig

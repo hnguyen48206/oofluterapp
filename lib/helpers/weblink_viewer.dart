@@ -201,7 +201,7 @@ class WebLinkViewerPageState extends ResumableState<WebLinkViewerPage> {
 
   @override
   Widget build(BuildContext context) {
-      flutterWebviewPlugin.onUrlChanged.listen((String url) {
+    flutterWebviewPlugin.onUrlChanged.listen((String url) {
       print(url);
       AppCache.webviewLastURL = url;
       if (url.contains('MobileTrinhKy')) {
@@ -224,6 +224,7 @@ class WebLinkViewerPageState extends ResumableState<WebLinkViewerPage> {
           // maintainState: true,
           child: SizedBox(
               child: WebviewScaffold(
+                  ignoreSSLErrors: true,
                   withJavascript: true,
                   clearCache: false,
                   clearCookies: false,

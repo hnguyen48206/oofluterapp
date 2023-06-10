@@ -45,8 +45,8 @@ android {
         applicationId "vn.onlineoffice.www.oomessenger"
         minSdkVersion 21
         targetSdkVersion 31
-        versionCode 138
-        versionName "3.0.1.8"
+        versionCode 140
+        versionName "3.0.2.0"
         testInstrumentationRunner "android.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }

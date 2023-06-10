@@ -89,8 +89,8 @@ class AppHelpers {
           String id;
           module = AppCache.messageNotify['module'];
           id = AppCache.messageNotify['id'];
-          String linkWeb =
-              FetchService.getLinkMobileLogin() + "&L=" + module + "&I=" + id;
+          String baseURL = FetchService.getLinkMobileLogin();
+          String linkWeb = baseURL + "&L=" + module + "&I=" + id;
           Navigator.push(
               context,
               MaterialPageRoute(
@@ -105,8 +105,8 @@ class AppHelpers {
     String module = AppCache.messageNotify['module'];
     String id = AppCache.messageNotify['id'];
     if (module == 'TraoDoi') module = 'TraoDoiCV';
-    if (AppCache.currentUser.modulesActive.contains(module) == false)
-      return false;
+    // if (AppCache.currentUser.modulesActive.contains(module) == false)
+    //   return false;
     if (module.toLowerCase() == 'baocao') {
       AppCache.messageNotify = null;
       AppCache.currentReportDaily = ReportDaily(id, '', '');
@@ -174,6 +174,19 @@ class AppHelpers {
     /////////////////////////////////////////////////////////////////////////////////////
     if (module.toLowerCase() == 'xe') {
       AppCache.messageNotify = null;
+      String baseURL = FetchService.getLinkMobileLogin();
+      final uri = Uri.parse(baseURL);
+      String linkWeb = uri.origin +
+          '/Index.aspx?P=' +
+          module.toUpperCase() +
+          '_03&I=' +
+          id.toUpperCase() +
+          '&C=2';
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => WebLinkViewerPage(
+                  title: "Chi Tiết Đăng Ký Xe", link: linkWeb)));
       return true;
     }
     if (module.toLowerCase() == 'trinhky') {
@@ -355,10 +368,16 @@ class AppHelpers {
       file.fileName = file.fileName.substring(file.fileName.length - 100);
     }
     if (file.bytes == null) {
-      File(file.localPath).readAsBytes().then((bytes) {
-        Share.file(file.fileName, file.fileName, bytes.buffer.asUint8List(),
-            file.mimeType);
-      });
+      // File(file.localPath).readAsBytes().then((bytes) {
+      //   Share.file(file.fileName, file.fileName, bytes.buffer.asUint8List(),
+      //       file.mimeType);
+      // });
+      AppCache.getFileFromURL(Uri.parse(file.url)).then((downloadedFile) => {
+            downloadedFile.readAsBytes().then((bytes) {
+              Share.file(file.fileName, file.fileName,
+                  bytes.buffer.asUint8List(), file.mimeType);
+            })
+          });
     } else {
       Share.file(file.fileName, file.fileName, file.bytes, file.mimeType);
     }

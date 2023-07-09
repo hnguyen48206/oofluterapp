@@ -7,6 +7,6 @@ public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
   public static final String APPLICATION_ID = "vn.onlineoffice.www.oomessenger";
   public static final String BUILD_TYPE = "debug";
-  public static final int VERSION_CODE = 138;
-  public static final String VERSION_NAME = "3.0.1.8";
+  public static final int VERSION_CODE = 140;
+  public static final String VERSION_NAME = "3.0.2.0";
 }

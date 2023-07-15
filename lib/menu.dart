@@ -49,21 +49,29 @@ class MenuPageState extends State<MenuPage> {
 
   getListWidget() {
     List<Widget> result = [];
-    result.add(Card(
-      child: ListTile(
-          leading: Icon(Icons.web, color: Colors.blue),
-          title: Text('Giao diện web'),
-          trailing: Icon(Icons.navigate_next, color: Colors.black),
-          onTap: () {
-            AppCache.webviewLastURL = FetchService.getLinkMobileLogin();
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => WebLinkViewerPage(
-                        title: "Giao diện web",
-                        link: FetchService.getLinkMobileLogin())));
-          }),
-    ));
+    var isWebAvailable = true;
+    for (var i = 0; i < AppCache.currentUser.modulesActive.length; i++) {
+      // TO DO
+      if (AppCache.currentUser.modulesActive[i]
+          .toLowerCase()
+          .contains('NOWEB'.toLowerCase())) isWebAvailable = false;
+    }
+    if (isWebAvailable)
+      result.add(Card(
+        child: ListTile(
+            leading: Icon(Icons.web, color: Colors.blue),
+            title: Text('Giao diện web'),
+            trailing: Icon(Icons.navigate_next, color: Colors.black),
+            onTap: () {
+              AppCache.webviewLastURL = FetchService.getLinkMobileLogin();
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WebLinkViewerPage(
+                          title: "Giao diện web",
+                          link: FetchService.getLinkMobileLogin())));
+            }),
+      ));
     if (AppCache.currentUser.modulesActive.contains('TrinhKy')) {
       result.add(Card(
         child: ListTile(

@@ -167,8 +167,11 @@ class AccountEditPageState extends State<AccountEditPage> {
                       // }
                       return null;
                     },
-                    onSaved: (val) => this._birthdayController.text =
-                        formatDate(val, AppCache.dateVnFormatArray))),
+                    onSaved: (val) => {
+                          if (this._birthdayController.text != '')
+                            this._birthdayController.text =
+                                formatDate(val, AppCache.dateVnFormatArray)
+                        })),
           ),
           ListTile(
             title: Text('Email',
@@ -237,8 +240,17 @@ class AccountEditPageState extends State<AccountEditPage> {
     final form = formKey.currentState;
     if (form.validate() == true) {
       form.save();
-      FetchService.accountChangeInfo(this._birthdayController.text,
-              this._emailController.text, this._phoneController.text)
+      // this._birthdayController.text =
+      //                   formatDate(val, AppCache.dateVnFormatArray)))
+      String birth_day = '';
+      if (this._birthdayController.text != '')
+        birth_day = this._birthdayController.text;
+      else {
+        var now = new DateTime.now();
+        birth_day = formatDate(now, AppCache.dateVnFormatArray);
+      }
+      FetchService.accountChangeInfo(
+              birth_day, this._emailController.text, this._phoneController.text)
           .then((index) {
         if (index > 0) {
           if (this.imageAvatar != null) {
@@ -293,7 +305,7 @@ class AccountEditPageState extends State<AccountEditPage> {
           ElevatedButton.icon(
               label: Text("Hủy",
                   style: TextStyle(color: Colors.white, fontSize: 14.0)),
-               style: ElevatedButton.styleFrom(
+              style: ElevatedButton.styleFrom(
                   primary: Colors.redAccent //elevated btton background color
                   ),
               icon: Icon(Icons.cancel, color: Colors.black),
@@ -301,7 +313,7 @@ class AccountEditPageState extends State<AccountEditPage> {
                 Navigator.pop(context);
               }),
           ElevatedButton.icon(
-               style: ElevatedButton.styleFrom(
+              style: ElevatedButton.styleFrom(
                   primary: Colors.green //elevated btton background color
                   ),
               icon: Icon(Icons.save, color: Colors.black),

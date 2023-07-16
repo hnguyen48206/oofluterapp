@@ -10,6 +10,7 @@ import 'package:onlineoffice_flutter/globals.dart';
 import 'package:onlineoffice_flutter/helpers/app_helpers.dart';
 import 'package:onlineoffice_flutter/models/document_model.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:html_unescape/html_unescape.dart';
 
 class DocumentPageState extends State<DocumentPage> {
   List<Document> _listRecords;
@@ -17,6 +18,7 @@ class DocumentPageState extends State<DocumentPage> {
   TextEditingController _textEditingController;
   RefreshController _refreshController;
   int minTick = 0;
+  var unescape = HtmlUnescape();
 
   Map<String, int> countNewBySegment = <String, int>{
     'VBDE': 0,
@@ -281,11 +283,11 @@ class DocumentPageState extends State<DocumentPage> {
   getRowInfo(Document record) {
     List<Widget> widgets = [];
     widgets.add(FittedBox(
-                  fit: BoxFit.fitWidth,
-                  clipBehavior: Clip.none,
-                  child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: getLineInfo(record))));
+        fit: BoxFit.fitWidth,
+        clipBehavior: Clip.none,
+        child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: getLineInfo(record))));
     if (record.ngayGui.endsWith('1900') == false) {
       widgets.add(Text('Ngày phát hành: ${record.ngayGui}',
           style: TextStyle(fontStyle: FontStyle.italic, color: Colors.red)));
@@ -296,7 +298,7 @@ class DocumentPageState extends State<DocumentPage> {
           style: TextStyle(fontStyle: FontStyle.normal, color: Colors.black)));
     }
     if (record.noiNhan.isNotEmpty) {
-      widgets.add(Text('Nơi nhận: ${record.noiNhan}',
+      widgets.add(Text('Nơi nhận: ${unescape.convert(record.noiNhan)}',
           style: TextStyle(fontStyle: FontStyle.normal, color: Colors.black)));
     }
     return widgets;

@@ -281,8 +281,27 @@ class AccountEditPageState extends State<AccountEditPage> {
                   actions: <Widget>[
                     ElevatedButton(
                         onPressed: () {
-                          Navigator.pop(context);
-                          Navigator.pop(context);
+                          Navigator.of(context, rootNavigator: true).pop();
+                          Navigator.of(context, rootNavigator: true).pop();
+                        },
+                        child:
+                            Text("OK", style: TextStyle(color: Colors.black)))
+                  ],
+                );
+              });
+        } else {
+          showCupertinoModalPopup(
+              context: context,
+              builder: (context) {
+                return CupertinoAlertDialog(
+                  title: Text('Lỗi hệ thống'),
+                  content: Text(
+                      'Cập nhật không thành công, xin vui lòng thử lại.',
+                      style: TextStyle(color: Colors.blueAccent)),
+                  actions: <Widget>[
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context, rootNavigator: true).pop();
                         },
                         child:
                             Text("OK", style: TextStyle(color: Colors.black)))

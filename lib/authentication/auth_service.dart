@@ -13,7 +13,8 @@ class AuthService {
         username, password, AppCache.tokenFCM, imei, os);
 
     if (AppCache.currentUser.error == null) {
-      store(username, password, FetchService.linkService);
+      store(username, password, FetchService.linkService,
+          AppCache.currentUser.isWebAPPv2);
       return true;
     }
     return false;
@@ -30,7 +31,8 @@ class AuthService {
     prefs.remove('password');
   }
 
-  Future<void> store(String username, String password, String url) async {
+  Future<void> store(
+      String username, String password, String url, bool isWebAPPv2) async {
     AppCache.currentUser.password = password;
     var prefs = await SharedPreferences.getInstance();
     prefs.setString('username', username);
@@ -38,6 +40,8 @@ class AuthService {
     prefs.setString('url', url);
     if (AppCache.currentUser.userId.isNotEmpty)
       prefs.setString('accountOO', json.encode(AppCache.currentUser.toJson()));
+    if (isWebAPPv2) prefs.setBool('isWebAPPv2', isWebAPPv2);
+
     return;
   }
 

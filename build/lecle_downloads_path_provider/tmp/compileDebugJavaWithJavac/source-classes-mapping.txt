@@ -1,0 +1,2 @@
+com/lecle/path/downloads/BuildConfig.java
+ com.lecle.path.downloads.BuildConfig

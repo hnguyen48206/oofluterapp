@@ -51,12 +51,14 @@ dependencies:
   # recode with last version
   image_picker: ^0.8.6
   multi_image_picker: ^4.8.01
-  flutter_webview_plugin:
-    git:
-      url: https://github.com/hnguyen48206/flutter_webview_plugin.git
-      ref: master
+  flutter_webview_plugin: ^0.4.0
+  internet_file: ^1.2.0
 
-  # flutter_webview_plugin: ^0.4.0
+  # flutter_webview_plugin:
+  #   git:
+  #     url: https://github.com/hnguyen48206/flutter_webview_plugin.git
+  #     ref: master
+
   # iOS => ~/Dropbox/OnlineOffice_AppV2/Flutter_App/flutter_webview_plugin_Fix_Error_Show_Dialog_iOS.txt
   # Android => C:\Flutter\.pub-cache\hosted\pub.dartlang.org\flutter_webview_plugin-{{version}}\android\src\main\java\com\flutter_webview_plugin\WebviewManager.java => replace '\.fileprovider' to '\.fileProvider'
   # esys_flutter_share: ^1.0.2
@@ -73,6 +75,11 @@ dependencies:
   diacritic: ^0.1.3
   firebase_core: ^2.3.0
   html_unescape: ^2.0.0
+  move_to_background: ^1.0.2
+  lecle_downloads_path_provider: ^0.0.2+8
+  fluttertoast: ^8.2.2
+  permission_handler: ^11.0.1
+
   #flutter_search_bar:
   #  git:
   #    url: https://github.com/ArcticZeroo/flutter-search-bar.git

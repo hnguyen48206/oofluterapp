@@ -97,54 +97,54 @@
 44    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 44-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
 44-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
-45
-46    <queries>
-46-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:15
-47        <intent>
-47-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:18
-48            <action android:name="android.intent.action.GET_CONTENT" />
-48-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
-48-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
+45    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+45-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+45-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+46    <uses-permission android:name="android.permission.VIBRATE" />
+46-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-66
+46-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-63
+47    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+47-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+47-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+48    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+48-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
+48-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
 49
-50            <data android:mimeType="*/*" />
-50-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-44
-50-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:19-41
-51        </intent>
-52        <intent>
-52-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
-53            <action android:name="android.media.browse.MediaBrowserService" />
-53-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
-53-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
-54        </intent>
-55        <intent>
-55-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
-56            <action android:name="androidx.media2.session.MediaSessionService" />
-56-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
-56-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
-57        </intent>
-58        <intent>
-58-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
-59            <action android:name="androidx.media2.session.MediaLibraryService" />
-59-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
-59-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
-60        </intent>
-61    </queries>
-62
-63    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
-63-->[:local_auth_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-72
-63-->[:local_auth_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-69
-64    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-64-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
-64-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
-65    <uses-permission android:name="android.permission.VIBRATE" />
-65-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-66
-65-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-63
-66    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-66-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
-66-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
-67    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- suppress DeprecatedClassUsageInspection -->
-67-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
-67-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
+50    <queries>
+50-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:15
+51        <intent>
+51-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:18
+52            <action android:name="android.intent.action.GET_CONTENT" />
+52-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-72
+52-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-69
+53
+54            <data android:mimeType="*/*" />
+54-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-44
+54-->[:file_picker] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:19-41
+55        </intent>
+56        <intent>
+56-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
+57            <action android:name="android.media.browse.MediaBrowserService" />
+57-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+57-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
+58        </intent>
+59        <intent>
+59-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
+60            <action android:name="androidx.media2.session.MediaSessionService" />
+60-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+60-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
+61        </intent>
+62        <intent>
+62-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
+63            <action android:name="androidx.media2.session.MediaLibraryService" />
+63-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+63-->[androidx.media2:media2-session:1.2.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\535e40d51e926600780a3e88946dbbab\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
+64        </intent>
+65    </queries>
+66
+67    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+67-->[:local_auth_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-72
+67-->[:local_auth_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\local_auth_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-69
 68    <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 68-->[androidx.biometric:biometric:1.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:5-74
 68-->[androidx.biometric:biometric:1.1.0] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\ebb866ddfc7f56e513b1a2db0ab37c96\biometric-1.1.0\AndroidManifest.xml:27:22-71
@@ -394,85 +394,85 @@
 206-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 207            android:initOrder="99" />
 207-->[:firebase_messaging] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
-208        <provider
-208-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
-209            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-209-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
-210            android:authorities="vn.onlineoffice.www.oomessenger.flutter.image_provider"
-210-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
-211            android:exported="false"
-211-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
-212            android:grantUriPermissions="true" >
-212-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
-213            <meta-data
-213-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
-214                android:name="android.support.FILE_PROVIDER_PATHS"
-214-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
-215                android:resource="@xml/flutter_image_picker_file_paths" />
-215-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
-216        </provider>
-217
-218        <receiver
-218-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-16:40
-219            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
-219-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-91
-220            android:exported="false" />
-220-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
-221        <receiver
-221-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-19:40
-222            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
-222-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-97
-223            android:exported="false" />
-223-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
-224        <receiver
-224-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-29:20
-225            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
-225-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-101
-226            android:exported="false" >
-226-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
-227            <intent-filter>
-227-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-28:29
-228                <action android:name="android.intent.action.BOOT_COMPLETED" />
-228-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-79
-228-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-76
-229                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-229-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-84
-229-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-81
-230                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-230-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
-230-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
-231                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-231-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-82
-231-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-79
-232            </intent-filter>
-233        </receiver>
-234
-235        <activity
-235-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
-236            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-236-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
-237            android:exported="false"
-237-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
-238            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-238-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
-239
-240        <provider
-240-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-20:20
-241            android:name="com.crazecoder.openfile.FileProvider"
-241-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
-242            android:authorities="vn.onlineoffice.www.oomessenger.fileProvider.com.crazecoder.openfile"
-242-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-88
-243            android:exported="false"
-243-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
-244            android:grantUriPermissions="true" >
-244-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
-245            <meta-data
-245-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
-246                android:name="android.support.FILE_PROVIDER_PATHS"
-246-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
-247                android:resource="@xml/filepaths" />
-247-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
-248        </provider>
+208
+209        <receiver
+209-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-16:40
+210            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+210-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-91
+211            android:exported="false" />
+211-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+212        <receiver
+212-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-19:40
+213            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+213-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-97
+214            android:exported="false" />
+214-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+215        <receiver
+215-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-29:20
+216            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+216-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-101
+217            android:exported="false" >
+217-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+218            <intent-filter>
+218-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-28:29
+219                <action android:name="android.intent.action.BOOT_COMPLETED" />
+219-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-79
+219-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-76
+220                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+220-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-84
+220-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:25-81
+221                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+221-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-82
+221-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-79
+222                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+222-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-82
+222-->[:flutter_local_notifications] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-79
+223            </intent-filter>
+224        </receiver>
+225
+226        <provider
+226-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-20:20
+227            android:name="com.crazecoder.openfile.FileProvider"
+227-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-64
+228            android:authorities="vn.onlineoffice.www.oomessenger.fileProvider.com.crazecoder.openfile"
+228-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-88
+229            android:exported="false"
+229-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+230            android:grantUriPermissions="true" >
+230-->[:open_file_safe] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\open_file_safe\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
+231            <meta-data
+231-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
+232                android:name="android.support.FILE_PROVIDER_PATHS"
+232-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
+233                android:resource="@xml/filepaths" />
+233-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
+234        </provider>
+235        <provider
+235-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+236            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+236-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+237            android:authorities="vn.onlineoffice.www.oomessenger.flutter.image_provider"
+237-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+238            android:exported="false"
+238-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+239            android:grantUriPermissions="true" >
+239-->[:image_picker_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+240            <meta-data
+240-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:99:13-102:52
+241                android:name="android.support.FILE_PROVIDER_PATHS"
+241-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:100:17-67
+242                android:resource="@xml/flutter_image_picker_file_paths" />
+242-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:101:17-51
+243        </provider>
+244
+245        <activity
+245-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+246            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+246-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+247            android:exported="false"
+247-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+248            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+248-->[:url_launcher_android] C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 249
 250        <uses-library
 250-->[androidx.window:window:1.1.0-alpha04] C:\Users\hn162\.gradle\caches\transforms-2\files-2.1\a49d95a46b90d20f729f3006b115ec03\jetified-window-1.1.0-alpha04\AndroidManifest.xml:23:9-25:40

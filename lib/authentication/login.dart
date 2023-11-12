@@ -257,9 +257,10 @@ class LoginPageState extends State<LoginPage> {
           ? Container(child: Center(child: CircularProgressIndicator()))
           : Container(
               child: ElevatedButton(
-                   style: ElevatedButton.styleFrom(
-                  primary: Colors.transparent //elevated btton background color
-                  ),
+                  style: ElevatedButton.styleFrom(
+                      primary:
+                          Colors.transparent //elevated btton background color
+                      ),
                   child: Text(
                     'Đăng nhập',
                     style: TextStyle(color: Colors.white, fontSize: 20),

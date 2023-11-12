@@ -162,10 +162,15 @@ class FetchService {
       result = Account.fromJson(json.decode(response.body));
       result.isOldVersion = false;
       result.password = pass;
-      setAllRole(result.userId);
-      setAllUser();
-      setAllGroupUser();
-      setListCategoryReport(result.userId);
+
+      if (!result.isWebAPPv2) {
+        //Neu ko phai v2 web thi theo logic cu
+        setAllRole(result.userId);
+        setAllUser();
+        setAllGroupUser();
+        setListCategoryReport(result.userId);
+      }
+
       return result;
     } else {
       if (linkService.contains('api/api') == true) {

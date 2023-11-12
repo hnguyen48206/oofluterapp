@@ -70,6 +70,8 @@ class Account {
   List<String> modulesActive = [];
   bool checked = false;
   bool isOldVersion = false;
+  bool isWebAPPv2 = false;
+  String webAPPv2LoginToken = '';
   String error;
 
   Account();
@@ -110,6 +112,14 @@ class Account {
     } else {
       isOldVersion = false;
     }
+    //autoLoginToken là 1 field moi chi co o ban v2
+    if (json['autoLoginToken'] != null) {
+      isWebAPPv2 = true;
+      webAPPv2LoginToken = json['autoLoginToken'];
+    } else {
+      isWebAPPv2 = false;
+    }
+
     checked = false;
   }
   Map<String, dynamic> toJson() {

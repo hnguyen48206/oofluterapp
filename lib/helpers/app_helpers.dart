@@ -37,6 +37,7 @@ import 'package:onlineoffice_flutter/dal/enums.dart';
 
 import '../signature/signature_detail.dart';
 import '../signature/signature_list.dart';
+import '../webapp.dart';
 
 class AppHelpers {
   static getBadgeNumberRepeater() {
@@ -64,7 +65,13 @@ class AppHelpers {
   }
 
   static openNextForm(BuildContext context) async {
-    if (AppCache.currentUser.isOldVersion) {
+    if (AppCache.currentUser.isWebAPPv2) {
+      String autoLoginPath = FetchService.linkService +
+          '/dashboard?keytoken=' +
+          AppCache.currentUser.webAPPv2LoginToken;
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => WebAppPage(autoLoginPath)));
+    } else if (AppCache.currentUser.isOldVersion) {
       if (AppCache.messageNotify == null) {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => OldVersionPage()));

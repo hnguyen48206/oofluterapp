@@ -17,6 +17,7 @@ import 'package:onlineoffice_flutter/models/signature_model.dart';
 import 'package:onlineoffice_flutter/models/user_group_model.dart';
 import 'package:onlineoffice_flutter/models/work_project_model.dart';
 import 'package:onlineoffice_flutter/models/comment_model.dart';
+import 'package:intl/intl.dart';
 
 class FetchService {
   static const Duration durationTimeout = Duration(seconds: 30);
@@ -433,7 +434,10 @@ class FetchService {
       body["work_id"] = workId;
       body["user_id"] = AppCache.currentUser.userId;
       body["content"] = content;
+      if (dateComplete == "" || dateComplete == null)
+        dateComplete = DateFormat('dd/MM/yyyy').format(new DateTime.now());
       body["date_complete"] = dateComplete;
+      print(body);
       final response =
           await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
       if (response.statusCode == 200) {

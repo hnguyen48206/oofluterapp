@@ -66,13 +66,15 @@ class AppHelpers {
 
   static openNextForm(BuildContext context) async {
     if (AppCache.currentUser.isWebAPPv2) {
-      String autoLoginPath = FetchService.linkService +
-          '/dashboard?keytoken=' +
-          AppCache.currentUser.webAPPv2LoginToken;
+      String autoLoginPath = FetchService.linkService;
       autoLoginPath = autoLoginPath.replaceAll("/api/api/", "");
       autoLoginPath = autoLoginPath.replaceAll("/appmobile/api/", "");
-      Navigator.push(context,
-          MaterialPageRoute(builder: (context) => WebAppPage(autoLoginPath)));
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => WebAppPage(autoLoginPath +
+                  '/dashboard?keytoken=' +
+                  AppCache.currentUser.webAPPv2LoginToken)));
     } else if (AppCache.currentUser.isOldVersion) {
       if (AppCache.messageNotify == null) {
         Navigator.push(

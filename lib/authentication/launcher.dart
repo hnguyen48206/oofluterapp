@@ -63,82 +63,6 @@ class LauncherPageState extends State<LauncherPage> {
       print('Nhận Firebase từ foreground');
       try {
         if (message.notification != null) {
-          // print(json.encode(message.data));
-
-          if (message.notification.title != '') {
-            SharedPreferences.getInstance().then((prefs) {
-              if (prefs != null) {
-                String username = prefs.getString('username') ?? "";
-                String password = prefs.getString('password') ?? "";
-                bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
-
-                if (username.isNotEmpty && password.isNotEmpty) {
-                  if (isWebAPPv2) {
-                    //Truong hop moi danh cho v2
-                    String url = prefs.getString('url') ?? "";
-                    if (url.isNotEmpty) {
-                      Navigator.push(
-                        this.context,
-                        MaterialPageRoute(
-                            builder: (context) => WebAppPage(url)),
-                      );
-                    }
-                  }
-                }
-              }
-            });
-          } else
-            notificationPlugin.showNotification(message.notification.title,
-                message.notification.body, json.encode(message.data));
-        }
-      } catch (error) {
-        print(error);
-      }
-    });
-
-    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-      // Parse the message received and send local notification
-      print('Nhận Firebase từ wakeup');
-      // try {
-      //   if (message.notification != null) {
-      //     // print(json.encode(message.data));
-      //     notificationPlugin.showNotification(message.notification.title,
-      //         message.notification.body, json.encode(message.data));
-      //   }
-      // } catch (error) {
-      //   print(error);
-      // }
-      if (message.notification.title != '') {
-        SharedPreferences.getInstance().then((prefs) {
-          if (prefs != null) {
-            String username = prefs.getString('username') ?? "";
-            String password = prefs.getString('password') ?? "";
-            bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
-
-            if (username.isNotEmpty && password.isNotEmpty) {
-              if (isWebAPPv2) {
-                //Truong hop moi danh cho v2
-                String url = prefs.getString('url') ?? "";
-                if (url.isNotEmpty) {
-                  Navigator.push(
-                    this.context,
-                    MaterialPageRoute(builder: (context) => WebAppPage(url)),
-                  );
-                }
-              }
-            }
-          }
-        });
-      } else
-        onNotificationClick(json.encode(message.data));
-    });
-
-    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-
-    _firebaseMessaging.getInitialMessage().then((message) {
-      print('Nhận Firebase từ terminated');
-      if (message != null) {
-        if (message.notification.title != '') {
           SharedPreferences.getInstance().then((prefs) {
             if (prefs != null) {
               String username = prefs.getString('username') ?? "";
@@ -150,17 +74,110 @@ class LauncherPageState extends State<LauncherPage> {
                   //Truong hop moi danh cho v2
                   String url = prefs.getString('url') ?? "";
                   if (url.isNotEmpty) {
-                    Navigator.push(
-                      this.context,
-                      MaterialPageRoute(builder: (context) => WebAppPage(url)),
-                    );
+                    if (message.data['module'] != null) {
+                      url = url.replaceAll("/api/api/", "");
+                      url = url.replaceAll("/appmobile/api/", "");
+                      url = url + message.data['module'];
+                      Navigator.push(
+                        this.context,
+                        MaterialPageRoute(
+                            builder: (context) => WebAppPage(url)),
+                      );
+                    }
                   }
+                } else {
+                  notificationPlugin.showNotification(
+                      message.notification.title,
+                      message.notification.body,
+                      json.encode(message.data));
                 }
               }
             }
           });
-        } else
-          onNotificationClick(json.encode(message.data));
+        }
+      } catch (error) {
+        print(error);
+      }
+    });
+
+    FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      // Parse the message received and send local notification
+      print('Nhận Firebase từ wakeup');
+      try {
+        if (message.notification != null) {
+          SharedPreferences.getInstance().then((prefs) {
+            if (prefs != null) {
+              String username = prefs.getString('username') ?? "";
+              String password = prefs.getString('password') ?? "";
+              bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
+
+              if (username.isNotEmpty && password.isNotEmpty) {
+                if (isWebAPPv2) {
+                  //Truong hop moi danh cho v2
+                  String url = prefs.getString('url') ?? "";
+                  if (url.isNotEmpty) {
+                    if (message.data['module'] != null) {
+                      url = url.replaceAll("/api/api/", "");
+                      url = url.replaceAll("/appmobile/api/", "");
+                      url = url + message.data['module'];
+                      Navigator.push(
+                        this.context,
+                        MaterialPageRoute(
+                            builder: (context) => WebAppPage(url)),
+                      );
+                    }
+                  }
+                } else {
+                  onNotificationClick(json.encode(message.data));
+                }
+              }
+            }
+          });
+        }
+      } catch (error) {
+        print(error);
+      }
+    });
+
+    FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+    _firebaseMessaging.getInitialMessage().then((message) {
+      print('Nhận Firebase từ terminated');
+      if (message != null) {
+        try {
+          if (message.notification != null) {
+            SharedPreferences.getInstance().then((prefs) {
+              if (prefs != null) {
+                String username = prefs.getString('username') ?? "";
+                String password = prefs.getString('password') ?? "";
+                bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
+
+                if (username.isNotEmpty && password.isNotEmpty) {
+                  if (isWebAPPv2) {
+                    //Truong hop moi danh cho v2
+                    String url = prefs.getString('url') ?? "";
+                    if (url.isNotEmpty) {
+                      if (message.data['module'] != null) {
+                        url = url.replaceAll("/api/api/", "");
+                        url = url.replaceAll("/appmobile/api/", "");
+                        url = url + message.data['module'];
+                        Navigator.push(
+                          this.context,
+                          MaterialPageRoute(
+                              builder: (context) => WebAppPage(url)),
+                        );
+                      }
+                    }
+                  } else {
+                    onNotificationClick(json.encode(message.data));
+                  }
+                }
+              }
+            });
+          }
+        } catch (error) {
+          print(error);
+        }
       }
     });
     _firebaseMessaging.subscribeToTopic('all').then((message) {
@@ -223,12 +240,21 @@ class LauncherPageState extends State<LauncherPage> {
             String username = prefs.getString('username') ?? "";
             String password = prefs.getString('password') ?? "";
             bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
+            String webAPPv2LoginToken =
+                prefs.getString('webAPPv2LoginToken') ?? "";
 
             if (username.isNotEmpty && password.isNotEmpty) {
               if (isWebAPPv2) {
+                AppCache.currentUser = Account();
+                AppCache.currentUser.isWebAPPv2 = isWebAPPv2;
+                AppCache.currentUser.webAPPv2LoginToken = webAPPv2LoginToken;
+
                 //Truong hop moi danh cho v2
                 String url = prefs.getString('url') ?? "";
                 if (url.isNotEmpty) {
+                  url = url.replaceAll("/api/api/", "");
+                  url = url.replaceAll("/appmobile/api/", "");
+
                   Navigator.push(
                     this.context,
                     MaterialPageRoute(builder: (context) => WebAppPage(url)),

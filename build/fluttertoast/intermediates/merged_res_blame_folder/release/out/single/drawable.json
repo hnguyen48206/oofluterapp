@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\corner.xml",
+        "source": "C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-8.2.4\\android\\src\\main\\res\\drawable\\corner.xml"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\toast_bg.xml",
+        "source": "C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\fluttertoast-8.2.4\\android\\src\\main\\res\\drawable\\toast_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\d1ffc57213c67f20bf18c3e0c0a30483\\core-1.6.0\\res\\drawable\\notification_bg_low.xml"
+    }
+]

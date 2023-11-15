@@ -69,6 +69,8 @@ class AppHelpers {
       String autoLoginPath = FetchService.linkService +
           '/dashboard?keytoken=' +
           AppCache.currentUser.webAPPv2LoginToken;
+      autoLoginPath = autoLoginPath.replaceAll("/api/api/", "");
+      autoLoginPath = autoLoginPath.replaceAll("/appmobile/api/", "");
       Navigator.push(context,
           MaterialPageRoute(builder: (context) => WebAppPage(autoLoginPath)));
     } else if (AppCache.currentUser.isOldVersion) {

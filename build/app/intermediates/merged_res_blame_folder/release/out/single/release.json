@@ -716,6 +716,10 @@
         "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\7fb10b9c80ffef167c62f37eb27b4804\\appcompat-1.2.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\drawable_corner.xml.flat",
+        "source": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\packaged_res\\release\\drawable\\corner.xml"
+    },
+    {
         "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_ic_done_white_24dp.png.flat",
         "source": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\local_auth_android\\intermediates\\packaged_res\\release\\drawable-xhdpi-v4\\ic_done_white_24dp.png"
     },
@@ -2312,6 +2316,10 @@
         "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\c8a2f9ddd4401df3c641927e67b62f27\\material-1.0.0\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\drawable_toast_bg.xml.flat",
+        "source": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\packaged_res\\release\\drawable\\toast_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\drawable-mdpi-v4_ic_photo_library_gray_100dp.png.flat",
         "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\56563c76338d9025c8ac081bc0417b65\\jetified-FishBun-0.11.2\\res\\drawable-mdpi-v4\\ic_photo_library_gray_100dp.png"
     },
@@ -2434,6 +2442,10 @@
     {
         "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\drawable-v21_design_password_eye.xml.flat",
         "source": "C:\\Users\\hn162\\.gradle\\caches\\transforms-2\\files-2.1\\c8a2f9ddd4401df3c641927e67b62f27\\material-1.0.0\\res\\drawable-v21\\design_password_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\layout_toast_custom.xml.flat",
+        "source": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\fluttertoast\\intermediates\\packaged_res\\release\\layout\\toast_custom.xml"
     },
     {
         "merged": "C:\\Users\\hn162\\OneDrive\\Desktop\\OnlineOffice\\oofluterapp\\build\\app\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",

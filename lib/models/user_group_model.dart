@@ -106,6 +106,14 @@ class Account {
     }
     if (json['ModulesActive'] != null) {
       modulesActive = json['ModulesActive'].toString().split(';');
+      //kiem tra xem co phai v2 hay ko
+      if (json['ModulesActive']
+          .toString()
+          .toLowerCase()
+          .contains('version11')) {
+        isWebAPPv2 = true;
+      } else
+        isWebAPPv2 = false;
     }
     if (json['IsOldVersion'] != null) {
       isOldVersion = json['IsOldVersion'];
@@ -114,12 +122,8 @@ class Account {
     }
     //autoLoginToken là 1 field moi chi co o ban v2
     if (json['autoLoginToken'] != null) {
-      isWebAPPv2 = true;
       webAPPv2LoginToken = json['autoLoginToken'];
-    } else {
-      isWebAPPv2 = false;
     }
-
     checked = false;
   }
   Map<String, dynamic> toJson() {

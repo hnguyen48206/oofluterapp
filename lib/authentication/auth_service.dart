@@ -13,8 +13,12 @@ class AuthService {
         username, password, AppCache.tokenFCM, imei, os);
 
     if (AppCache.currentUser.error == null) {
-      store(username, password, FetchService.linkService,
-          AppCache.currentUser.isWebAPPv2);
+      store(
+          username,
+          password,
+          FetchService.linkService,
+          AppCache.currentUser.isWebAPPv2,
+          AppCache.currentUser.webAPPv2LoginToken);
       return true;
     }
     return false;
@@ -32,7 +36,8 @@ class AuthService {
   }
 
   Future<void> store(
-      String username, String password, String url, bool isWebAPPv2) async {
+      String username, String password, String url, bool isWebAPPv2,
+      [String webAPPv2LoginToken]) async {
     AppCache.currentUser.password = password;
     var prefs = await SharedPreferences.getInstance();
     prefs.setString('username', username);
@@ -41,6 +46,8 @@ class AuthService {
     if (AppCache.currentUser.userId.isNotEmpty)
       prefs.setString('accountOO', json.encode(AppCache.currentUser.toJson()));
     if (isWebAPPv2) prefs.setBool('isWebAPPv2', isWebAPPv2);
+    if (webAPPv2LoginToken != '')
+      prefs.setString('webAPPv2LoginToken', webAPPv2LoginToken);
 
     return;
   }

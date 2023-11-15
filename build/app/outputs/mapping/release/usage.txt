@@ -11513,6 +11513,27 @@ com.aboutkai.easy_pdf_viewer.R$string
 com.aboutkai.easy_pdf_viewer.R$style
 com.aboutkai.easy_pdf_viewer.R$styleable
 com.aboutkai.easy_pdf_viewer.R
+com.baseflow.permissionhandler.BuildConfig
+com.baseflow.permissionhandler.PermissionConstants$PermissionGroup
+com.baseflow.permissionhandler.PermissionConstants$PermissionStatus
+com.baseflow.permissionhandler.PermissionConstants$ServiceStatus
+com.baseflow.permissionhandler.PermissionConstants
+com.baseflow.permissionhandler.PermissionHandlerPlugin:
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+com.baseflow.permissionhandler.PermissionUtils:
+    static final java.lang.String SHARED_PREFERENCES_PERMISSION_WAS_DENIED_BEFORE_KEY
+    public void <init>()
+com.baseflow.permissionhandler.R$attr
+com.baseflow.permissionhandler.R$color
+com.baseflow.permissionhandler.R$dimen
+com.baseflow.permissionhandler.R$drawable
+com.baseflow.permissionhandler.R$id
+com.baseflow.permissionhandler.R$integer
+com.baseflow.permissionhandler.R$layout
+com.baseflow.permissionhandler.R$string
+com.baseflow.permissionhandler.R$style
+com.baseflow.permissionhandler.R$styleable
+com.baseflow.permissionhandler.R
 com.bumptech.glide.GenericTransitionOptions:
     public static com.bumptech.glide.GenericTransitionOptions with(int)
     public static com.bumptech.glide.GenericTransitionOptions with(com.bumptech.glide.request.transition.TransitionFactory)
@@ -26534,6 +26555,18 @@ com.google.gson.stream.MalformedJsonException:
 com.google.thirdparty.publicsuffix.PublicSuffixPatterns
 com.google.thirdparty.publicsuffix.PublicSuffixType
 com.google.thirdparty.publicsuffix.TrieParser
+com.lecle.path.downloads.BuildConfig
+com.lecle.path.downloads.R$attr
+com.lecle.path.downloads.R$color
+com.lecle.path.downloads.R$dimen
+com.lecle.path.downloads.R$drawable
+com.lecle.path.downloads.R$id
+com.lecle.path.downloads.R$integer
+com.lecle.path.downloads.R$layout
+com.lecle.path.downloads.R$string
+com.lecle.path.downloads.R$style
+com.lecle.path.downloads.R$styleable
+com.lecle.path.downloads.R
 com.mr.flutter.plugin.filepicker.BuildConfig
 com.mr.flutter.plugin.filepicker.FilePickerDelegate:
     private static final java.lang.String TAG
@@ -27293,6 +27326,21 @@ com.sangcomz.fishbun.util.TouchImageView:
 com.sangcomz.fishbun.util.UiUtil:
     public static final android.graphics.drawable.BitmapDrawable getDrawableFromBitmap(android.content.res.Resources,android.graphics.Bitmap)
     public static final void isLandscape(android.content.Context,kotlin.jvm.functions.Function0)
+com.sayegh.move_to_background.BuildConfig
+com.sayegh.move_to_background.MoveToBackgroundPlugin:
+    private static final java.lang.String CHANNEL_NAME
+    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+com.sayegh.move_to_background.R$attr
+com.sayegh.move_to_background.R$color
+com.sayegh.move_to_background.R$dimen
+com.sayegh.move_to_background.R$drawable
+com.sayegh.move_to_background.R$id
+com.sayegh.move_to_background.R$integer
+com.sayegh.move_to_background.R$layout
+com.sayegh.move_to_background.R$string
+com.sayegh.move_to_background.R$style
+com.sayegh.move_to_background.R$styleable
+com.sayegh.move_to_background.R
 com.tekartik.sqflite.BuildConfig
 com.tekartik.sqflite.Constant:
     static final java.lang.String CMD_GET
@@ -28981,6 +29029,116 @@ io.flutter.view.TextureRegistry:
     public abstract io.flutter.view.TextureRegistry$SurfaceTextureEntry registerSurfaceTexture(android.graphics.SurfaceTexture)
 io.flutter.view.VsyncWaiter:
     public static void reset()
+io.github.ponnamkarthik.toast.fluttertoast.BuildConfig
+io.github.ponnamkarthik.toast.fluttertoast.R$attr
+io.github.ponnamkarthik.toast.fluttertoast.R$color
+io.github.ponnamkarthik.toast.fluttertoast.R$dimen
+io.github.ponnamkarthik.toast.fluttertoast.R$drawable:
+    public static final int notification_action_background
+    public static final int notification_bg
+    public static final int notification_bg_low
+    public static final int notification_bg_low_normal
+    public static final int notification_bg_low_pressed
+    public static final int notification_bg_normal
+    public static final int notification_bg_normal_pressed
+    public static final int notification_icon_background
+    public static final int notification_template_icon_bg
+    public static final int notification_template_icon_low_bg
+    public static final int notification_tile_bg
+    public static final int notify_panel_notification_icon_bg
+    public static final int toast_bg
+    private void <init>()
+io.github.ponnamkarthik.toast.fluttertoast.R$id:
+    public static final int accessibility_action_clickable_span
+    public static final int accessibility_custom_action_0
+    public static final int accessibility_custom_action_1
+    public static final int accessibility_custom_action_10
+    public static final int accessibility_custom_action_11
+    public static final int accessibility_custom_action_12
+    public static final int accessibility_custom_action_13
+    public static final int accessibility_custom_action_14
+    public static final int accessibility_custom_action_15
+    public static final int accessibility_custom_action_16
+    public static final int accessibility_custom_action_17
+    public static final int accessibility_custom_action_18
+    public static final int accessibility_custom_action_19
+    public static final int accessibility_custom_action_2
+    public static final int accessibility_custom_action_20
+    public static final int accessibility_custom_action_21
+    public static final int accessibility_custom_action_22
+    public static final int accessibility_custom_action_23
+    public static final int accessibility_custom_action_24
+    public static final int accessibility_custom_action_25
+    public static final int accessibility_custom_action_26
+    public static final int accessibility_custom_action_27
+    public static final int accessibility_custom_action_28
+    public static final int accessibility_custom_action_29
+    public static final int accessibility_custom_action_3
+    public static final int accessibility_custom_action_30
+    public static final int accessibility_custom_action_31
+    public static final int accessibility_custom_action_4
+    public static final int accessibility_custom_action_5
+    public static final int accessibility_custom_action_6
+    public static final int accessibility_custom_action_7
+    public static final int accessibility_custom_action_8
+    public static final int accessibility_custom_action_9
+    public static final int action_container
+    public static final int action_divider
+    public static final int action_image
+    public static final int action_text
+    public static final int actions
+    public static final int androidx_window_activity_scope
+    public static final int async
+    public static final int blocking
+    public static final int chronometer
+    public static final int dialog_button
+    public static final int forever
+    public static final int icon
+    public static final int icon_group
+    public static final int info
+    public static final int italic
+    public static final int line1
+    public static final int line3
+    public static final int locale
+    public static final int ltr
+    public static final int normal
+    public static final int notification_background
+    public static final int notification_main_column
+    public static final int notification_main_column_container
+    public static final int right_icon
+    public static final int right_side
+    public static final int rtl
+    public static final int tag_accessibility_actions
+    public static final int tag_accessibility_clickable_spans
+    public static final int tag_accessibility_heading
+    public static final int tag_accessibility_pane_title
+    public static final int tag_on_apply_window_listener
+    public static final int tag_on_receive_content_listener
+    public static final int tag_on_receive_content_mime_types
+    public static final int tag_screen_reader_focusable
+    public static final int tag_state_description
+    public static final int tag_transition_group
+    public static final int tag_unhandled_key_event_manager
+    public static final int tag_unhandled_key_listeners
+    public static final int tag_window_insets_animation_callback
+    public static final int text2
+    public static final int time
+    public static final int title
+    private void <init>()
+io.github.ponnamkarthik.toast.fluttertoast.R$integer
+io.github.ponnamkarthik.toast.fluttertoast.R$layout:
+    public static final int custom_dialog
+    public static final int notification_action
+    public static final int notification_action_tombstone
+    public static final int notification_template_custom_big
+    public static final int notification_template_icon_group
+    public static final int notification_template_part_chronometer
+    public static final int notification_template_part_time
+    private void <init>()
+io.github.ponnamkarthik.toast.fluttertoast.R$string
+io.github.ponnamkarthik.toast.fluttertoast.R$style
+io.github.ponnamkarthik.toast.fluttertoast.R$styleable
+io.github.ponnamkarthik.toast.fluttertoast.R
 javax.inject.Inject
 javax.inject.Named
 javax.inject.Qualifier

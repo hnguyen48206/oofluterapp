@@ -5,12 +5,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:need_resume/need_resume.dart';
-import 'package:flutter/services.dart';
-import 'package:move_to_background/move_to_background.dart';
 // import 'package:webview_flutter/webview_flutter.dart';
 import 'package:internet_file/storage_io.dart';
+import 'package:onlineoffice_flutter/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'authentication/login.dart';
 import 'globals.dart';
 import 'models/user_group_model.dart';
@@ -89,6 +87,7 @@ class WebAppPageState extends ResumableState<WebAppPage> {
     //     ),
     //   )
     //   ..loadRequest(Uri.parse(widget.link));
+
     flutterWebviewPlugin.onStateChanged.listen((state) async {
       if (state.type == WebViewState.finishLoad) {
         this.currentUrl = state.url;
@@ -113,17 +112,18 @@ class WebAppPageState extends ResumableState<WebAppPage> {
     // flutterWebviewPlugin.dispose();
 
     super.dispose();
-    MoveToBackground.moveTaskToBack();
+    // MoveToBackground.moveTaskToBack();
   }
 
   Future<bool> onBackClick() async {
-    // bool value = await webviewController.canGoBack();
-    // if (value == true)
-    //   webviewController.goBack();
-    // else {
-    //   MoveToBackground.moveTaskToBack();
-    // }
-    // return false;
+    var prefs = await SharedPreferences.getInstance();
+    var pass = prefs.getString('password') ?? "";
+    if (pass != "") {
+      return false;
+    } else {
+      // MoveToBackground.moveTaskToBack();
+      return true;
+    }
   }
 
   @override
@@ -160,8 +160,13 @@ class WebAppPageState extends ResumableState<WebAppPage> {
               prefs.remove('password');
               prefs.remove('isWebAPPv2');
               prefs.remove('webAPPv2LoginToken');
+              flutterWebviewPlugin.close();
 
-              Navigator.push(context,
+              appAuth.logout().then((prefs) {
+                print('API logout ok');
+              });
+
+              Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => LoginPage()));
             }
 

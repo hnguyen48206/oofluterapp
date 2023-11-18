@@ -34,6 +34,7 @@ import 'package:onlineoffice_flutter/helpers/image_viewer.dart';
 import 'package:onlineoffice_flutter/helpers/pdf_viewer.dart';
 import 'package:onlineoffice_flutter/announcement/announcement_list.dart';
 import 'package:onlineoffice_flutter/dal/enums.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../signature/signature_detail.dart';
 import '../signature/signature_list.dart';

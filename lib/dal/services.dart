@@ -139,6 +139,7 @@ class FetchService {
     Account result = Account();
     http.Response response;
     try {
+      var requestHeaders = {'Content-type': 'application/json'};
       body.clear();
       body['username'] = user;
       body['password'] =
@@ -146,8 +147,9 @@ class FetchService {
       body['token'] = token ?? "";
       body['imei'] = imei;
       body['os'] = os;
-      response =
-          await http.post(Uri.parse(url), body: body).timeout(durationTimeout);
+      response = await http
+          .post(Uri.parse(url), headers: requestHeaders, body: jsonEncode(body))
+          .timeout(durationTimeout);
     } on TimeoutException {
       result.error = "Không có kết nối.";
       return result;

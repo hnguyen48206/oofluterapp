@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:onlineoffice_flutter/authentication/login.dart';
 import 'package:onlineoffice_flutter/dal/services.dart';
 import 'package:onlineoffice_flutter/globals.dart';
@@ -141,46 +142,7 @@ class LauncherPageState extends State<LauncherPage> {
 
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
-    _firebaseMessaging.getInitialMessage().then((message) {
-      print('Nhận Firebase từ terminated');
-      if (message != null) {
-        try {
-          if (message.notification != null) {
-            SharedPreferences.getInstance().then((prefs) {
-              if (prefs != null) {
-                String username = prefs.getString('username') ?? "";
-                String password = prefs.getString('password') ?? "";
-                bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
-
-                if (username.isNotEmpty && password.isNotEmpty) {
-                  if (isWebAPPv2) {
-                    //Truong hop moi danh cho v2
-                    String url = prefs.getString('url') ?? "";
-                    if (url.isNotEmpty) {
-                      if (message.data['module'] != null) {
-                        url = url.replaceAll("/api/api/", "");
-                        url = url.replaceAll("/appmobile/api/", "");
-                        url = url + message.data['module'];
-                        Navigator.push(
-                          this.context,
-                          MaterialPageRoute(
-                              builder: (context) => WebAppPage(url)),
-                        );
-                      }
-                    }
-                  } else {
-                    onNotificationClick(json.encode(message.data));
-                  }
-                }
-              }
-            });
-          }
-        } catch (error) {
-          print(error);
-        }
-      }
-    });
-    _firebaseMessaging.subscribeToTopic('all').then((message) {
+    _firebaseMessaging.subscribeToTopic('hoang').then((message) {
       print("subscribe ok");
     });
   }
@@ -213,7 +175,7 @@ class LauncherPageState extends State<LauncherPage> {
 
   void setTokenLogin() {
     this._firebaseMessaging.getToken().then((token) {
-      print(token);
+      print('token: ' + token);
 
       if (token == null) {
         showCupertinoModalPopup(
@@ -240,62 +202,88 @@ class LauncherPageState extends State<LauncherPage> {
             String username = prefs.getString('username') ?? "";
             String password = prefs.getString('password') ?? "";
             bool isWebAPPv2 = prefs.getBool('isWebAPPv2') ?? false;
+            String url = prefs.getString('url') ?? "";
+
             String webAPPv2LoginToken =
                 prefs.getString('webAPPv2LoginToken') ?? "";
 
             if (username.isNotEmpty && password.isNotEmpty) {
-              if (isWebAPPv2) {
-                AppCache.currentUser = Account();
-                AppCache.currentUser.isWebAPPv2 = isWebAPPv2;
-                AppCache.currentUser.webAPPv2LoginToken = webAPPv2LoginToken;
+              //Co thong tin dang nhap, kiem tra xem co phai push hay ko
 
-                //Truong hop moi danh cho v2
-                String url = prefs.getString('url') ?? "";
-                if (url.isNotEmpty) {
-                  url = url.replaceAll("/api/api/", "");
-                  url = url.replaceAll("/appmobile/api/", "");
+              _firebaseMessaging.getInitialMessage().then((message) {
+                print('Nhận Firebase từ terminated');
 
-                  Navigator.push(
-                    this.context,
-                    MaterialPageRoute(builder: (context) => WebAppPage(url)),
-                  );
-                }
-              } else {
-                //xu ly nhu cu
-                String url = prefs.getString('url') ?? "";
-                if (url.isNotEmpty) {
-                  if (url.contains('://') == false) {
-                    url =
-                        (prefs.getInt('https') == 1 ? "https://" : "http://") +
+                //open from push
+
+                if (message != null) {
+                  if (isWebAPPv2) {
+                    AppCache.currentUser = Account();
+                    AppCache.currentUser.isWebAPPv2 = isWebAPPv2;
+                    AppCache.currentUser.webAPPv2LoginToken =
+                        webAPPv2LoginToken;
+
+                    //Truong hop moi danh cho v2
+                    if (url.isNotEmpty) {
+                      url = url.replaceAll("/api/api/", "");
+                      url = url.replaceAll("/appmobile/api/", "");
+                      url = url + message.data['module'];
+                      Navigator.push(
+                        this.context,
+                        MaterialPageRoute(
+                            builder: (context) => WebAppPage(url)),
+                      );
+                    }
+                  } else {
+                    //xu ly nhu cu
+                    onNotificationClick(json.encode(message.data));
+                  }
+                } else {
+                  //open normally
+                  String url = prefs.getString('url') ?? "";
+                  if (url.isNotEmpty) {
+                    if (isWebAPPv2) {
+                      Navigator.push(
+                        this.context,
+                        MaterialPageRoute(
+                            builder: (context) => WebAppPage(url)),
+                      );
+                    } else {
+                      if (url.contains('://') == false) {
+                        url = (prefs.getInt('https') == 1
+                                ? "https://"
+                                : "http://") +
                             url +
                             "/api/api/";
+                      }
+
+                      FetchService.linkService = url;
+                      String accountOO = prefs.getString('accountOO');
+                      if (accountOO != null && accountOO.isNotEmpty) {
+                        FlutterUdid.udid.then((imei) {
+                          appAuth
+                              .login(imei, Platform.isAndroid ? "A" : "I",
+                                  username, password)
+                              .then((result) {
+                            if (result) {
+                              AppCache.imei = imei;
+                            } else {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => LoginPage()));
+                            }
+                          });
+                        });
+                        AppCache.currentUser =
+                            Account.fromJson(json.decode(accountOO));
+                        AppHelpers.openNextForm(context);
+                        return;
+                      }
+                      login(username, password);
+                    }
                   }
                 }
-                FetchService.linkService = url;
-                String accountOO = prefs.getString('accountOO');
-                if (accountOO != null && accountOO.isNotEmpty) {
-                  FlutterUdid.udid.then((imei) {
-                    appAuth
-                        .login(imei, Platform.isAndroid ? "A" : "I", username,
-                            password)
-                        .then((result) {
-                      if (result) {
-                        AppCache.imei = imei;
-                      } else {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => LoginPage()));
-                      }
-                    });
-                  });
-                  AppCache.currentUser =
-                      Account.fromJson(json.decode(accountOO));
-                  AppHelpers.openNextForm(context);
-                  return;
-                }
-                login(username, password);
-              }
+              });
             } else {
               Navigator.push(
                 this.context,

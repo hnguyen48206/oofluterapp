@@ -248,7 +248,7 @@
 125-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:93:9-103:20
 126            android:name="androidx.core.content.FileProvider"
 126-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:94:13-62
-127            android:authorities="vn.onlineoffice.www.oomessenger.fileProvider"
+127            android:authorities="vn.onlineoffice.www.oomessenger.fileprovider"
 127-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:95:13-79
 128            android:exported="false"
 128-->C:\Users\hn162\OneDrive\Desktop\OnlineOffice\oofluterapp\android\app\src\main\AndroidManifest.xml:96:13-37
